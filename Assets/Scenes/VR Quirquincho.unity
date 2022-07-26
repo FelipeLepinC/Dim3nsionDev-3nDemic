@@ -8229,8 +8229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e4412f0f870e7c45b3d356d4d0b4f53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  min: 0
-  seg: 3
+  min: 2
+  seg: 0
   tiempo: {fileID: 1904251790}
   mensaje: {fileID: 1201905247}
   puntaje: {fileID: 111283106}

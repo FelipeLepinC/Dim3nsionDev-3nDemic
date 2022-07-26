@@ -11,6 +11,9 @@ public class AppleCounter : MonoBehaviour
     public int total;
     public Image alert;
     public GameObject Sonido;
+    public Text entregado;
+    private int actual;
+    public Image panel;
     //public FirstPersonController character;
     //public FirstPersonController controles;
     //private float nextActionTime = 0.0f;
@@ -25,7 +28,16 @@ public class AppleCounter : MonoBehaviour
          counter += 1;
          PersonalCounter.text = "" + (int)counter;
      }
- }
+    }
+
+    IEnumerator ApplesInHome(int apples){
+        entregado.text = "¡Has depositado " + (int)apples + " manzanas en la madriguera!";
+        entregado.enabled = true;
+        panel.enabled = true;
+        yield return new WaitForSeconds(4);
+        entregado.enabled = false;
+        panel.enabled = false;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +48,8 @@ public class AppleCounter : MonoBehaviour
         PersonalCounter.text = "0";
         TotalCounter.text = "0";
         alert.enabled = false;
+        entregado.enabled = false;
+        panel.enabled = false;
     }
 
     // Update is called once per frame
@@ -72,6 +86,11 @@ public class AppleCounter : MonoBehaviour
     }
 
     public void InHome(){
+        actual = counter;
+        if (actual > 0){
+            Debug.Log(actual);
+            StartCoroutine(ApplesInHome(actual));
+        }
         total += counter;
         counter = 0;
         PersonalCounter.text = "" + (int)counter;
