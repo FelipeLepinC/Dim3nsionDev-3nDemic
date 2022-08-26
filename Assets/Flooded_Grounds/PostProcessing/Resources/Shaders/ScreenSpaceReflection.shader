@@ -18,6 +18,8 @@ Shader "Hidden/Post FX/Screen Space Reflection"
         #include "Common.cginc"
         #include "ScreenSpaceRaytrace.cginc"
 
+        //UNITY_DECLARE_DEPTH_TEXTURE(_CameraDepthTexture);
+
         float4   _ProjInfo;
         float4x4 _WorldToCameraMatrix;
         float4x4 _CameraToWorldMatrix;
@@ -30,6 +32,7 @@ Shader "Hidden/Post FX/Screen Space Reflection"
         sampler2D _CameraGBufferTexture0;
         sampler2D _CameraGBufferTexture1;
         sampler2D _CameraGBufferTexture2;
+        //sampler2D awa = UNITY_DECLARE_DEPTH_TEXTURE(_CameraDepthTexture);
         sampler2D _CameraGBufferTexture3;
         sampler2D _CameraReflectionsTexture;
 
@@ -126,6 +129,7 @@ Shader "Hidden/Post FX/Screen Space Reflection"
             float3 P;
 
             P.z = SAMPLE_DEPTH_TEXTURE(_CameraDepthTexture, ssP.xy);
+            //P.z = SAMPLE_DEPTH_TEXTURE(UNITY_DECLARE_DEPTH_TEXTURE(_CameraDepthTexture), ssP.xy);
 
             // Offset to pixel center
             P = ReconstructCSPosition(float2(ssP) /*+ float2(0.5, 0.5)*/, P.z);
@@ -772,6 +776,7 @@ Shader "Hidden/Post FX/Screen Space Reflection"
         float4 fragDepthToCSZ(v2f i) : SV_Target
         {
             float depth = SAMPLE_DEPTH_TEXTURE(_CameraDepthTexture, i.uv2.xy);
+            //float depth = SAMPLE_DEPTH_TEXTURE(UNITY_DECLARE_DEPTH_TEXTURE(_CameraDepthTexture);, i.uv2.xy);
             return float4(-LinearEyeDepth(depth), 0.0, 0.0, 0.0);
         }
 
