@@ -7,6 +7,7 @@ TagManager:
   - CinemachineTarget
   - Apple
   - Terrain
+  - Capsula
   layers:
   - Default
   - TransparentFX
