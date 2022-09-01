@@ -19,37 +19,50 @@ public class Cazador : MonoBehaviour
     public Vector3 posicionPerseguido;
     public Vector3 posicionPerseguidor;
     public Vector3 direccionPersecucion;
-    public GameObject perseguido;
-    public AppleCounter interfaz;
-    public TimeController tiempo;
+    //public GameObject perseguido;
+    //public AppleCounter interfaz;
+    //public TimeController tiempo;
+    private TimeController tiempo;
     public FieldOfView campoVision;
 
     Rigidbody rb;
 
-    //Perseguimiento V2
-    public Transform target;
+    // Perseguimiento V2
+    //public Transform target;
+    private Transform target;
+    private GameObject perseguido;
     NavMeshAgent nav;
     private bool visto = false;
     private bool perdido;
     private bool trapped;
+    private GameObject[] jugadores; 
 
     // Animaciones
     Animator animator;
 
     // Reset
-    public GameObject madriguera;
-    public CharacterController controller;
-    public AppleCounter ui_contador;
+    //public GameObject madriguera;
+    //public CharacterController controller;
+    private CharacterController controller;
+    //public AppleCounter ui_contador;
     public Vector3 pos;
+    private AppleCounter ui_contador;
+    private AppleCounter interfaz;
 
     // Start is called before the first frame update
     void Awake()
     {
+        jugadores = GameObject.FindGameObjectsWithTag("Player1");
         nav = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         perdido = true;
         trapped = false;
+        perseguido= GameObject.FindWithTag("Player1");
+        controller = GameObject.FindWithTag("Player1").GetComponent<CharacterController>();
+        interfaz = GameObject.FindWithTag("MainCamera").GetComponent<AppleCounter>();
+        ui_contador = GameObject.FindWithTag("MainCamera").GetComponent<AppleCounter>();
+        tiempo = GameObject.FindWithTag("PanelTiempo").GetComponent<TimeController>();
     }
 
     // Update is called once per frame
@@ -103,7 +116,7 @@ public class Cazador : MonoBehaviour
             }
             visto = true;
             interfaz.GetComponent<AppleCounter>().persued();
-            ProcessPosition();
+            //ProcessPosition();
             perseguir();
             //MoveToPerseguido();
         }
@@ -197,6 +210,8 @@ public class Cazador : MonoBehaviour
 
     private void perseguir(){
         animator.SetBool("isRunning", true);
+        Debug.Log(jugadores.Length);
+        target= GameObject.FindWithTag("Player1").transform;
         nav.SetDestination(target.position);
     }
 }

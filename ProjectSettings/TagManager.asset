@@ -8,6 +8,9 @@ TagManager:
   - Apple
   - Terrain
   - Capsula
+  - Protagonista
+  - PanelTiempo
+  - Player1
   layers:
   - Default
   - TransparentFX
