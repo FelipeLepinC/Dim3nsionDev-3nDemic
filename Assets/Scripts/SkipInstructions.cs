@@ -15,7 +15,7 @@ public class SkipInstructions : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return)){
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Quirquincho");
         }
     }
 }

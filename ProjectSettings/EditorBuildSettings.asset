@@ -6,19 +6,19 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/MenuPrincipal.unity
     guid: c8b8d61a70b3f0142a8a4740dab1252c
   - enabled: 1
-    path: Assets/Scenes/Juego.unity
+    path: Assets/Scenes/Museo.unity
     guid: d5ddd4cb754302d48be186601d22c185
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
+    path: Assets/Scenes/JuegoQuirquincho/Tutorial.unity
     guid: ee0604c4798ef8749985742b2cd84700
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/JuegoQuirquincho/Quirquincho.unity
     guid: edd3a7c49d249974f8be0e28ad596934
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6213c6ede81ee2c4ca770743295a0a51, type: 2}

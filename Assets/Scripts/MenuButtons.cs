@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class MenuButtons : MonoBehaviour
 {
         public void Jugar(){
-            SceneManager.LoadScene("Juego");
+            SceneManager.LoadScene("Museo");
         }
 
         public void Salir(){
