@@ -9,6 +9,7 @@ public class Mensaje : MonoBehaviour
 
     public string mensaje;
     public bool entro = false;
+    public AudioSource audiol;
     private bool estadoMensaje;
     private GUIStyle algo = new GUIStyle();
 
@@ -24,6 +25,7 @@ public class Mensaje : MonoBehaviour
 
         if(estadoMensaje){
             if (Input.GetKeyDown(KeyCode.E)){
+                audiol.Play()
                 LimpiarMensajeTecla();
             }
         }
