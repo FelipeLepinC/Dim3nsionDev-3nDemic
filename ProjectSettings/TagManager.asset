@@ -7,11 +7,12 @@ TagManager:
   - CinemachineTarget
   - Apple
   - Terrain
+  - Trampa
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Terrain
   - Water
   - UI
   - 
