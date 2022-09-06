@@ -25,7 +25,7 @@ public class Mensaje : MonoBehaviour
 
         if(estadoMensaje){
             if (Input.GetKeyDown(KeyCode.E)){
-                audiol.Play()
+                audiol.Play();
                 LimpiarMensajeTecla();
             }
         }
