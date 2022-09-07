@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,11 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
+<<<<<<< HEAD
   controlID: 16
+=======
+  controlID: 55
+>>>>>>> 8f64781925603a0be75cb19c348eb15ad0003dfb
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -92,8 +96,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 225
     height: 614
+=======
+    width: 180
+    height: 508
+>>>>>>> 8f64781925603a0be75cb19c348eb15ad0003dfb
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
@@ -223,7 +232,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 17
+  controlID: 45
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +257,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 18
+  controlID: 46
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,38 +326,53 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 0
     m_Folders:
+<<<<<<< HEAD
     - Assets
+=======
+    - Assets/Scenes
+>>>>>>> 8f64781925603a0be75cb19c348eb15ad0003dfb
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
   - Assets
+=======
+  - Assets/Scenes
+>>>>>>> 8f64781925603a0be75cb19c348eb15ad0003dfb
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\tokyotech\Documents\GitHub\Dim3nsionDev-ChileFaunaVR
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 79}
     m_SelectedIDs: 1a710000
     m_LastClickedID: 28954
     m_ExpandedIDs: 000000001a7100001c7100001e71000020710000227100002471000026710000287100004273000044ce00009ace000000ca9a3bffffff7f
+=======
+    scrollPos: {x: 0, y: 419}
+    m_SelectedIDs: 326b0000
+    m_LastClickedID: 27442
+    m_ExpandedIDs: 00000000306b0000326b0000346b00005a6c000000ca9a3bffffff7f
+>>>>>>> 8f64781925603a0be75cb19c348eb15ad0003dfb
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Scenes
+      m_OriginalName: Scenes
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 27442
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -360,7 +384,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 000000001a7100001c7100001e71000020710000227100002471000026710000287100002a710000
+=======
+    m_ExpandedIDs: 00000000306b0000326b0000346b0000
+>>>>>>> 8f64781925603a0be75cb19c348eb15ad0003dfb
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,23 +516,29 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 263e0100
       m_LastClickedID: 81446
       m_ExpandedIDs: ac47fcff9c53fcffd478fcffc484fcff3a8afcff488afcff2c8cfcff1c98fcff6c1bffff5656ffff6456fffff85affff9262ffffa262ffffa862ffff986effff56c0ffff64c0ffff8ae8ffff9ae8ffffa0e8ffffbef9ffffd4630000d0640000726500000cd0000034d000003ed00000c4e50000e20701000a08010012080100a43d0100d43d01001a3e01002c3e0100983f0100ba430100
+=======
+      m_SelectedIDs: c66d0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 664dfefff26efefffa82feff5285feffb2f6feffbaf6feffc2f6feffc4f6feff1afefeff8203ffff94c1ffff9cc1ffffa4c1ffffa6c1ffffc8c5ffffd8c5ffffdec5ffffced1ffff14dfffff40e1ffff98e1fffff4e1ffff78f5ffff24f7ffff287e00002c7f0000508100005a810000748100007a8100008c8100001cad000040ad00004aad000064ad00006aad00007cad0000
+>>>>>>> 8f64781925603a0be75cb19c348eb15ad0003dfb
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Player
+        m_OriginalName: Player
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 44278
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -547,8 +581,13 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
+<<<<<<< HEAD
       snapOffset: {x: -100, y: -25.600006}
       snapOffsetDelta: {x: -1, y: -0.3999939}
+=======
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: -100, y: -25.600006}
+>>>>>>> 8f64781925603a0be75cb19c348eb15ad0003dfb
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -569,7 +608,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 24.8}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -591,7 +630,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 24.8}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -739,9 +778,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 225.7, y: 99.6, z: 325.4}
     speed: 2
     m_Value: {x: 225.7, y: 99.6, z: 325.4}
+=======
+    m_Target: {x: -3.3153262, y: -6.4882317, z: -6.7187424}
+    speed: 2
+    m_Value: {x: -3.3153262, y: -6.4882317, z: -6.7187424}
+>>>>>>> 8f64781925603a0be75cb19c348eb15ad0003dfb
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -783,11 +828,12 @@ MonoBehaviour:
         m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
+      m_Size: {x: 1, y: 1}
     m_ShowGrid: 1
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
     speed: 2
     m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
@@ -795,6 +841,15 @@ MonoBehaviour:
     m_Target: 1.5344372
     speed: 2
     m_Value: 1.5344372
+=======
+    m_Target: {x: -0.50085694, y: -0.084898174, z: 0.04945085, w: -0.8599483}
+    speed: 2
+    m_Value: {x: -0.5008515, y: -0.08489725, z: 0.04945031, w: -0.8599389}
+  m_Size:
+    m_Target: 11.642651
+    speed: 2
+    m_Value: 11.642651
+>>>>>>> 8f64781925603a0be75cb19c348eb15ad0003dfb
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -812,7 +867,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LastSceneViewRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -889,20 +944,34 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
       width: 1188
       height: 572
     m_Scale: {x: 0.7447917, y: 0.7447917}
     m_Translation: {x: 594, y: 286}
+=======
+      width: 950
+      height: 466
+    m_Scale: {x: 0.7812174, y: 0.7812174}
+    m_Translation: {x: 475, y: 230.216}
+>>>>>>> 8f64781925603a0be75cb19c348eb15ad0003dfb
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -797.53845
       y: -384
       width: 1595.0769
       height: 768
+=======
+      x: -608.0254
+      y: -294.68878
+      width: 1216.0508
+      height: 596.5049
+>>>>>>> 8f64781925603a0be75cb19c348eb15ad0003dfb
     m_MinimalGUI: 1
   m_defaultScale: 0.7447917
   m_LastWindowPixelSize: {x: 1188, y: 593}
