@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Photon.Pun;
 
 public class Cazador : MonoBehaviour
 {
@@ -52,17 +53,26 @@ public class Cazador : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        jugadores = GameObject.FindGameObjectsWithTag("Player1");
+        
         nav = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         perdido = true;
         trapped = false;
+        jugadores = GameObject.FindGameObjectsWithTag("Player1");
         perseguido= GameObject.FindWithTag("Player1");
         controller = GameObject.FindWithTag("Player1").GetComponent<CharacterController>();
         interfaz = GameObject.FindWithTag("MainCamera").GetComponent<AppleCounter>();
         ui_contador = GameObject.FindWithTag("MainCamera").GetComponent<AppleCounter>();
         tiempo = GameObject.FindWithTag("PanelTiempo").GetComponent<TimeController>();
+        //if(PhotonNetwork.isMasterClient){
+        //    jugadores = GameObject.FindGameObjectsWithTag("Player1");
+        //    perseguido= GameObject.FindWithTag("Player1");
+        //    controller = GameObject.FindWithTag("Player1").GetComponent<CharacterController>();
+        //    interfaz = GameObject.FindWithTag("MainCamera").GetComponent<AppleCounter>();
+         //   ui_contador = GameObject.FindWithTag("MainCamera").GetComponent<AppleCounter>();
+        //    tiempo = GameObject.FindWithTag("PanelTiempo").GetComponent<TimeController>();
+        //}
     }
 
     // Update is called once per frame
