@@ -8,6 +8,8 @@ TagManager:
   - Apple
   - Terrain
   - Trampa
+  - Alimento
+  - NoAlimento
   layers:
   - Default
   - TransparentFX

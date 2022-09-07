@@ -8,6 +8,7 @@ namespace FPCSwimmer
 {
     public class FPCSwimmer : MonoBehaviour
     {
+        public bool habilitado;
 
         #region PARAMETERS
 
@@ -288,7 +289,10 @@ namespace FPCSwimmer
             UpdatePlayerInWaterStatus();
 
             // Update position, taking into account if we were underwater or not.
-            isMoving = CalculateNewPosition(isSwimming);
+            if (habilitado)
+            {
+                isMoving = CalculateNewPosition(isSwimming);
+            }
 
             // Updates waiting times before playing same sounds again
             UpdateSoundTimers();
