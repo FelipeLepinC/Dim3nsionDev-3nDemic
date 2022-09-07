@@ -3,15 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using TMPro;
+using Photon.Realtime;
 
 //Esto permite iniciar el modo multijugador
 
 public class Launcher : MonoBehaviourPunCallbacks //Esta extensión de MonoBehavoiur nos da acceso a callbacks para creación de salas, errores, unirse a lobbys. etc.
 {
+    public static Launcher Instance;
     [SerializeField] TMP_InputField roomNameInputField;
     [SerializeField] TMP_Text errorText;
     [SerializeField] TMP_Text roomNameText;
+    [SerializeField] Transform roomListContent;
+    [SerializeField] Transform playerListContent;
+    [SerializeField] GameObject roomListItemPrefab;
+    [SerializeField] GameObject playerListItemPrefab;
     // Start is called before the first frame update
+
+    void Awake()
+    {
+        Instance = this;
+    }
 
     void Start()
     {
@@ -28,7 +39,8 @@ public class Launcher : MonoBehaviourPunCallbacks //Esta extensión de MonoBehav
     public override void OnJoinedLobby()
     {
         MenuManager.Instance.OpenMenu("title");
-        Debug.Log("Hola a todos");
+        Debug.Log("Joined Lobby");
+        PhotonNetwork.NickName = "Player" + Random.Range(0, 1000).ToString("0000");
     }
     // Update is called once per frame
     public void CreateRoom()
@@ -47,6 +59,11 @@ public class Launcher : MonoBehaviourPunCallbacks //Esta extensión de MonoBehav
     {
         MenuManager.Instance.OpenMenu("room");  
         roomNameText.text = PhotonNetwork.CurrentRoom.Name;
+        Player[] players = PhotonNetwork.PlayerList;
+        for(int i=0; i< players.Length; i++)
+        {
+            Instantiate(playerListItemPrefab, playerListContent).GetComponent<PlayerListItem>().SetUp(players[i]);
+        }
 
     }
 
@@ -62,8 +79,35 @@ public class Launcher : MonoBehaviourPunCallbacks //Esta extensión de MonoBehav
         MenuManager.Instance.OpenMenu("loading");
     }
 
+    public void JoinRoom(RoomInfo info)
+    {
+        
+        PhotonNetwork.JoinRoom(info.Name);
+        //Debug.Log(info.Name);
+        MenuManager.Instance.OpenMenu("loading");
+
+    }
+
     public override void OnLeftRoom()
     {
         MenuManager.Instance.OpenMenu("title");
+    }
+
+    public override void OnRoomListUpdate(List<RoomInfo> roomList)
+    {
+        foreach(Transform trans in roomListContent)
+        {
+            Destroy(trans.gameObject);
+        }
+        for(int i = 0; i < roomList.Count ; i++ )
+        {
+            Instantiate(roomListItemPrefab, roomListContent).GetComponent<RoomListItem>().SetUp(roomList[i]);
+        }
+    }
+
+    public override void OnPlayerEnteredRoom(Player newPlayer) {
+        {
+            Instantiate(playerListItemPrefab, playerListContent).GetComponent<PlayerListItem>().SetUp(newPlayer);
+        }
     }
 }
