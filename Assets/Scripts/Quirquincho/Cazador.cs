@@ -186,7 +186,7 @@ public class Cazador : MonoBehaviour
             Debug.Log("Han pillado al jugador");
             tiempo.GetComponent<TimeController>().pillado();
             controller.enabled = false;
-            perseguido.transform.position = new Vector3(-107.7f, 124.26f, 428.17f);
+            perseguido.transform.position = new Vector3(-153.6481f, 125.2326f, 480.7899f);
             controller.enabled = true;
             ui_contador.GetComponent<AppleCounter>().Reset();
         }
