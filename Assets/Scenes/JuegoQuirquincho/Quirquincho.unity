@@ -651,6 +651,26 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &132672599
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132672592}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 77efc513c743c794c9b1e340fee38c40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &133750767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8639856686275367802, guid: 7ac4bc5a65d68f447b1b32e58606a3fa, type: 3}
@@ -6854,6 +6874,14 @@ PrefabInstance:
     - target: {fileID: 1043462794, guid: 7c1de2525a12ae849ac9f008ce3200fd, type: 3}
       propertyPath: m_Pitch
       value: -2.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939330764393934276, guid: 7c1de2525a12ae849ac9f008ce3200fd, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 132672599}
+    - target: {fileID: 1939330764393934276, guid: 7c1de2525a12ae849ac9f008ce3200fd, type: 3}
+      propertyPath: variableMovimiento
+      value: Mov
       objectReference: {fileID: 0}
     - target: {fileID: 2856955418391312853, guid: 7c1de2525a12ae849ac9f008ce3200fd, type: 3}
       propertyPath: m_IsActive
