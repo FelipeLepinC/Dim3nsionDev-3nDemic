@@ -40,7 +40,10 @@ public class RoomManager : MonoBehaviourPunCallbacks
             //PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerManager"), Vector3.zero, (Quaternion.identity));
             //PhotonNetwork.Instantiate("PlayerManager", Vector3.zero, (Quaternion.identity));
             GameObject player = PhotonNetwork.Instantiate(playerPrefab.name, playerPrefab.transform.position, Quaternion.identity);
-            StartCoroutine(HunterSpawn());
+            if (PhotonNetwork.IsMasterClient){
+                StartCoroutine(HunterSpawn());
+            }
+            
         }
     }
 
