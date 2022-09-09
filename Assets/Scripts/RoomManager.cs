@@ -7,6 +7,8 @@ using System.IO;
 
 public class RoomManager : MonoBehaviourPunCallbacks
 {
+    public GameObject playerPrefab;
+    public GameObject hunterPrefab;
 
     public static RoomManager Instance;
     // Start is called before the first frame update
@@ -36,8 +38,16 @@ public class RoomManager : MonoBehaviourPunCallbacks
         if(scene.buildIndex == 1) //Número de escena asiciada al juego que queremos cargar, y aquí es donde instanciamos el Prefab del PlayerManager
         {
             //PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerManager"), Vector3.zero, (Quaternion.identity));
-            PhotonNetwork.Instantiate("PlayerManager", Vector3.zero, (Quaternion.identity));
+            //PhotonNetwork.Instantiate("PlayerManager", Vector3.zero, (Quaternion.identity));
+            GameObject player = PhotonNetwork.Instantiate(playerPrefab.name, playerPrefab.transform.position, Quaternion.identity);
+            StartCoroutine(HunterSpawn());
         }
+    }
+
+    IEnumerator HunterSpawn()
+    {
+        yield return new WaitForSeconds(3);
+        GameObject enemy = PhotonNetwork.Instantiate(hunterPrefab.name, new Vector3(Random.Range(-115, -110), 116, 513), Quaternion.identity);
     }
 
 

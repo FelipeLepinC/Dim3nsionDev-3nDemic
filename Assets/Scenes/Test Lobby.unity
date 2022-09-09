@@ -538,6 +538,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150815355a004ab44ac8f090be89da93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 7582061563991482125, guid: f240cf4b228f89e43a8fbe3891d5547d, type: 3}
+  hunterPrefab: {fileID: 3109350519016471037, guid: d38bcc67f2da1ab419975736de74421c, type: 3}
 --- !u!4 &152283342
 Transform:
   m_ObjectHideFlags: 0

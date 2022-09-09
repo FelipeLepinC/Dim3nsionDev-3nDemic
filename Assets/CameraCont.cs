@@ -26,6 +26,7 @@ public class CameraCont : MonoBehaviour
     {
         if (view.IsMine) // Se restringe la activación de componentes solo para el jugador entrante
         {
+            Debug.Log("SOY YOOOOOO");
             //Vector3 input = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), Input.GetAxisRaw("Up"));
             //transform.position += input.normalized * 6 * Time.deltaTime;
             if (gameObject.GetPhotonView().IsMine){
