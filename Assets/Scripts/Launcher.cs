@@ -17,6 +17,7 @@ public class Launcher : MonoBehaviourPunCallbacks //Esta extensión de MonoBehav
     [SerializeField] Transform playerListContent;
     [SerializeField] GameObject roomListItemPrefab;
     [SerializeField] GameObject playerListItemPrefab;
+    [SerializeField] GameObject startGameButton;
     // Start is called before the first frame update
 
     void Awake()
@@ -33,7 +34,10 @@ public class Launcher : MonoBehaviourPunCallbacks //Esta extensión de MonoBehav
 
     public override void OnConnectedToMaster() //Callback llamado por Photon cuando conectamos exitosamente al servidor.
     {
+        Debug.Log("Connected to Master");
         PhotonNetwork.JoinLobby();
+        PhotonNetwork.AutomaticallySyncScene = true; //sincronza la misma escena para todos los jugadores que estén en la misma sala
+
     }
 
     public override void OnJoinedLobby()
@@ -60,17 +64,36 @@ public class Launcher : MonoBehaviourPunCallbacks //Esta extensión de MonoBehav
         MenuManager.Instance.OpenMenu("room");  
         roomNameText.text = PhotonNetwork.CurrentRoom.Name;
         Player[] players = PhotonNetwork.PlayerList;
+
+
+        foreach(Transform child in playerListContent)
+        {
+            Destroy(child.gameObject);
+        }
+
         for(int i=0; i< players.Length; i++)
         {
             Instantiate(playerListItemPrefab, playerListContent).GetComponent<PlayerListItem>().SetUp(players[i]);
         }
 
+        startGameButton.SetActive(PhotonNetwork.IsMasterClient);
+
+    }
+
+    public override void OnMasterClientSwitched(Player newMasterClient)
+    {
+        startGameButton.SetActive(PhotonNetwork.IsMasterClient);
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message)
     {
         errorText.text = "Room Creation Failder" + message;
         MenuManager.Instance.OpenMenu("error");
+    }
+
+    public void StartGame()
+    {
+        PhotonNetwork.LoadLevel(1);
     }
 
     public void LeaveRoom()
@@ -101,6 +124,9 @@ public class Launcher : MonoBehaviourPunCallbacks //Esta extensión de MonoBehav
         }
         for(int i = 0; i < roomList.Count ; i++ )
         {
+            if(roomList[i].RemovedFromList){
+                continue;
+            }
             Instantiate(roomListItemPrefab, roomListContent).GetComponent<RoomListItem>().SetUp(roomList[i]);
         }
     }
