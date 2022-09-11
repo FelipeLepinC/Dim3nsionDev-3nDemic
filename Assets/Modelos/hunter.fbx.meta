@@ -16,8 +16,8 @@ ModelImporter:
     optimizeGameObjects: 1
     removeConstantScaleCurves: 1
     motionNodeName: 
-    rigImportErrors: "Copied Avatar Rig Configuration mis-match. Transform hierarchy
-      does not match:\n\tTransform 'Root_M' for human bone 'Hips' not found\n"
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'Hips' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -81,7 +81,77 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: hunter(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Eyelashes
+      parentName: hunter(Clone)
+      position: {x: -0.0000000095088035, y: 0.0000000027567149, z: 4.491259e-16}
+      rotation: {x: 0.00000008145852, y: 0.00000004371139, z: 1.1641179e-10, w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: Body_Neck
+      parentName: hunter(Clone)
+      position: {x: -0.0000000095088035, y: 0.0000000027567149, z: 4.491259e-16}
+      rotation: {x: 0.00000008145852, y: 0.00000004371139, z: 1.1641179e-10, w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: Body_Legs
+      parentName: hunter(Clone)
+      position: {x: -0.0000000095088035, y: 0.0000000027567149, z: 4.491259e-16}
+      rotation: {x: 0.00000008145852, y: 0.00000004371139, z: 1.1641179e-10, w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: Body_Arms
+      parentName: hunter(Clone)
+      position: {x: -0.000000023841855, y: 0.0000000834465, z: -0.0000000047683573}
+      rotation: {x: 0.00000008239167, y: -0.00000004371139, z: 4.2471757e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Eyes
+      parentName: hunter(Clone)
+      position: {x: 5.8233515e-24, y: 6.1537986e-10, z: -0.000000006865234}
+      rotation: {x: 0.00000008146034, y: 0.00000004371139, z: -3.4995124e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hair7
+      parentName: hunter(Clone)
+      position: {x: 5.8233515e-24, y: 6.1537986e-10, z: -0.000000006865234}
+      rotation: {x: 0.00000008146034, y: 0.00000004371139, z: -3.4995124e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Moustache4
+      parentName: hunter(Clone)
+      position: {x: 5.8233515e-24, y: 6.1537986e-10, z: -0.000000006865234}
+      rotation: {x: 0.00000008146034, y: 0.00000004371139, z: -3.4995124e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beard6
+      parentName: hunter(Clone)
+      position: {x: 5.8233515e-24, y: 6.1537986e-10, z: -0.000000006865234}
+      rotation: {x: 0.00000008146034, y: 0.00000004371139, z: -3.4995124e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_Head
+      parentName: hunter(Clone)
+      position: {x: -0.0000000095088035, y: 0.0000000027567149, z: 4.491259e-16}
+      rotation: {x: 0.00000008145852, y: 0.00000004371139, z: 1.1641179e-10, w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: Eyebrows
+      parentName: hunter(Clone)
+      position: {x: -0.0000000095088035, y: 0.0000000027567149, z: 4.491259e-16}
+      rotation: {x: 0.00000008145852, y: 0.00000004371139, z: 1.1641179e-10, w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: Body_Feet
+      parentName: hunter(Clone)
+      position: {x: -0.0000000095088035, y: 0.0000000027567149, z: 4.491259e-16}
+      rotation: {x: 0.00000008145852, y: 0.00000004371139, z: 1.1641179e-10, w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: Body_Hands
+      parentName: hunter(Clone)
+      position: {x: -0.0000000095088035, y: 0.0000000027567149, z: 4.491259e-16}
+      rotation: {x: 0.00000008145852, y: 0.00000004371139, z: 1.1641179e-10, w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: Body_Chest
+      parentName: hunter(Clone)
+      position: {x: -0.0000000095088035, y: 0.0000000027567149, z: 4.491259e-16}
+      rotation: {x: 0.00000008145852, y: 0.00000004371139, z: 1.1641179e-10, w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
