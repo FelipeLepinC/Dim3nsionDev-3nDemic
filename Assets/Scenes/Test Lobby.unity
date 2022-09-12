@@ -497,9 +497,10 @@ GameObject:
   - component: {fileID: 152283342}
   - component: {fileID: 152283341}
   - component: {fileID: 152283340}
+  - component: {fileID: 152283343}
   m_Layer: 0
   m_Name: RoomManager
-  m_TagString: Untagged
+  m_TagString: RoomManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -521,8 +522,9 @@ MonoBehaviour:
   prefixField: -1
   Synchronization: 3
   OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents: []
+  observableSearch: 0
+  ObservedComponents:
+  - {fileID: 152283343}
   sceneViewId: 1
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -540,6 +542,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 7582061563991482125, guid: f240cf4b228f89e43a8fbe3891d5547d, type: 3}
   hunterPrefab: {fileID: 3109350519016471037, guid: d38bcc67f2da1ab419975736de74421c, type: 3}
+  QuirquinchoManager: {fileID: 5787050847938529809, guid: 37f6720e50c0c224cb49af1c168ea89d, type: 3}
+  prefabMadriguera: {fileID: 5709715432578299747, guid: 5702de4f001dc0e4cb30a8f807d473db, type: 3}
+  cameras: []
+  total: 0
 --- !u!4 &152283342
 Transform:
   m_ObjectHideFlags: 0
@@ -555,6 +561,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &152283343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152283339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 1
+  m_UseLocal: 1
 --- !u!1 &308044597
 GameObject:
   m_ObjectHideFlags: 0

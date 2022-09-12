@@ -11,6 +11,9 @@ TagManager:
   - Protagonista
   - PanelTiempo
   - Player1
+  - RoomManager
+  - GameManager
+  - Jugador
   layers:
   - Default
   - TransparentFX

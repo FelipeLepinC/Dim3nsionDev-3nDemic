@@ -14,6 +14,10 @@ public class AppleCounter : MonoBehaviour
     public Text entregado;
     private int actual;
     public Image panel;
+    private GameObject gameManager;
+    private GameObject roomManager;
+    private GameObject[] cameras;
+    public GameObject cuenta;
     //public FirstPersonController character;
     //public FirstPersonController controles;
     //private float nextActionTime = 0.0f;
@@ -58,6 +62,9 @@ public class AppleCounter : MonoBehaviour
         if (counter == 5){
             alert.enabled = false;
         }
+        TotalCounter.text = "" + (int)cuenta.gameObject.GetComponent<CameraCont>().contador;
+        //roomManager = GameObject.FindWithTag("RoomManager");
+        //TotalCounter.text = "" + (int)roomManager.gameObject.GetComponent<RoomManager>().total;
     //StartCoroutine("DoCheck");
     }
 
@@ -85,16 +92,42 @@ public class AppleCounter : MonoBehaviour
         Instantiate(Sonido);
     }
 
-    public void InHome(){
+    public int InHome(){
+        
         actual = counter;
         if (actual > 0){
             Debug.Log(actual);
-            StartCoroutine(ApplesInHome(actual));
+            //gameManager = GameObject.FindWithTag("GameManager");
+            //gameManager.GetComponent<QuirquinchoManager>().ActualizarContador(actual);
+            roomManager = GameObject.FindWithTag("RoomManager");
+            roomManager.GetComponent<RoomManager>().Llamar();
+            int t = total + counter;
+            cameras = GameObject.FindGameObjectsWithTag("MainCamera");
+            foreach(GameObject p in cameras){
+                Debug.Log("Hola soy un jugador");
+                p.GetComponent<AppleCounter>().InHomeForAll(t);
+            }
+            //gameManager.GetComponent<RoomManager>().ActualizarContador(actual);
+            //StartCoroutine(ApplesInHome(actual)); //Esto sirve para la alerta de interfaz creada en Testing
+            Debug.Log("Hola");
         }
-        total += counter;
+        //total += counter;
         counter = 0;
         PersonalCounter.text = "" + (int)counter;
+        //TotalCounter.text = "" + (int)total;
+        return total;
+    }
+
+    public void InHomeForAll(int t){
+        //actual = counter;
+        //total += t;
+        //counter = 0;
+        //PersonalCounter.text = "" + (int)counter;
+        //TotalCounter.text = "" + (int)total;
+        Debug.Log("El numero recibido por manager es : " + t);
+        total = t;
         TotalCounter.text = "" + (int)total;
+        return;
 
     }
 

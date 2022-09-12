@@ -8,6 +8,7 @@ public class CameraCont : MonoBehaviour
     PhotonView view;
     public GameObject camera;
     public GameObject player;
+    public int contador;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +27,7 @@ public class CameraCont : MonoBehaviour
     {
         if (view.IsMine) // Se restringe la activación de componentes solo para el jugador entrante
         {
-            Debug.Log("SOY YOOOOOO");
+            //Debug.Log("SOY YOOOOOO");
             //Vector3 input = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), Input.GetAxisRaw("Up"));
             //transform.position += input.normalized * 6 * Time.deltaTime;
             if (gameObject.GetPhotonView().IsMine){
@@ -36,5 +37,31 @@ public class CameraCont : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void ContadorTotal(int t)
+    {
+        //Debug.Log("Soy un jugador llamado por el cazador");
+        //contador = t + contador;
+        Debug.Log(contador);
+        if (view.IsMine){
+            view.RPC("RPC_Function", RpcTarget.AllBuffered);
+            Debug.Log("AAAAAAA");
+            Debug.Log(RpcTarget.AllBuffered);
+            Debug.Log("AAAAAAA");
+        }
+        
+        //camera.gameObject.GetComponent<AppleCounter>().InHomeForAll(contador);
+    }
+
+
+
+    [PunRPC]
+    void RPC_Function()
+    {
+        contador = 1 + contador;
+        Debug.Log(contador);
+        Debug.Log("Soy la RPC Function");
+        camera.gameObject.GetComponent<AppleCounter>().InHomeForAll(contador);
     }
 }

@@ -37,6 +37,7 @@ public class Cazador : MonoBehaviour
     private bool perdido;
     private bool trapped;
     private GameObject[] jugadores; 
+    private GameObject[] jugadoras; 
 
     // Animaciones
     Animator animator;
@@ -60,6 +61,7 @@ public class Cazador : MonoBehaviour
         perdido = true;
         trapped = false;
         jugadores = GameObject.FindGameObjectsWithTag("Player1");
+        jugadoras = GameObject.FindGameObjectsWithTag("Jugador");
         perseguido= GameObject.FindWithTag("Player1");
         controller = GameObject.FindWithTag("Player1").GetComponent<CharacterController>();
         interfaz = GameObject.FindWithTag("MainCamera").GetComponent<AppleCounter>();
@@ -73,6 +75,12 @@ public class Cazador : MonoBehaviour
          //   ui_contador = GameObject.FindWithTag("MainCamera").GetComponent<AppleCounter>();
         //    tiempo = GameObject.FindWithTag("PanelTiempo").GetComponent<TimeController>();
         //}
+        Debug.Log(jugadoras.Length);
+        foreach(GameObject p in jugadoras){
+                //p.GetComponent<CameraCont>().ContadorTotal();
+                //Debug.Log("Hola soy un jugador");
+                //p.GetComponent<AppleCounter>().InHomeForAll(t);
+            }
     }
 
     // Update is called once per frame
