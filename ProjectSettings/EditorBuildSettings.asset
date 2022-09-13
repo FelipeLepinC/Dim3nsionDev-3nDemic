@@ -38,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Museo.unity
     guid: 23adb7125da8889429ad57239a53f77e
+  - enabled: 1
+    path: Assets/Scenes/Quirquincho VR.unity
+    guid: b88a6cde09ca6f141b19fe67dd8ecca8
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6213c6ede81ee2c4ca770743295a0a51, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
