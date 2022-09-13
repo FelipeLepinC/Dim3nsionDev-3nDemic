@@ -8,9 +8,11 @@ public class Mensaje : MonoBehaviour
 {
 
     public string mensaje;
+    public string juego;
     public bool entro = false;
-    private bool estadoMensaje;
-    private GUIStyle algo = new GUIStyle();
+    public AudioSource audiol;
+    public bool estadoMensaje;
+    [SerializeField] private GameObject iniciar;
 
     void Start(){
         estadoMensaje = false;
@@ -18,19 +20,31 @@ public class Mensaje : MonoBehaviour
     
     void OnGUI(){
         if (entro && estadoMensaje){
-            algo.fontSize = 100;
-            GUI.Label(new Rect(500, 800, 200, 30), mensaje, algo);
+            iniciar.SetActive(true);
+        }else{
+            iniciar.SetActive(false);
         }
 
-        if(estadoMensaje){
+        if(estadoMensaje && mensaje == "Presiona E para jugar"){
             if (Input.GetKeyDown(KeyCode.E)){
-                LimpiarMensajeTecla();
+                if(juego == "Quirquincho"){
+                    audiol.Play();
+                    LimpiarMensajeTecla();
+                }
+                if(juego == "Tortuga"){
+                    audiol.Play();
+                    Tortuguita();
+                }
             }
         }
     }
 
     private void LimpiarMensajeTecla(){
         SceneManager.LoadScene("Tutorial");
+    }
+
+    private void Tortuguita(){
+        SceneManager.LoadScene("JuegoTortuga");
     }
 
     private void OnTriggerEnter(Collider other){
