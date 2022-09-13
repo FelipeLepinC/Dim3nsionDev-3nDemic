@@ -3348,12 +3348,20 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3226599439670639543, guid: df315a8375e971b4ea0a339b9c072fe1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 15.777667
+      objectReference: {fileID: 0}
+    - target: {fileID: 3226599439670639543, guid: df315a8375e971b4ea0a339b9c072fe1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 14.33026
+      objectReference: {fileID: 0}
+    - target: {fileID: 3226599439670639543, guid: df315a8375e971b4ea0a339b9c072fe1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -115.48
+      value: -112.3035
       objectReference: {fileID: 0}
     - target: {fileID: 3226599439670639543, guid: df315a8375e971b4ea0a339b9c072fe1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 116.22
+      value: 118.3579
       objectReference: {fileID: 0}
     - target: {fileID: 3226599439670639543, guid: df315a8375e971b4ea0a339b9c072fe1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8430,6 +8438,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6106205764619560512, guid: 5702de4f001dc0e4cb30a8f807d473db, type: 3}
+      propertyPath: sceneViewId
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5709715432578299747, guid: 5702de4f001dc0e4cb30a8f807d473db, type: 3}
       propertyPath: m_Name
       value: Madriguera Simulator (3)
