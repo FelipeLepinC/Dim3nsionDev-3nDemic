@@ -20,7 +20,7 @@ public class Cazador1 : MonoBehaviour
     public Vector3 posicionPerseguidor;
     public Vector3 direccionPersecucion;
     public GameObject perseguido;
-    public AppleCounter interfaz;
+    public AppleCounter1 interfaz;
     public TimeController tiempo;
     public FieldOfView campoVision;
 
@@ -39,7 +39,7 @@ public class Cazador1 : MonoBehaviour
     // Reset
     public GameObject madriguera;
     public CharacterController controller;
-    public AppleCounter ui_contador;
+    public AppleCounter1 ui_contador;
     public Vector3 pos;
 
     // Start is called before the first frame update
@@ -64,7 +64,7 @@ public class Cazador1 : MonoBehaviour
             if (perdido == true){
                 trapped = false;
                 visto = false;
-                interfaz.GetComponent<AppleCounter>().not_persued();
+                interfaz.GetComponent<AppleCounter1>().not_persued();
                 
                 if (isWandering == false)
                 {
@@ -102,7 +102,7 @@ public class Cazador1 : MonoBehaviour
                 rb.velocity = new Vector3(0f, 0f, 0f);
             }
             visto = true;
-            interfaz.GetComponent<AppleCounter>().persued();
+            interfaz.GetComponent<AppleCounter1>().persued();
             ProcessPosition();
             perseguir();
             //MoveToPerseguido();
@@ -182,13 +182,13 @@ public class Cazador1 : MonoBehaviour
             trapped = true;
             perdido = true;
             nav.ResetPath();
-            interfaz.GetComponent<AppleCounter>().not_persued();
+            interfaz.GetComponent<AppleCounter1>().not_persued();
             Debug.Log("Han pillado al jugador");
             tiempo.GetComponent<TimeController>().pillado();
             controller.enabled = false;
             perseguido.transform.position = new Vector3(-153.6481f, 125.2326f, 480.7899f);
             controller.enabled = true;
-            ui_contador.GetComponent<AppleCounter>().Reset();
+            ui_contador.GetComponent<AppleCounter1>().Reset();
         }
         if (player.gameObject.tag == "Apple"){
             Physics.IgnoreCollision(player.collider, GetComponent<Collider>());
