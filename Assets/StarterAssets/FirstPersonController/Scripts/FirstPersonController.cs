@@ -68,6 +68,10 @@ namespace StarterAssets
 		private float _jumpTimeoutDelta;
 		private float _fallTimeoutDelta;
 
+		public Animator animator;
+
+    	public string variableMovimiento;
+
 	
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 		private PlayerInput _playerInput;
@@ -207,6 +211,7 @@ namespace StarterAssets
 
 			// normalise input direction
 			Vector3 inputDirection = new Vector3(_input.move.x, 0.0f, _input.move.y).normalized;
+			animator.SetFloat(variableMovimiento, (Mathf.Abs(_input.move.y) + Mathf.Abs(_input.move.x)));
 
 			// note: Vector2's != operator uses approximation so is not floating point error prone, and is cheaper than magnitude
 			// if there is a move input rotate player when the player is moving
