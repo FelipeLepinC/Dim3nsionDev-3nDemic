@@ -14,6 +14,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
 
     public static RoomManager Instance;
     public GameObject[] cameras;
+    private GameObject[] plyr;
     public int total = 0;
     private bool wait = true;
     // Start is called before the first frame update
@@ -87,20 +88,53 @@ public class RoomManager : MonoBehaviourPunCallbacks
     public void Llamar()
     {
         Debug.Log("Alooo");
-        StartCoroutine(ActualizarContador(1));
+        
+        
+        plyr = GameObject.FindGameObjectsWithTag("MainCamera");
+        foreach(GameObject p in plyr){
+            Debug.Log("Tengo " + p.GetComponent<AppleCounter>().counter +" manzanas");
+            StartCoroutine(ActualizarContador2(p.GetComponent<AppleCounter>().counter));
+            p.GetComponent<AppleCounter>().counter = 0;
+        }
+        
+        
     }
 
     IEnumerator ActualizarContador(int t)
     {
         wait = true;
         yield return new WaitForSeconds(2);
+        
+        //Debug.Log("El total de la sesión es: " + total);
+        
+        cameras = GameObject.FindGameObjectsWithTag("Jugador");
+        
+
+        //total += t;
+        
+        foreach(GameObject p in cameras){
+            //Debug.Log(cameras.Length);
+            //Debug.Log("Hola soy un jugador que va a jugar");
+            
+            //p.GetComponent<AppleCounter>().InHomeForAll(total);
+
+            //Debug.Log("Toy jugando");
+            //p.GetComponent<CameraCont>().ContadorTotal(t);
+        }
+        wait = false;
+    }
+
+    IEnumerator ActualizarContador2(int t)
+    {
+        wait = true;
+        yield return new WaitForSeconds(2);
         total += t;
-        Debug.Log("El total de la sesión es: " + total);
+        //Debug.Log("El total de la sesión es: " + total);
         cameras = GameObject.FindGameObjectsWithTag("Jugador");
         
         foreach(GameObject p in cameras){
             //Debug.Log(cameras.Length);
-            //Debug.Log("Hola soy un jugador");
+            Debug.Log("Hola soy un jugador que va a jugar");
             p.GetComponent<CameraCont>().ContadorTotal(t);
             //p.GetComponent<AppleCounter>().InHomeForAll(total);
         }
