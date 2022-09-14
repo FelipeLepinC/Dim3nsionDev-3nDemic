@@ -14,11 +14,15 @@ TagManager:
   - RoomManager
   - GameManager
   - Jugador
+  - NoAlimento
+  - TrampaNPC
+  - Alimento
+  - TrampaPlayer
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Terrain
   - Water
   - UI
   - 
