@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5675,7 +5675,7 @@ MonoBehaviour:
   radius: 1
   gizmoColor: {r: 0, g: 1, b: 0, a: 1}
   showGizmos: 1
-  ui_contador: {fileID: 1848659147}
+  ui_contador: {fileID: 1862568917}
 --- !u!1 &800947986 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3ec42aa31461f8d4e9d2137295176da9, type: 3}
@@ -6026,10 +6026,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cef81ef87efd1640a0d18d23b9b002d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 1
+  radius: 3
   gizmoColor: {r: 0, g: 1, b: 0, a: 1}
   showGizmos: 1
-  ui_contador: {fileID: 1848659147}
+  ui_contador: {fileID: 1862568917}
 --- !u!1001 &887818417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11459,7 +11459,7 @@ MonoBehaviour:
   radius: 1
   gizmoColor: {r: 0, g: 1, b: 0, a: 1}
   showGizmos: 1
-  ui_contador: {fileID: 1848659147}
+  ui_contador: {fileID: 1862568917}
 --- !u!1001 &1650425668
 PrefabInstance:
   m_ObjectHideFlags: 0
