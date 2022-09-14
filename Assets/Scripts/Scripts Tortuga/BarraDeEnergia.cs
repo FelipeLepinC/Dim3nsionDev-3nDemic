@@ -46,7 +46,7 @@ public class BarraDeEnergia : MonoBehaviour
         {
             transform.position = atrapado.position - difTrampaPlayer;
         }
-        if (Input.GetKey(KeyCode.E) && atrapado != null)
+        if (OVRInput.Get(OVRInput.Button.One) && atrapado != null)
         {
             if (energiaActual >= 10)
             {
@@ -55,7 +55,7 @@ public class BarraDeEnergia : MonoBehaviour
                 Debug.Log("Liberado");
             }
         }
-        if (Input.GetKey(KeyCode.E) && atrapado == null)
+        if (OVRInput.Get(OVRInput.Button.One) && atrapado == null)
         {
             Empujar();
             Debug.Log("Modo Empujar");
