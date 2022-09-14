@@ -26,7 +26,8 @@ public class Mensaje : MonoBehaviour
         }
 
         if(estadoMensaje && mensaje == "Presiona E para jugar"){
-            if (Input.GetKeyDown(KeyCode.E)){
+            if (OVRInput.Get(OVRInput.Button.One))
+            {
                 if(juego == "Quirquincho"){
                     audiol.Play();
                     LimpiarMensajeTecla();
@@ -40,11 +41,11 @@ public class Mensaje : MonoBehaviour
     }
 
     private void LimpiarMensajeTecla(){
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("Quirquincho VR");
     }
 
     private void Tortuguita(){
-        SceneManager.LoadScene("JuegoTortuga");
+        SceneManager.LoadScene("JuegoTortuga VR");
     }
 
     private void OnTriggerEnter(Collider other){

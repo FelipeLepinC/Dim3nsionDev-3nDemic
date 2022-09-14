@@ -8674,5 +8674,9 @@ PrefabInstance:
       propertyPath: iniciar
       value: 
       objectReference: {fileID: 1501182751}
+    - target: {fileID: 5986811978777795955, guid: 08254b4d237a07041892af62bf691988, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4ce043f53b9ff57459d2ec95f92bad5d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08254b4d237a07041892af62bf691988, type: 3}
