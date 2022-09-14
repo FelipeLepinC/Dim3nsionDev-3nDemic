@@ -26,7 +26,7 @@ public class AppleCollider1 : MonoBehaviour
             //other.gameObject.GetComponent<man>().LightsOn();
             //cosa.gameObject.SetActive(false);
 
-            ui_contador.GetComponent<AppleCounter>().Apple();
+            ui_contador.GetComponent<AppleCounter1>().Apple();
             //Destroy(other.gameObject);
             //keys += 1;
             // Apple();
