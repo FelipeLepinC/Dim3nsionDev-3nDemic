@@ -50,6 +50,8 @@ public class Cazador : MonoBehaviour
     public Vector3 pos;
     private AppleCounter ui_contador;
     private AppleCounter interfaz;
+    private int contadores = 1;
+    private int mayor;
 
     // Start is called before the first frame update
     void Awake()
@@ -83,9 +85,38 @@ public class Cazador : MonoBehaviour
             }
     }
 
+    
+    IEnumerator verificar(){
+        if (contadores == 1){
+            //Debug.Log("Cazador entra a verificar");
+            contadores = 2;
+            mayor = 0;
+            foreach(GameObject p in jugadoras){
+                //p.GetComponent<CameraCont>().ContadorTotal(1);
+                Debug.Log("Jugador detectado por el cazador, contador es: " + p.GetComponent<CameraCont>().contador);
+                //p.GetComponent<AppleCounter>().InHomeForAll(t);
+                if ( p.GetComponent<CameraCont>().contador > mayor){
+                    mayor = p.GetComponent<CameraCont>().contador;
+                }
+                
+            }
+            Debug.Log("El mayor de todos es: " + mayor);
+            
+            foreach(GameObject p in jugadoras){
+                p.GetComponent<CameraCont>().contador = mayor;
+                p.GetComponent<CameraCont>().contador = mayor;
+                Debug.Log("Jugador detectado por el cazador, contador actualizado es: " + p.GetComponent<CameraCont>().contador);
+                
+            }
+            yield return new WaitForSeconds(1);
+            contadores = 1;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
+        StartCoroutine(verificar());
         if (campoVision.GetComponent<FieldOfView>().visibleTargets.Count == 0)
         {
             if (visto == true && perdido == false){

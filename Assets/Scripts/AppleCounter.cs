@@ -12,7 +12,7 @@ public class AppleCounter : MonoBehaviour
     public Image alert;
     public GameObject Sonido;
     public Text entregado;
-    private int actual;
+    public int actual;
     public Image panel;
     private GameObject gameManager;
     private GameObject roomManager;
@@ -23,6 +23,7 @@ public class AppleCounter : MonoBehaviour
     //private float nextActionTime = 0.0f;
     //public float period = 0.1f;
     //private Rigidbody2D Rigidbody2D;
+
     
 
     IEnumerator DoCheck() {
@@ -63,6 +64,7 @@ public class AppleCounter : MonoBehaviour
             alert.enabled = false;
         }
         TotalCounter.text = "" + (int)cuenta.gameObject.GetComponent<CameraCont>().contador;
+        PersonalCounter.text = "" + (int)counter;
         //roomManager = GameObject.FindWithTag("RoomManager");
         //TotalCounter.text = "" + (int)roomManager.gameObject.GetComponent<RoomManager>().total;
     //StartCoroutine("DoCheck");

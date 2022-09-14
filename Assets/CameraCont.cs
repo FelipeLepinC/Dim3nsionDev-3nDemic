@@ -43,12 +43,13 @@ public class CameraCont : MonoBehaviour
     {
         //Debug.Log("Soy un jugador llamado por el cazador");
         //contador = t + contador;
+        //contador = t + contador;
         Debug.Log(contador);
         if (view.IsMine){
-            view.RPC("RPC_Function", RpcTarget.AllBuffered);
-            Debug.Log("AAAAAAA");
-            Debug.Log(RpcTarget.AllBuffered);
-            Debug.Log("AAAAAAA");
+            view.RPC("RPC_Function", RpcTarget.AllBuffered, t);
+            //Debug.Log("AAAAAAA");
+            //Debug.Log(RpcTarget.AllBuffered);
+            //Debug.Log("AAAAAAA");
         }
         
         //camera.gameObject.GetComponent<AppleCounter>().InHomeForAll(contador);
@@ -57,11 +58,11 @@ public class CameraCont : MonoBehaviour
 
 
     [PunRPC]
-    void RPC_Function()
+    void RPC_Function(int a)
     {
-        contador = 1 + contador;
-        Debug.Log(contador);
-        Debug.Log("Soy la RPC Function");
-        camera.gameObject.GetComponent<AppleCounter>().InHomeForAll(contador);
+        contador = a + contador;
+        //Debug.Log(contador);
+        //Debug.Log("Soy la RPC Function");
+        //camera.gameObject.GetComponent<AppleCounter>().InHomeForAll(contador);
     }
 }

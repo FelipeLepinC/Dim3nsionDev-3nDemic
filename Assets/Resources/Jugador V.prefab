@@ -1977,7 +1977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2862278905927072854, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 2.1787071
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2862278905927072855, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2563,6 +2563,7 @@ MonoBehaviour:
   alert: {fileID: 2935438905374254712}
   Sonido: {fileID: 9053082527400644565, guid: 20caffcee954a9940bf2d1782541b926, type: 3}
   entregado: {fileID: 0}
+  actual: 0
   panel: {fileID: 0}
   cuenta: {fileID: 7582061563991482125}
 --- !u!114 &2935438906068099435
