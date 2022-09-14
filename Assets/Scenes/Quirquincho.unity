@@ -4655,88 +4655,88 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1820102278}
-  - {fileID: 1930955150}
-  - {fileID: 1679251597}
-  - {fileID: 1085309248}
-  - {fileID: 1746408753}
-  - {fileID: 721209356}
-  - {fileID: 1716991842}
-  - {fileID: 512035537}
-  - {fileID: 789971094}
-  - {fileID: 132159591}
-  - {fileID: 50334500}
-  - {fileID: 1831365840}
-  - {fileID: 1066463751}
-  - {fileID: 1975234731}
-  - {fileID: 803609014}
-  - {fileID: 1107855288}
-  - {fileID: 2484768}
-  - {fileID: 1948568438}
-  - {fileID: 1398472571}
   - {fileID: 1367314080}
   - {fileID: 1570774905}
-  - {fileID: 1948232088}
-  - {fileID: 1052559765}
-  - {fileID: 1549064651}
-  - {fileID: 2086736354}
-  - {fileID: 1901285680}
-  - {fileID: 1587005246}
-  - {fileID: 1132435946}
+  - {fileID: 603882362}
+  - {fileID: 1085309248}
+  - {fileID: 241694056}
   - {fileID: 239301928}
-  - {fileID: 937420451}
-  - {fileID: 2036018372}
-  - {fileID: 609333718}
+  - {fileID: 1746408753}
+  - {fileID: 1098675083}
+  - {fileID: 747789720}
+  - {fileID: 132159591}
+  - {fileID: 1305990829}
+  - {fileID: 1831365840}
+  - {fileID: 1498524168}
   - {fileID: 1790656548}
-  - {fileID: 1084406825}
+  - {fileID: 1901285680}
+  - {fileID: 2012132185}
+  - {fileID: 1183484305}
+  - {fileID: 1566673948}
+  - {fileID: 458740827}
+  - {fileID: 937420451}
+  - {fileID: 395684837}
+  - {fileID: 721209356}
+  - {fileID: 2036018372}
+  - {fileID: 2484768}
+  - {fileID: 437798002}
+  - {fileID: 1975234731}
+  - {fileID: 469284702}
+  - {fileID: 7106176}
+  - {fileID: 1587005246}
+  - {fileID: 1849099820}
+  - {fileID: 767791303}
+  - {fileID: 1107855288}
+  - {fileID: 668522260}
   - {fileID: 1036478756}
   - {fileID: 116639025}
-  - {fileID: 1877914806}
-  - {fileID: 1305990829}
-  - {fileID: 437798002}
-  - {fileID: 1567122869}
-  - {fileID: 395684837}
-  - {fileID: 469284702}
-  - {fileID: 458740827}
-  - {fileID: 1183484305}
-  - {fileID: 668522260}
-  - {fileID: 1498524168}
-  - {fileID: 754441467}
+  - {fileID: 512035537}
   - {fileID: 287886375}
   - {fileID: 281413108}
+  - {fileID: 1762847454}
   - {fileID: 1137477832}
-  - {fileID: 913336147}
+  - {fileID: 1957414248}
   - {fileID: 176472068}
-  - {fileID: 241694056}
+  - {fileID: 2086736354}
   - {fileID: 1673752848}
   - {fileID: 1042226781}
-  - {fileID: 747789720}
   - {fileID: 1825791845}
+  - {fileID: 803609014}
   - {fileID: 2017683734}
   - {fileID: 491792597}
+  - {fileID: 1084406825}
   - {fileID: 503282304}
+  - {fileID: 609333718}
   - {fileID: 667598097}
-  - {fileID: 1566673948}
+  - {fileID: 1567122869}
   - {fileID: 352648017}
+  - {fileID: 1930955150}
   - {fileID: 1979087057}
+  - {fileID: 50334500}
   - {fileID: 721684625}
+  - {fileID: 1716991842}
   - {fileID: 919782761}
+  - {fileID: 1066463751}
   - {fileID: 904606839}
-  - {fileID: 2012132185}
+  - {fileID: 1948568438}
   - {fileID: 1962002426}
-  - {fileID: 1957414248}
+  - {fileID: 1549064651}
   - {fileID: 944853857}
+  - {fileID: 1948232088}
   - {fileID: 577343961}
+  - {fileID: 800947987}
   - {fileID: 344996956}
-  - {fileID: 1849099820}
+  - {fileID: 1398472571}
   - {fileID: 763574704}
+  - {fileID: 1877914806}
   - {fileID: 1768635058}
   - {fileID: 1428572330}
-  - {fileID: 800947987}
-  - {fileID: 603882362}
-  - {fileID: 1098675083}
-  - {fileID: 7106176}
-  - {fileID: 767791303}
-  - {fileID: 1762847454}
+  - {fileID: 913336147}
+  - {fileID: 789971094}
+  - {fileID: 754441467}
+  - {fileID: 1132435946}
+  - {fileID: 1052559765}
+  - {fileID: 1679251597}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16445,7 +16445,26 @@ PrefabInstance:
     - {fileID: 37528375, guid: 7c1de2525a12ae849ac9f008ce3200fd, type: 3}
     - {fileID: 630426713, guid: 7c1de2525a12ae849ac9f008ce3200fd, type: 3}
     - {fileID: 1939330764393934276, guid: 7c1de2525a12ae849ac9f008ce3200fd, type: 3}
+    - {fileID: 1046293506, guid: 7c1de2525a12ae849ac9f008ce3200fd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7c1de2525a12ae849ac9f008ce3200fd, type: 3}
+--- !u!1 &2062733397067402864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9139529138865723451, guid: 7c1de2525a12ae849ac9f008ce3200fd, type: 3}
+  m_PrefabInstance: {fileID: 2062733397067402863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2062733397067402865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062733397067402864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4583cc1247e3042b08eb49c789c998, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui_contador: {fileID: 1848659147}
 --- !u!1001 &4613937511367433819
 PrefabInstance:
   m_ObjectHideFlags: 0
