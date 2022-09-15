@@ -2433,6 +2433,18 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &-4535806276948414519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7582061563991482125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a690ef9747cccd54e879a60e50867fc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &446567589890016841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2529,6 +2541,12 @@ MonoBehaviour:
   camera: {fileID: 5506669354310931447}
   player: {fileID: 938761413207878389}
   contador: 0
+  counter: 0
+  local: 0
+  counter2: 0
+  reset: 1
+  suma: 0
+  ganador: 0
 --- !u!114 &8518560852599741462
 MonoBehaviour:
   m_ObjectHideFlags: 0

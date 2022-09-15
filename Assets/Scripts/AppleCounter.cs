@@ -64,7 +64,8 @@ public class AppleCounter : MonoBehaviour
             alert.enabled = false;
         }
         TotalCounter.text = "" + (int)cuenta.gameObject.GetComponent<CameraCont>().contador;
-        PersonalCounter.text = "" + (int)counter;
+        PersonalCounter.text = "" + (int)cuenta.gameObject.GetComponent<CameraCont>().counter;
+        //PersonalCounter.text = "" + (int)counter;
         //roomManager = GameObject.FindWithTag("RoomManager");
         //TotalCounter.text = "" + (int)roomManager.gameObject.GetComponent<RoomManager>().total;
     //StartCoroutine("DoCheck");

@@ -52,6 +52,7 @@ public class Cazador : MonoBehaviour
     private AppleCounter interfaz;
     private int contadores = 1;
     private int mayor;
+    private int mayor2;
 
     // Start is called before the first frame update
     void Awake()
@@ -91,12 +92,16 @@ public class Cazador : MonoBehaviour
             //Debug.Log("Cazador entra a verificar");
             contadores = 2;
             mayor = 0;
+            mayor2 = 0;
             foreach(GameObject p in jugadoras){
                 //p.GetComponent<CameraCont>().ContadorTotal(1);
                 Debug.Log("Jugador detectado por el cazador, contador es: " + p.GetComponent<CameraCont>().contador);
                 //p.GetComponent<AppleCounter>().InHomeForAll(t);
                 if ( p.GetComponent<CameraCont>().contador > mayor){
                     mayor = p.GetComponent<CameraCont>().contador;
+                }
+                if ( p.GetComponent<CameraCont>().counter > mayor2){
+                    mayor2 = p.GetComponent<CameraCont>().counter;
                 }
                 
             }
@@ -105,6 +110,7 @@ public class Cazador : MonoBehaviour
             foreach(GameObject p in jugadoras){
                 p.GetComponent<CameraCont>().contador = mayor;
                 p.GetComponent<CameraCont>().contador = mayor;
+                p.GetComponent<CameraCont>().ganador = mayor2;
                 Debug.Log("Jugador detectado por el cazador, contador actualizado es: " + p.GetComponent<CameraCont>().contador);
                 
             }

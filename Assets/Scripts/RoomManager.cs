@@ -139,7 +139,16 @@ public class RoomManager : MonoBehaviourPunCallbacks
             //p.GetComponent<AppleCounter>().InHomeForAll(total);
         }
         wait = false;
+    }
 
-
+    public void EntregarManzanas(){
+        Debug.Log("VAMOS A ENTREGAR MANZANAS");
+        cameras = GameObject.FindGameObjectsWithTag("Jugador");
+        foreach(GameObject p in cameras){
+            //Debug.Log(cameras.Length);
+            Debug.Log("Hola soy un jugador que va a jugar");
+            p.GetComponent<CameraCont>().RepartirManzanas();
+            //p.GetComponent<AppleCounter>().InHomeForAll(total);
+        }
     }
 }
