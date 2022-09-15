@@ -13,21 +13,21 @@ public class ContadorTortugas : MonoBehaviour
     // Update is called once per frame
     void Start()
     {
-        GameObject NPCs = GameObject.Find("Tortugas NPC");
+        GameObject NPCs = GameObject.Find("Tortugas NPC (1)");
         maxNPC = NPCs.transform.childCount;
     }
 
     void Update()
     {
-        GameObject NPCs = GameObject.Find("Tortugas NPC");
+        GameObject NPCs = GameObject.Find("Tortugas NPC (1)");
         int cantidadNPCs = NPCs.transform.childCount;
         TortugaCounter.text = "" + (int)cantidadNPCs;
         rescatadas = maxNPC - cantidadNPCs;
         if (cantidadNPCs == 0)
         {
             //terminar.finished = true;
-            //tiempo = PanelTiempo.GetComponent<TimeControllerTortuga>();
-            //tiempo.finished = true;
+            tiempo = PanelTiempo.GetComponent<TimeControllerTortuga>();
+            tiempo.finished = true;
             // Terminar el juego
         }
     }
