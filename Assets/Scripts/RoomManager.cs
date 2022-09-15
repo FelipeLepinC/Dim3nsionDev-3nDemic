@@ -11,7 +11,6 @@ public class RoomManager : MonoBehaviourPunCallbacks
     public GameObject hunterPrefab;
     public GameObject QuirquinchoManager;
     public GameObject prefabMadriguera;
-    public GameObject prefabMadriguera1;
 
     public static RoomManager Instance;
     public GameObject[] cameras;
@@ -62,7 +61,6 @@ public class RoomManager : MonoBehaviourPunCallbacks
         yield return new WaitForSeconds(2);
         GameObject enemy = PhotonNetwork.Instantiate(hunterPrefab.name, new Vector3(Random.Range(-115, -110), 116, 513), Quaternion.identity);
         GameObject madriguera = PhotonNetwork.Instantiate(prefabMadriguera.name, prefabMadriguera.transform.position, Quaternion.identity);
-        GameObject madriguera1 = PhotonNetwork.Instantiate(prefabMadriguera1.name, prefabMadriguera1.transform.position, Quaternion.identity);
     }
 
     /*public void ActualizarContador(int t)
