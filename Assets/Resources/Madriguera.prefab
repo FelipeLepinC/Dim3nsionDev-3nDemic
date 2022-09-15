@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8e8e2c1327cb244981028634e1a68f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 1
+  radius: 2
   gizmoColor: {r: 0, g: 1, b: 0, a: 1}
   showGizmos: 1
 --- !u!1001 &4456391326527182514
