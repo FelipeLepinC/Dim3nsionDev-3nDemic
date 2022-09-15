@@ -560,7 +560,7 @@ namespace FPCSwimmer
             }
 
             // Apply the movement to the player
-            cc.Move(playerVelocityVector * Time.deltaTime * playerSpeed);
+            cc.Move(playerVelocityVector * Time.deltaTime * playerSpeed * 3);
 
             // Return true if the player used inputs commands to move.
             return isMoving;
