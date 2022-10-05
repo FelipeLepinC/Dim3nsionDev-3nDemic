@@ -46,7 +46,7 @@ public class BarraDeEnergia : MonoBehaviour
         {
             transform.position = atrapado.position - difTrampaPlayer;
         }
-        if (OVRInput.Get(OVRInput.Button.One) && atrapado != null)
+        if ((OVRInput.Get(OVRInput.Button.One) || Input.GetKey(KeyCode.E)) && atrapado != null)
         {
             if (energiaActual >= 10)
             {
@@ -95,7 +95,6 @@ public class BarraDeEnergia : MonoBehaviour
         {
             Atrapado(collision.gameObject.transform);
             soundManager.SeleccionAudio(6, 1.0f);
-            // 
             if (energiaActual < 10)
             {
                 tiempo = PanelTiempo.GetComponent<TimeControllerTortuga>();
@@ -110,7 +109,7 @@ public class BarraDeEnergia : MonoBehaviour
         if (collision.gameObject.tag == "TrampaNPC")
         {
             BajarEnergia(2);
-            if (energiaActual == 0) Debug.Log("No tienes energ�a para mover la trampa");
+            if (energiaActual == 0) Debug.Log("No tienes energía para mover la trampa");
         }
     }
 
@@ -147,18 +146,24 @@ public class BarraDeEnergia : MonoBehaviour
     void Atrapado(Transform posicionTrampa)
     {
         CharacterController cc = GetComponent<CharacterController>();
-        cc.enabled = false;
-        if (atrapado == null || atrapado != posicionTrampa)
+        if (cc.enabled)
         {
-            difTrampaPlayer = posicionTrampa.position - transform.position;
+            cc.enabled = false;
+            if (atrapado == null || atrapado != posicionTrampa)
+            {
+                difTrampaPlayer = posicionTrampa.position - transform.position;
+            }
+            atrapado = posicionTrampa;
         }
-        atrapado = posicionTrampa;
     }
     void Liberado()
     {
         atrapado = null;
         CharacterController cc = GetComponent<CharacterController>();
-        cc.enabled = true;
+        if (!cc.enabled)
+        {
+            cc.enabled = true;
+        }
     }
     void Empujar()
     {
