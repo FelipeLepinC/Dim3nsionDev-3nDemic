@@ -35,10 +35,11 @@ public class SpawnOnline : MonoBehaviour
             //}
             if(c.GetType().Name == "FPCSwimmerNormal"){
                 c.enabled = false;
-                Debug.Log("Se desactivará" + c.GetType().Name);
+                Debug.Log("Se desactivará " + c.GetType().Name);
             }
-            
         }
+        this.GetComponent<SphereCollider>().enabled = false;
+        this.GetComponent<Rigidbody>().isKinematic = false;
         //GetComponent<TrackRenderer>().enabled = true;
 
         
@@ -66,7 +67,6 @@ public class SpawnOnline : MonoBehaviour
             {
                 Debug.Log(c.GetType().Name);
                 c.enabled = true;
-            
             }
             if (gameObject.GetPhotonView().IsMine){
                 for (int i = 0; i < gameObject.transform.childCount; i++)
@@ -75,6 +75,8 @@ public class SpawnOnline : MonoBehaviour
                     gameObject.transform.GetChild(i).gameObject.SetActive(true); //Se activan las componentes únicas del jugador entrante
                 }
             }
+            this.GetComponent<SphereCollider>().enabled = true;
+            this.GetComponent<Rigidbody>().isKinematic = true;
         }
     }
 }
