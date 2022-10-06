@@ -18,6 +18,7 @@ TagManager:
   - TrampaNPC
   - Alimento
   - TrampaPlayer
+  - Modelo
   layers:
   - Default
   - TransparentFX

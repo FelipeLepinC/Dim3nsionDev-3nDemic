@@ -54,6 +54,7 @@ public class TortugaLauncher : MonoBehaviourPunCallbacks //Esta extensión de Mo
             return;
         }
         PhotonNetwork.CreateRoom(roomNameInputField.text);
+        Debug.Log("Se creó una sala");
         MenuManager.Instance.OpenMenu("loading");
         //OnJoinedRoom();
 
@@ -93,6 +94,7 @@ public class TortugaLauncher : MonoBehaviourPunCallbacks //Esta extensión de Mo
 
     public void StartGame()
     {
+        Debug.Log("Se cargó la escena");
         PhotonNetwork.LoadLevel(3);
     }
 

@@ -17,6 +17,7 @@ public class RoomTortugaManager : MonoBehaviourPunCallbacks
     private GameObject[] plyr;
     public int total = 0;
     private bool wait = true;
+    private int awa = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,13 +42,15 @@ public class RoomTortugaManager : MonoBehaviourPunCallbacks
 
     void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
-        if(scene.buildIndex == 3) //Número de escena asiciada al juego que queremos cargar, y aquí es donde instanciamos el Prefab del PlayerManager
+        if(scene.buildIndex == 3 && awa == 0) //Número de escena asiciada al juego que queremos cargar, y aquí es donde instanciamos el Prefab del PlayerManager
         {
+            Debug.Log("Se spawneará un jugador");
+            awa = 1; // Impide que se spawneen 2 tortugas por jugador.
             wait = false;
             //PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerManager"), Vector3.zero, (Quaternion.identity));
             //PhotonNetwork.Instantiate("PlayerManager", Vector3.zero, (Quaternion.identity));
             GameObject player = PhotonNetwork.Instantiate(playerPrefab.name, playerPrefab.transform.position, Quaternion.identity);
-            GameObject quirquincho = PhotonNetwork.Instantiate(TortugaManager.name, Vector3.zero, Quaternion.identity);
+            //GameObject quirquincho = PhotonNetwork.Instantiate(TortugaManager.name, Vector3.zero, Quaternion.identity);
             
             if (PhotonNetwork.IsMasterClient){
                 StartCoroutine(SpawnItems());
