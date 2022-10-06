@@ -592,7 +592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 5294455335121862625, guid: 7ab642b16eb92b74783508d08451fca4, type: 3}
   tortugaPrefab: {fileID: 0}
-  TortugaManager: {fileID: 0}
+  TortugaManager: {fileID: 5787050847938529809, guid: 2341d9727423bba4fb961bbf401d8c48, type: 3}
   trampaPrefab: {fileID: 0}
   cameras: []
   total: 0
@@ -1018,8 +1018,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1473204156}
-        m_TargetAssemblyTypeName: Launcher, Assembly-CSharp
+      - m_Target: {fileID: 1473204158}
+        m_TargetAssemblyTypeName: TortugaLauncher, Assembly-CSharp
         m_MethodName: LeaveRoom
         m_Mode: 1
         m_Arguments:
@@ -2739,8 +2739,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1473204156}
-        m_TargetAssemblyTypeName: Launcher, Assembly-CSharp
+      - m_Target: {fileID: 1473204158}
+        m_TargetAssemblyTypeName: TortugaLauncher, Assembly-CSharp
         m_MethodName: CreateRoom
         m_Mode: 1
         m_Arguments:
