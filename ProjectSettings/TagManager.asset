@@ -19,6 +19,8 @@ TagManager:
   - Alimento
   - TrampaPlayer
   - Modelo
+  - Scripts
+  - Audio
   layers:
   - Default
   - TransparentFX

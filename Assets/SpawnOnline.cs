@@ -7,10 +7,42 @@ using Photon.Pun;
 public class SpawnOnline : MonoBehaviour
 {
     PhotonView view;
+    //private Rigidbody rb;
+    //private CharacterController cc;
+    //public FPCSwimmerNormal FPC;
     // Start is called before the first frame update
+    private Component[] array;
     void Start()
     {
         view = GetComponent<PhotonView>();
+        //cc  = GetComponent<CharacterController>();
+        //rb  = GetComponent<Rigidbody>();
+        //FPC = GetComponent<FPCSwimmerNormal>();        
+        //FPC.enabled = false;
+
+        //array = GetComponents(typeof(Component));
+        //for (int i = 0; i < array.Length; i++){
+        //    Debug.Log(array[i].GetType().Name);
+        //    array[i].GetType().enabled = false;
+        //}
+
+        MonoBehaviour[] comps = GetComponents<MonoBehaviour>();
+        foreach(MonoBehaviour c in comps)
+        {
+            Debug.Log(c.GetType().Name);
+            //if(c.GetType().Name != "PhotonView" || c.GetType().Name != "SpawnOnline" ){
+            //    c.enabled = false;
+            //}
+            if(c.GetType().Name == "FPCSwimmerNormal"){
+                c.enabled = false;
+                Debug.Log("Se desactivará" + c.GetType().Name);
+            }
+            
+        }
+        //GetComponent<TrackRenderer>().enabled = true;
+
+        
+        
         for (int i = 0; i < gameObject.transform.childCount; i++)
                 {
                     if(gameObject.transform.GetChild(i).tag != "Modelo"){
@@ -29,6 +61,13 @@ public class SpawnOnline : MonoBehaviour
             //Debug.Log("SOY YOOOOOO");
             //Vector3 input = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), Input.GetAxisRaw("Up"));
             //transform.position += input.normalized * 6 * Time.deltaTime;
+            MonoBehaviour[] comps = GetComponents<MonoBehaviour>();
+            foreach(MonoBehaviour c in comps)
+            {
+                Debug.Log(c.GetType().Name);
+                c.enabled = true;
+            
+            }
             if (gameObject.GetPhotonView().IsMine){
                 for (int i = 0; i < gameObject.transform.childCount; i++)
                 {
