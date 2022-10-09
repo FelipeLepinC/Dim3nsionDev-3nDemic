@@ -29,13 +29,13 @@ public class SpawnOnline : MonoBehaviour
         MonoBehaviour[] comps = GetComponents<MonoBehaviour>();
         foreach(MonoBehaviour c in comps)
         {
-            Debug.Log(c.GetType().Name);
+            //Debug.Log(c.GetType().Name);
             //if(c.GetType().Name != "PhotonView" || c.GetType().Name != "SpawnOnline" ){
             //    c.enabled = false;
             //}
             if(c.GetType().Name == "FPCSwimmerNormal"){
                 c.enabled = false;
-                Debug.Log("Se desactivará " + c.GetType().Name);
+                //Debug.Log("Se desactivará " + c.GetType().Name);
             }
         }
         this.GetComponent<SphereCollider>().enabled = false;
@@ -46,9 +46,15 @@ public class SpawnOnline : MonoBehaviour
         
         for (int i = 0; i < gameObject.transform.childCount; i++)
                 {
-                    if(gameObject.transform.GetChild(i).tag != "Modelo"){
-                        Debug.Log(gameObject.transform.GetChild(i).tag + " desactivada");
-                        gameObject.transform.GetChild(i).gameObject.SetActive(false); //Se desactivan todos los componentes hijos de los jugadores nuevos para que no se mezclen con el actual
+                    gameObject.transform.GetChild(i).gameObject.SetActive(false);
+                    if(gameObject.transform.GetChild(i).tag == "Modelo" ){
+                        //Debug.Log(gameObject.transform.GetChild(i).tag + " desactivada");
+                        gameObject.transform.GetChild(i).gameObject.SetActive(true); //Se desactivan todos los componentes hijos de los jugadores nuevos para que no se mezclen con el actual
+                    }
+                    if(gameObject.transform.GetChild(i).tag == "Atrapado" ){
+                        //Debug.Log(gameObject.transform.GetChild(i).tag + " desactivada");
+                        gameObject.transform.GetChild(i).gameObject.SetActive(true); //Se desactivan todos los componentes hijos de los jugadores nuevos para que no se mezclen con el actual
+
                     }
                     
         }
@@ -65,14 +71,18 @@ public class SpawnOnline : MonoBehaviour
             MonoBehaviour[] comps = GetComponents<MonoBehaviour>();
             foreach(MonoBehaviour c in comps)
             {
-                Debug.Log(c.GetType().Name);
+                //Debug.Log(c.GetType().Name);
                 c.enabled = true;
             }
             if (gameObject.GetPhotonView().IsMine){
                 for (int i = 0; i < gameObject.transform.childCount; i++)
                 {
-                    Debug.Log(gameObject.transform.GetChild(i).tag + " activada");
+                    //Debug.Log(gameObject.transform.GetChild(i).tag + " activada");
                     gameObject.transform.GetChild(i).gameObject.SetActive(true); //Se activan las componentes únicas del jugador entrante
+                    if(gameObject.transform.GetChild(i).tag == "Atrapado" ){
+                        //Debug.Log(gameObject.transform.GetChild(i).tag + " desactivada");
+                        gameObject.transform.GetChild(i).gameObject.SetActive(false); //Se desactivan todos los componentes hijos de los jugadores nuevos para que no se mezclen con el actual
+                    }
                 }
             }
             this.GetComponent<SphereCollider>().enabled = true;

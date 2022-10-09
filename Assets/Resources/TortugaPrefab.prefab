@@ -1493,6 +1493,51 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Medalla obtenida:'
+--- !u!1 &6473962075029742399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7304909185192785553}
+  - component: {fileID: 7511079246454689159}
+  m_Layer: 0
+  m_Name: BoolAtrapado
+  m_TagString: Atrapado
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7304909185192785553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6473962075029742399}
+  m_LocalRotation: {x: 0.017572206, y: -0.57015306, z: -0.012199349, w: 0.8212599}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5294455335121862630}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &7511079246454689159
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6473962075029742399}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1498816083295331071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1833,6 +1878,18 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &-6323166303543600446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5294455335121862625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7cb030d40b459449b2d3b78d8975754, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &593467687214337757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1899,3 +1956,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c04f34d7a0afe043a9b12b2ab2aa044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &7861593407272724457 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3223631240378056322, guid: 36c476abb3a44d94aa079322b088b3f4, type: 3}
+  m_PrefabInstance: {fileID: 4730290362153621867}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &8832709872869971645
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7861593407272724457}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}

@@ -21,6 +21,7 @@ TagManager:
   - Modelo
   - Scripts
   - Audio
+  - Atrapado
   layers:
   - Default
   - TransparentFX

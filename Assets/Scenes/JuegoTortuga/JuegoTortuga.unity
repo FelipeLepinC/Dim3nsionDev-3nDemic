@@ -814,6 +814,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1721256257}
     m_Modifications:
+    - target: {fileID: -9008689624359887661, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -870,6 +874,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3840361553397645466, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3580291308652068606, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3000102980662341154, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577170780505423089, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
       propertyPath: m_Name
       value: crabtrapNPC
@@ -877,6 +897,42 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
       propertyPath: m_TagString
       value: TrampaNPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585055934648929826, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796858810134656484, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433521823896634942, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451118302482216456, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4454071442065339460, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280982611955873341, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632671735974963340, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429042682342845315, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439475612198668979, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
@@ -3631,6 +3687,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1256722717}
     m_Modifications:
+    - target: {fileID: -9008689624359887661, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3687,6 +3747,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3840361553397645466, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3580291308652068606, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3000102980662341154, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577170780505423089, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
       propertyPath: m_Name
       value: crabtrapPlayer (1)
@@ -3694,6 +3770,42 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
       propertyPath: m_TagString
       value: TrampaPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585055934648929826, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796858810134656484, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433521823896634942, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451118302482216456, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4454071442065339460, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280982611955873341, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632671735974963340, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429042682342845315, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439475612198668979, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
@@ -4669,6 +4781,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1721256257}
     m_Modifications:
+    - target: {fileID: -9008689624359887661, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -4725,6 +4841,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3840361553397645466, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3580291308652068606, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3000102980662341154, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577170780505423089, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
       propertyPath: m_Name
       value: crabtrapNPC (1)
@@ -4732,6 +4864,42 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
       propertyPath: m_TagString
       value: TrampaNPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585055934648929826, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796858810134656484, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433521823896634942, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451118302482216456, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4454071442065339460, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280982611955873341, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632671735974963340, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429042682342845315, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439475612198668979, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
@@ -11596,6 +11764,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1721256257}
     m_Modifications:
+    - target: {fileID: -9008689624359887661, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -11652,6 +11824,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3840361553397645466, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3580291308652068606, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3000102980662341154, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577170780505423089, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
       propertyPath: m_Name
       value: crabtrapNPC (2)
@@ -11659,6 +11847,42 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
       propertyPath: m_TagString
       value: TrampaNPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585055934648929826, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796858810134656484, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433521823896634942, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3451118302482216456, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4454071442065339460, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280982611955873341, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632671735974963340, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429042682342845315, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439475612198668979, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd9e4eaa001b7149aa99ecb813e6177, type: 3}
