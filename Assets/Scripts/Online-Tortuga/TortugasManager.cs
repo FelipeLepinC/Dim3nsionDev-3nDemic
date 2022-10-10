@@ -6,16 +6,21 @@ public class TortugasManager : MonoBehaviour
 {
     public GameObject[] jugadores;
     public int total;
+    private int estado;
+    private int secondLock;
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log("Hola soy el Tortuga Manager");
+        secondLock = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (secondLock == 0){
+            StartCoroutine(MostrarEstado());
+        }
     }
 
     public void ActualizarContador(int t)
@@ -30,5 +35,12 @@ public class TortugasManager : MonoBehaviour
         }
 
 
+    }
+
+    IEnumerator MostrarEstado(){
+        secondLock = 1;
+        Debug.Log("Hola amigos soy el Tortugas Manager : " + estado);
+        yield return new WaitForSeconds(2);
+        secondLock = 0;
     }
 }

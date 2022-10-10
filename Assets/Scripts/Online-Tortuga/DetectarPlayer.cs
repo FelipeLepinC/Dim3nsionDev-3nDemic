@@ -23,11 +23,11 @@ public class DetectarPlayer : MonoBehaviour
             Debug.Log(raycastHit.collider.gameObject.tag + " Detectado");
         }*/
         enemies = GameObject.FindGameObjectsWithTag("Atrapado");
+        //Debug.Log(enemies.Length);
         foreach (GameObject enemy in enemies)
-        Debug.Log(enemies.Length);
         {
-            Debug.Log(enemies.Length);
-            Debug.Log("Hay un aliado cerca");
+            
+            //Debug.Log("Hay un aliado cerca");
         }
     }
 }

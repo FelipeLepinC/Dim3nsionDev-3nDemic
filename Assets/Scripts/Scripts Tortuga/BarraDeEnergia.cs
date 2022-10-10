@@ -21,6 +21,9 @@ public class BarraDeEnergia : MonoBehaviour
     protected Transform atrapado = null;
     protected Vector3 difTrampaPlayer = Vector3.zero;
 
+    private int estado;
+    private int secondLock;
+
     //Sonidos
 
     private SoundManager soundManager;
@@ -30,6 +33,8 @@ public class BarraDeEnergia : MonoBehaviour
     private void Awake()
     {
         soundManager = FindObjectOfType<SoundManager>();
+        estado = 0;
+        secondLock = 0;
     }
 
     void Start()
@@ -39,6 +44,10 @@ public class BarraDeEnergia : MonoBehaviour
     void Update()
     {
         barraDeEnergia.fillAmount = energiaActual / energiaMaxima;
+        if (secondLock == 0){
+            secondLock = 1;
+            StartCoroutine(MostrarEstado());
+        }
     }
     void LateUpdate()
     {
@@ -174,5 +183,11 @@ public class BarraDeEnergia : MonoBehaviour
     {
         empujar = false;
         playerRb.mass = 1;
+    }
+
+    IEnumerator MostrarEstado(){
+        Debug.Log("El estado del jugador es: " + estado);
+        yield return new WaitForSeconds(2);
+        secondLock = 0;
     }
 }

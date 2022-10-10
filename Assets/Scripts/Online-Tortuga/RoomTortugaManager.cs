@@ -50,7 +50,7 @@ public class RoomTortugaManager : MonoBehaviourPunCallbacks
             //PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerManager"), Vector3.zero, (Quaternion.identity));
             //PhotonNetwork.Instantiate("PlayerManager", Vector3.zero, (Quaternion.identity));
             GameObject player = PhotonNetwork.Instantiate(playerPrefab.name, playerPrefab.transform.position, Quaternion.identity);
-            //GameObject quirquincho = PhotonNetwork.Instantiate(TortugaManager.name, Vector3.zero, Quaternion.identity);
+            GameObject quirquincho = PhotonNetwork.Instantiate(TortugaManager.name, Vector3.zero, Quaternion.identity);
             
             if (PhotonNetwork.IsMasterClient){
                 StartCoroutine(SpawnItems());
