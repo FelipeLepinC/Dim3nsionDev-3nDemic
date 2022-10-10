@@ -2033,7 +2033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5126527961139664765, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5126527961139664767, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_Enabled
@@ -2046,6 +2046,10 @@ PrefabInstance:
     - target: {fileID: 5242107653240477476, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5242107653240477476, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6556307555316582679, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_RootOrder
@@ -2093,7 +2097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094977340588366727, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_Name
-      value: Jugador V
+      value: Jugador V 1
       objectReference: {fileID: 0}
     - target: {fileID: 7094977340588366727, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_Layer
@@ -2810,6 +2814,12 @@ MonoBehaviour:
   camera: {fileID: 5506669354310931447}
   player: {fileID: 938761413207878389}
   contador: 0
+  counter: 0
+  local: 0
+  counter2: 0
+  reset: 1
+  suma: 0
+  ganador: 0
 --- !u!114 &8518560852599741462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2829,6 +2839,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5886809868919573917}
     m_Modifications:
+    - target: {fileID: 3128063810581836658, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3128063810581836658, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771825369638978399, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771825369638978399, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4036481884340995768, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4036481884340995768, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167168513501512049, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167168513501512049, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7189785752574487063, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
       propertyPath: m_Name
       value: quirquincho_animado
@@ -2837,21 +2879,29 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Capsula
       objectReference: {fileID: 0}
+    - target: {fileID: 7198161224599175931, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198161224599175931, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7533555294021726381, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7533555294021726381, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.1499939
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7533555294021726381, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.6709976
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7533555294021726381, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -24.90979
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7533555294021726381, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
       propertyPath: m_LocalRotation.w
