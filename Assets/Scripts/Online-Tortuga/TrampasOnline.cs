@@ -6,10 +6,12 @@ using Photon.Pun;
 public class TrampasOnline : MonoBehaviour
 {
     GameObject[] enemies;
+    GameObject[] manager;
     public int estado;
     private int mylock;
     PhotonView view;
     BarraDeEnergia barra;
+    private float distancia;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +19,7 @@ public class TrampasOnline : MonoBehaviour
         barra = GetComponent<BarraDeEnergia>();
         estado = 0;
         mylock = 0;
+        distancia = 40;
     }
 
     // Update is called once per frame
@@ -31,7 +34,7 @@ public class TrampasOnline : MonoBehaviour
         }
         
         if (Input.GetKeyDown("space")){
-            view.RPC("RPC_SumarOnline", RpcTarget.OthersBuffered);
+            //view.RPC("RPC_SumarOnline", RpcTarget.OthersBuffered);
             //view.RPC(nameof(barra.Liberado), RpcTarget.OthersBuffered);
             if (view.IsMine){
                 //Debug.Log("Mi estado Online es:" + estado);
@@ -45,17 +48,23 @@ public class TrampasOnline : MonoBehaviour
             Debug.Log(enemies.Length);
             foreach (GameObject enemy in enemies)
             {
-                enemy.GetComponent<TortugasManager>().JugadorLlama();
-                Debug.Log("Hay un Manager en la sala");
+               //enemy.GetComponent<TortugasManager>().JugadorLlama();
+               Debug.Log("El otro jugador está a una distancia de " + enemy.GetComponent<TortugasManager>().distancia);
+               distancia = enemy.GetComponent<TortugasManager>().distancia;
+               //Debug.Log("Hay un Manager en la sala");
+            }
+
+            if (distancia <= 3){
+                view.RPC("RPC_SumarOnline", RpcTarget.OthersBuffered);
             }        
 
         }
     }    
     IEnumerator Sumar(){
-        mylock = 1;
-        yield return new WaitForSeconds(2);
-        if (estado >= 10){
-            estado -= 2;
+        mylock = 1;       
+        yield return new WaitForSeconds(1);
+        if (estado >= 5){
+            estado = 0;
             barra.Liberado();
         }
         //SumarOnline();
