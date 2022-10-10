@@ -8,6 +8,7 @@ public class TortugasManager : MonoBehaviour
     public int total;
     private int estado;
     private int secondLock;
+    private float distancia;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,7 @@ public class TortugasManager : MonoBehaviour
         total += t;
         Debug.Log("El total de la sesión es: " + total);
         jugadores = GameObject.FindGameObjectsWithTag("Jugador");
+        
         foreach(GameObject p in jugadores){
             p.GetComponent<CameraCont>().ContadorTotal(5);
             Debug.Log("Hola soy un jugador");
@@ -44,7 +46,9 @@ public class TortugasManager : MonoBehaviour
 
     IEnumerator MostrarEstado(){
         jugadores = GameObject.FindGameObjectsWithTag("Player");
+        distancia = Vector3.Distance(jugadores[0].transform.position, jugadores[1].transform.position);
         Debug.Log("Hay" + jugadores.Length + " jugadores en la sala");
+        Debug.Log("La distancia entre los jugadores es: " + distancia);
         foreach(GameObject p in jugadores){
             Debug.Log("El estado del jugador es:" + p.GetComponent<TrampasOnline>().estado );
         }
