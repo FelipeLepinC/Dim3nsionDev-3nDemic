@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 7859356291527130956}
   - component: {fileID: 7859356291527130945}
   m_Layer: 0
-  m_Name: FPCPlayer
+  m_Name: NOBORRAR2
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

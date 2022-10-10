@@ -37,6 +37,10 @@ public class SpawnOnline : MonoBehaviour
                 c.enabled = false;
                 //Debug.Log("Se desactivará " + c.GetType().Name);
             }
+            //if(c.GetType().Name == "TrampasOnline"){
+            //    c.enabled = false;
+                //Debug.Log("Se desactivará " + c.GetType().Name);
+            //}
         }
         this.GetComponent<SphereCollider>().enabled = false;
         this.GetComponent<Rigidbody>().isKinematic = false;

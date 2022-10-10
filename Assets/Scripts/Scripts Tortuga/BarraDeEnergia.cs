@@ -48,6 +48,10 @@ public class BarraDeEnergia : MonoBehaviour
             secondLock = 1;
             StartCoroutine(MostrarEstado());
         }
+        if (Input.GetKeyDown("space")){
+            estado += 1;
+        }
+
     }
     void LateUpdate()
     {
@@ -165,8 +169,9 @@ public class BarraDeEnergia : MonoBehaviour
             atrapado = posicionTrampa;
         }
     }
-    void Liberado()
+    public void Liberado()
     {
+        Debug.Log("Me acabo de liberar");
         atrapado = null;
         CharacterController cc = GetComponent<CharacterController>();
         if (!cc.enabled)
@@ -186,7 +191,7 @@ public class BarraDeEnergia : MonoBehaviour
     }
 
     IEnumerator MostrarEstado(){
-        Debug.Log("El estado del jugador es: " + estado);
+        //Debug.Log("El estado del jugador es: " + estado);
         yield return new WaitForSeconds(2);
         secondLock = 0;
     }

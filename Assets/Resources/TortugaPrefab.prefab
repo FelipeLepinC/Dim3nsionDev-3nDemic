@@ -1935,6 +1935,19 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &8255491525013867680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5294455335121862625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd302fced6bf3ea408a41b8fe63da082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  estado: 0
 --- !u!143 &5294455335121862629 stripped
 CharacterController:
   m_CorrespondingSourceObject: {fileID: 638650327352141454, guid: 36c476abb3a44d94aa079322b088b3f4, type: 3}

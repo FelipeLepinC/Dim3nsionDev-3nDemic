@@ -216,7 +216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 261507653366680190}
   m_Layer: 0
-  m_Name: Tortuga
+  m_Name: NOBORRAR4
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

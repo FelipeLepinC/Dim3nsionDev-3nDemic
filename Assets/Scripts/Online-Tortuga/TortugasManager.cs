@@ -21,6 +21,7 @@ public class TortugasManager : MonoBehaviour
         if (secondLock == 0){
             StartCoroutine(MostrarEstado());
         }
+
     }
 
     public void ActualizarContador(int t)
@@ -37,9 +38,24 @@ public class TortugasManager : MonoBehaviour
 
     }
 
+    public void JugadorLlama(){
+        Debug.Log("Tortuga Manager ha respondido");
+    }
+
     IEnumerator MostrarEstado(){
+        jugadores = GameObject.FindGameObjectsWithTag("Player");
+        Debug.Log("Hay" + jugadores.Length + " jugadores en la sala");
+        foreach(GameObject p in jugadores){
+            Debug.Log("El estado del jugador es:" + p.GetComponent<TrampasOnline>().estado );
+        }
         secondLock = 1;
-        Debug.Log("Hola amigos soy el Tortugas Manager : " + estado);
+        if (estado == 0){
+            Debug.Log("Tortuga es libre");
+        }
+        if (estado == 1){
+            Debug.Log("Tortuga está atrapada ayúdenla");
+        }
+        
         yield return new WaitForSeconds(2);
         secondLock = 0;
     }

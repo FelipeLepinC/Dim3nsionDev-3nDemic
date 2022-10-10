@@ -50,7 +50,7 @@ public class RoomTortugaManager : MonoBehaviourPunCallbacks
             //PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerManager"), Vector3.zero, (Quaternion.identity));
             //PhotonNetwork.Instantiate("PlayerManager", Vector3.zero, (Quaternion.identity));
             GameObject player = PhotonNetwork.Instantiate(playerPrefab.name, playerPrefab.transform.position, Quaternion.identity);
-            GameObject quirquincho = PhotonNetwork.Instantiate(TortugaManager.name, Vector3.zero, Quaternion.identity);
+            //GameObject quirquincho = PhotonNetwork.Instantiate(TortugaManager.name, Vector3.zero, Quaternion.identity);
             
             if (PhotonNetwork.IsMasterClient){
                 StartCoroutine(SpawnItems());
@@ -61,9 +61,10 @@ public class RoomTortugaManager : MonoBehaviourPunCallbacks
 
     IEnumerator SpawnItems()
     {
-        yield return new WaitForSeconds(2);
-        GameObject tortuga = PhotonNetwork.Instantiate(tortugaPrefab.name, new Vector3(Random.Range(-115, -110), 116, 513), Quaternion.identity);
-        GameObject madriguera = PhotonNetwork.Instantiate(trampaPrefab.name, trampaPrefab.transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(1);
+        GameObject quirquincho = PhotonNetwork.Instantiate(TortugaManager.name, Vector3.zero, Quaternion.identity);
+        //GameObject tortuga = PhotonNetwork.Instantiate(tortugaPrefab.name, new Vector3(Random.Range(-115, -110), 116, 513), Quaternion.identity);
+        //GameObject madriguera = PhotonNetwork.Instantiate(trampaPrefab.name, trampaPrefab.transform.position, Quaternion.identity);
     }
 
 

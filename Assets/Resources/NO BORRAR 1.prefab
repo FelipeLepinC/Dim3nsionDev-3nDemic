@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5090345132211457452}
   - component: {fileID: 2846592314140961846}
   m_Layer: 0
-  m_Name: TortugaGlobal
+  m_Name: NO BORRAR 1
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
