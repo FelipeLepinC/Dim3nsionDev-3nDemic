@@ -61,12 +61,12 @@ public class CameraCont : MonoBehaviour
         }
 
         else if(reset == 0 && reset == 0){
-            camera.gameObject.GetComponent<AppleCounter>().counter = 0;
+            camera.gameObject.GetComponent<AppleCounter1>().counter = 0;
              counter = 0;
              //reset = 1;
         }
         else if (reset == 1 ){
-            counter = camera.gameObject.GetComponent<AppleCounter>().counter; //se actualiza porque
+            counter = camera.gameObject.GetComponent<AppleCounter1>().counter; //se actualiza porque
         }
 
         if (view.IsMine) // Se restringe la activación de componentes solo para el jugador entrante
