@@ -92,9 +92,9 @@ public class RoomManager : MonoBehaviourPunCallbacks
         
         plyr = GameObject.FindGameObjectsWithTag("MainCamera");
         foreach(GameObject p in plyr){
-            Debug.Log("Tengo " + p.GetComponent<AppleCounter>().counter +" manzanas");
-            StartCoroutine(ActualizarContador2(p.GetComponent<AppleCounter>().counter));
-            p.GetComponent<AppleCounter>().counter = 0;
+            Debug.Log("Tengo " + p.GetComponent<AppleCounter1>().counter +" manzanas");
+            StartCoroutine(ActualizarContador2(p.GetComponent<AppleCounter1>().counter));
+            p.GetComponent<AppleCounter1>().counter = 0;
         }
         
         
