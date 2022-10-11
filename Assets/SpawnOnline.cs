@@ -37,6 +37,12 @@ public class SpawnOnline : MonoBehaviour
                 c.enabled = false;
                 //Debug.Log("Se desactivará " + c.GetType().Name);
             }
+            if(c.GetType().Name == "UnderWaterDetector"){
+                c.enabled = false;
+            }
+            if(c.GetType().Name == "FPCSwimmer"){
+                c.enabled = false;
+            }
             //if(c.GetType().Name == "TrampasOnline"){
             //    c.enabled = false;
                 //Debug.Log("Se desactivará " + c.GetType().Name);
