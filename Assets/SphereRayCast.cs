@@ -8,7 +8,7 @@ public class SphereRayCast : MonoBehaviour
     public Color gizmoColor = Color.green;
     public bool showGizmos = true;
     //public AppleCounter ui_contador;
-    private AppleCounter1 ui_contador;
+    private AppleCounter ui_contador;
     private RoomManager gameManager;
     private int total;
     private int candado = 1;
@@ -29,7 +29,7 @@ public class SphereRayCast : MonoBehaviour
     IEnumerator IdentificarPlayers()
     {
         yield return new WaitForSeconds(2);
-        ui_contador = GameObject.FindWithTag("MainCamera").GetComponent<AppleCounter1>();
+        ui_contador = GameObject.FindWithTag("MainCamera").GetComponent<AppleCounter>();
         gameManager = GameObject.FindWithTag("RoomManager").GetComponent<RoomManager>();
     }
 
