@@ -122,6 +122,7 @@ public class Cazador : MonoBehaviour
     void Update()
     {
         StartCoroutine(verificar());
+        Debug.Log(campoVision.GetComponent<FieldOfView>().visibleTargets.Count);
         if (campoVision.GetComponent<FieldOfView>().visibleTargets.Count == 0)
         {
             if (visto == true && perdido == false){
@@ -268,6 +269,7 @@ public class Cazador : MonoBehaviour
         animator.SetBool("isRunning", true);
         //Debug.Log(jugadores.Length);
         // target= GameObject.FindWithTag("Player1").transform;
+        campoVision.GetComponent<FieldOfView>().FindVisibleTargets();
         target = campoVision.GetComponent<FieldOfView>().targetMinimo;
 
         nav.SetDestination(target.position);

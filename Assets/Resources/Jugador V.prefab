@@ -2843,6 +2843,10 @@ PrefabInstance:
       value: quirquincho_animado
       objectReference: {fileID: 0}
     - target: {fileID: 7189785752574487063, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7189785752574487063, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
       propertyPath: m_TagString
       value: Capsula
       objectReference: {fileID: 0}

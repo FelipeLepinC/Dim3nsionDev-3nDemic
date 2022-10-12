@@ -7,6 +7,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8068964549171551744, guid: d8b8ebca37a2ed84290d13de1256b420, type: 3}
+      propertyPath: viewAngle
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068964549171551744, guid: d8b8ebca37a2ed84290d13de1256b420, type: 3}
+      propertyPath: viewRadius
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068964549171551744, guid: d8b8ebca37a2ed84290d13de1256b420, type: 3}
+      propertyPath: targetMask.m_Bits
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 8068964549171551745, guid: d8b8ebca37a2ed84290d13de1256b420, type: 3}
       propertyPath: target
       value: 
