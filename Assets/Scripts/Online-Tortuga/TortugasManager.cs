@@ -8,7 +8,7 @@ public class TortugasManager : MonoBehaviour
     public int total;
     private int estado;
     private int secondLock;
-    private float distancia;
+    public float distancia;
     // Start is called before the first frame update
     void Start()
     {

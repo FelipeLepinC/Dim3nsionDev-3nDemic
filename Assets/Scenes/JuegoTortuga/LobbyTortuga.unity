@@ -590,7 +590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 607302d9a9281204f80048f0b90908e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 5807141828938653865, guid: 97b583fd92555094a905f8c20ce7e590, type: 3}
+  playerPrefab: {fileID: 5294455335121862625, guid: 7ab642b16eb92b74783508d08451fca4, type: 3}
   tortugaPrefab: {fileID: 0}
   TortugaManager: {fileID: 5787050847938529809, guid: 2341d9727423bba4fb961bbf401d8c48, type: 3}
   trampaPrefab: {fileID: 0}

@@ -30,8 +30,17 @@ public class TrampasOnline : MonoBehaviour
             }
         }
         
-        if (Input.GetKeyDown("space")){
-            view.RPC("RPC_SumarOnline", RpcTarget.OthersBuffered);
+        if (Input.GetKeyDown("space") || OVRInput.Get(OVRInput.Button.Two)){
+            enemies = GameObject.FindGameObjectsWithTag("GameManager");
+            foreach (GameObject enemy in enemies)
+            {
+                Debug.Log("Distancia: " + enemy.GetComponent<TortugasManager>().distancia);
+                if (enemy.GetComponent<TortugasManager>().distancia < 3){
+                    view.RPC("RPC_SumarOnline", RpcTarget.OthersBuffered);
+                }
+            }    
+
+
             //view.RPC(nameof(barra.Liberado), RpcTarget.OthersBuffered);
             if (view.IsMine){
                 //Debug.Log("Mi estado Online es:" + estado);
@@ -41,8 +50,8 @@ public class TrampasOnline : MonoBehaviour
             //estado += 1;
             //Debug.Log("Space fue presionado");
             //Debug.Log(estado);
-            enemies = GameObject.FindGameObjectsWithTag("GameManager");
-            Debug.Log(enemies.Length);
+            
+            //Debug.Log(enemies.Length);
             foreach (GameObject enemy in enemies)
             {
                 enemy.GetComponent<TortugasManager>().JugadorLlama();
@@ -54,8 +63,8 @@ public class TrampasOnline : MonoBehaviour
     IEnumerator Sumar(){
         mylock = 1;
         yield return new WaitForSeconds(2);
-        if (estado >= 10){
-            estado -= 2;
+        if (estado > 0){
+            estado = 0;
             barra.Liberado();
         }
         //SumarOnline();

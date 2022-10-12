@@ -136,3 +136,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jugadores: []
   total: 0
+  distancia: 0
