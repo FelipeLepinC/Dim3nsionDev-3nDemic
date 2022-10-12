@@ -39,6 +39,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cazador DEF
       objectReference: {fileID: 0}
+    - target: {fileID: 8595074788771101285, guid: d8b8ebca37a2ed84290d13de1256b420, type: 3}
+      propertyPath: m_TagString
+      value: Cazador
+      objectReference: {fileID: 0}
     - target: {fileID: 8938526334513946847, guid: d8b8ebca37a2ed84290d13de1256b420, type: 3}
       propertyPath: m_RootOrder
       value: 0

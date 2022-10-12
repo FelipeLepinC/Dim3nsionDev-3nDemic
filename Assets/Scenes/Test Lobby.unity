@@ -228,7 +228,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.00012207031, y: 23.87825}
+  m_AnchoredPosition: {x: 0.00012207031, y: 23.878296}
   m_SizeDelta: {x: 600, y: 70}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &29388649
@@ -386,7 +386,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00012207031, y: 1.1218872}
+  m_AnchoredPosition: {x: 0.00012207031, y: 1.1218262}
   m_SizeDelta: {x: -309.67505, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &107250021
@@ -543,7 +543,7 @@ MonoBehaviour:
   playerPrefab: {fileID: 7582061563991482125, guid: f240cf4b228f89e43a8fbe3891d5547d, type: 3}
   hunterPrefab: {fileID: 3109350519016471037, guid: d38bcc67f2da1ab419975736de74421c, type: 3}
   QuirquinchoManager: {fileID: 5787050847938529809, guid: 37f6720e50c0c224cb49af1c168ea89d, type: 3}
-  prefabMadriguera: {fileID: 5709715432578299747, guid: 5702de4f001dc0e4cb30a8f807d473db, type: 3}
+  prefabMadriguera: {fileID: 727115480886269834, guid: c10603b4d0b0723468919117b621e30f, type: 3}
   cameras: []
   total: 0
 --- !u!4 &152283342

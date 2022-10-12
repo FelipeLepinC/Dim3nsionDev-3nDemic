@@ -94,9 +94,7 @@ public class Cazador : MonoBehaviour
             mayor = 0;
             mayor2 = 0;
             foreach(GameObject p in jugadoras){
-                //p.GetComponent<CameraCont>().ContadorTotal(1);
-                Debug.Log("Jugador detectado por el cazador, contador es: " + p.GetComponent<CameraCont>().contador);
-                //p.GetComponent<AppleCounter>().InHomeForAll(t);
+                //Debug.Log("Jugador detectado por el cazador, contador es: " + p.GetComponent<CameraCont>().contador);
                 if ( p.GetComponent<CameraCont>().contador > mayor){
                     mayor = p.GetComponent<CameraCont>().contador;
                 }
@@ -105,13 +103,13 @@ public class Cazador : MonoBehaviour
                 }
                 
             }
-            Debug.Log("El mayor de todos es: " + mayor);
+            //Debug.Log("El mayor de todos es: " + mayor);
             
             foreach(GameObject p in jugadoras){
                 p.GetComponent<CameraCont>().contador = mayor;
                 p.GetComponent<CameraCont>().contador = mayor;
                 p.GetComponent<CameraCont>().ganador = mayor2;
-                Debug.Log("Jugador detectado por el cazador, contador actualizado es: " + p.GetComponent<CameraCont>().contador);
+                //Debug.Log("Jugador detectado por el cazador, contador actualizado es: " + p.GetComponent<CameraCont>().contador);
                 
             }
             yield return new WaitForSeconds(1);
@@ -180,7 +178,7 @@ public class Cazador : MonoBehaviour
     IEnumerator perdiendo(){
        
         yield return new WaitForSeconds(1);
-        Debug.Log(perdido);
+        //Debug.Log(perdido);
         perseguir();
         while(perdido == false){
             yield return new WaitForSeconds(4);
@@ -265,8 +263,30 @@ public class Cazador : MonoBehaviour
 
     private void perseguir(){
         animator.SetBool("isRunning", true);
-        Debug.Log(jugadores.Length);
+        //Debug.Log(jugadores.Length);
         target= GameObject.FindWithTag("Player1").transform;
         nav.SetDestination(target.position);
+    }
+
+    public void Saludar(){
+        //Debug.Log("Maldito Armadillo");
+    }
+
+    public void ArmadilloOculto(){
+        //yield return new WaitForSeconds(1);
+        interfaz.GetComponent<AppleCounter>().not_persued();
+        //transform.localRotation *= Quaternion.Euler(0, 0, 180);
+        
+        //Debug.Log("Quirquincho se ha ocultado");
+        Debug.Log(perdido);
+        
+        //perseguir();
+        GetComponent<FieldOfView>().enabled = false;
+        perdido = true;
+        transform.rotation = Quaternion.Inverse(transform.rotation);
+        rb.velocity = new Vector3(0f, 0f, 0f);
+        interfaz.GetComponent<AppleCounter>().not_persued();
+        nav.ResetPath();
+        
     }
 }

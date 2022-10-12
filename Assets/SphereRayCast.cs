@@ -12,6 +12,7 @@ public class SphereRayCast : MonoBehaviour
     private RoomManager gameManager;
     private int total;
     private int candado = 1;
+    GameObject[] cazadores;
 
     Collider[] Apples;
     // Start is called before the first frame update
@@ -47,9 +48,15 @@ public class SphereRayCast : MonoBehaviour
             if (apple.tag == "Player1"){
                 if (candado == 1){
                     candado = 0;
+                    cazadores = GameObject.FindGameObjectsWithTag("Cazador");
+                    //Debug.Log(cazadores.Length);
+                    cazadores[0].GetComponent<Cazador>().Saludar();
+                    cazadores[0].GetComponent<Cazador>().ArmadilloOculto();
+                    //apple.tag = "Untagged";
                     gameManager.GetComponent<RoomManager>().Llamar();
-                    StartCoroutine(abrirCandado());
+                    StartCoroutine(abrirCandado(apple));
                 }
+                
                 //total = ui_contador.GetComponent<AppleCounter>().InHome(); //ESTA DEBE ESTAR ACTIVADA
                 //Debug.Log("Room Manager detecta que en total hay" + total + "manzanas");
                 
@@ -58,15 +65,17 @@ public class SphereRayCast : MonoBehaviour
         }
     }
 
-    IEnumerator abrirCandado(){
+    IEnumerator abrirCandado(Collider apple){
         yield return new WaitForSeconds(5);
         candado = 1;
+        //apple.tag = "Player1";
     }
 
     private void OnDrawGizmos() {
         if (showGizmos){
             Gizmos.color = gizmoColor;
             Gizmos.DrawSphere(transform.position, radius);
+            
         }
         
     }

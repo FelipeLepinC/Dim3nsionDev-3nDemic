@@ -48,7 +48,7 @@ public class BarraDeEnergia : MonoBehaviour
             secondLock = 1;
             StartCoroutine(MostrarEstado());
         }
-        if (Input.GetKeyDown("space")){
+        if (OVRInput.Get(OVRInput.Button.Two) || Input.GetKeyDown("space")){
             estado += 1;
         }
 
