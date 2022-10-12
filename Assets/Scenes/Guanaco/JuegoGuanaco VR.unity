@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1592,6 +1592,10 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6839569649472339300, guid: 26247820b33ec5c4a8c3fcc02e0d6f17, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6839569649472339303, guid: 26247820b33ec5c4a8c3fcc02e0d6f17, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1647,6 +1651,14 @@ PrefabInstance:
     - target: {fileID: 6839569649472339307, guid: 26247820b33ec5c4a8c3fcc02e0d6f17, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681144515145679780, guid: 26247820b33ec5c4a8c3fcc02e0d6f17, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681144515145679780, guid: 26247820b33ec5c4a8c3fcc02e0d6f17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.421
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6839569649472339297, guid: 26247820b33ec5c4a8c3fcc02e0d6f17, type: 3}
