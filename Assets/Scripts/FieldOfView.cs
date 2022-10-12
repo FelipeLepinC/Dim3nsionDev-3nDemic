@@ -14,6 +14,9 @@ public class FieldOfView : MonoBehaviour
 	public LayerMask targetMask;
 	public LayerMask obstacleMask;
 
+	public float min = 100000000.0f;
+	public Transform targetMinimo;
+
 	[HideInInspector]
 	public List<Transform> visibleTargets = new List<Transform>();
 
@@ -46,6 +49,12 @@ public class FieldOfView : MonoBehaviour
 			{
 				float dstToTarget = Vector3.Distance(transform.position, target.position);
 
+				if (dstToTarget < min)
+                {
+					min = dstToTarget;
+					targetMinimo = target;
+				}
+
 				if (!Physics.Raycast(transform.position, dirToTarget, dstToTarget, obstacleMask))
 				{
 					visibleTargets.Add(target);
@@ -53,6 +62,11 @@ public class FieldOfView : MonoBehaviour
 			}
 		}
 	}
+
+	public void minimo()
+    {
+		min = 1000000000.0f;
+    }
 
 
 	public Vector3 DirFromAngle(float angleInDegrees, bool angleIsGlobal)

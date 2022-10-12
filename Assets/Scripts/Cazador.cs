@@ -62,6 +62,7 @@ public class Cazador : MonoBehaviour
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         perdido = true;
+        campoVision.GetComponent<FieldOfView>().minimo();
         trapped = false;
         jugadores = GameObject.FindGameObjectsWithTag("Player1");
         jugadoras = GameObject.FindGameObjectsWithTag("Jugador");
@@ -183,6 +184,7 @@ public class Cazador : MonoBehaviour
         while(perdido == false){
             yield return new WaitForSeconds(4);
             perdido = true;
+            campoVision.GetComponent<FieldOfView>().minimo();
         }
         rb.velocity = new Vector3(0f, 0f, 0f);
         nav.ResetPath();
@@ -247,6 +249,7 @@ public class Cazador : MonoBehaviour
         {
             trapped = true;
             perdido = true;
+            campoVision.GetComponent<FieldOfView>().minimo();
             nav.ResetPath();
             interfaz.GetComponent<AppleCounter>().not_persued();
             Debug.Log("Han pillado al jugador");
@@ -264,7 +267,9 @@ public class Cazador : MonoBehaviour
     private void perseguir(){
         animator.SetBool("isRunning", true);
         //Debug.Log(jugadores.Length);
-        target= GameObject.FindWithTag("Player1").transform;
+        // target= GameObject.FindWithTag("Player1").transform;
+        target = campoVision.GetComponent<FieldOfView>().targetMinimo;
+
         nav.SetDestination(target.position);
     }
 
@@ -283,6 +288,7 @@ public class Cazador : MonoBehaviour
         //perseguir();
         GetComponent<FieldOfView>().enabled = false;
         perdido = true;
+        campoVision.GetComponent<FieldOfView>().minimo();
         transform.rotation = Quaternion.Inverse(transform.rotation);
         rb.velocity = new Vector3(0f, 0f, 0f);
         interfaz.GetComponent<AppleCounter>().not_persued();
