@@ -24,6 +24,8 @@ TagManager:
   - Atrapado
   - Madrigera
   - Cazador
+  - punto
+  - Saliva
   layers:
   - Default
   - TransparentFX
