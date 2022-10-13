@@ -55,10 +55,43 @@ public class CameraCont : MonoBehaviour
         if (counter == 7 && reset == 2){
             counter = 7;
         }
-        //Debug.Log(counter);
-        if (counter == 5){
-            counter = 5;
+        if (counter == 8 && reset == 2){
+            counter = 8;
         }
+        if (counter == 9 && reset == 2){
+            counter = 9;
+        }
+        if (counter == 10 && reset == 2){
+            counter = 10;
+        }
+        if (counter == 11 && reset == 2){
+            counter = 11;
+        }
+        if (counter == 12 && reset == 2){
+            counter = 12;
+        }
+        if (counter == 13 && reset == 2){
+            counter = 13;
+        }
+        if (counter == 14 && reset == 2){
+            counter = 14;
+        }
+        if (counter == 15 && reset == 2){
+            counter = 15;
+        }
+        if (counter == 16 && reset == 2){
+            counter = 16;
+        }
+        if (counter == 17 && reset == 2){
+            counter = 17;
+        }
+        if (counter == 18 && reset == 2){
+            counter = 18;
+        }
+        //Debug.Log(counter);
+        //if (counter == 20){
+        //    counter = 20;
+        //}
 
         else if(reset == 0 && reset == 0){
             camera.gameObject.GetComponent<AppleCounter>().counter = 0;

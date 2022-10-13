@@ -281,6 +281,7 @@ public class Cazador : MonoBehaviour
 
     public void ArmadilloOculto(){
         //yield return new WaitForSeconds(1);
+        campoVision.GetComponent<FieldOfView>().enabled = false;
         interfaz.GetComponent<AppleCounter>().not_persued();
         //transform.localRotation *= Quaternion.Euler(0, 0, 180);
         
@@ -297,4 +298,6 @@ public class Cazador : MonoBehaviour
         nav.ResetPath();
         
     }
+
+    //public void 
 }
