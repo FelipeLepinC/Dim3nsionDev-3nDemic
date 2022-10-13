@@ -14,6 +14,6 @@ public class Moving : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.gameObject.transform.position = jugador.gameObject.transform.position + new Vector3(0,5,0);
+        this.gameObject.transform.position = jugador.gameObject.transform.position + new Vector3(0,0,0);
     }
 }
