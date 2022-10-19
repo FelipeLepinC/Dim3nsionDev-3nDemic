@@ -27,6 +27,7 @@ public class CameraCont : MonoBehaviour
                         gameObject.transform.GetChild(i).gameObject.SetActive(false); //Se desactivan todos los componentes hijos de los jugadores nuevos para que no se mezclen con el actual
                     }
                     
+                    
         }
     }
     
@@ -108,9 +109,14 @@ public class CameraCont : MonoBehaviour
             //Vector3 input = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), Input.GetAxisRaw("Up"));
             //transform.position += input.normalized * 6 * Time.deltaTime;
             if (gameObject.GetPhotonView().IsMine){
+                Debug.Log("SOY YOOOOOO");
                 for (int i = 0; i < gameObject.transform.childCount; i++)
                 {
                     gameObject.transform.GetChild(i).gameObject.SetActive(true); //Se activan las componentes únicas del jugador entrante
+                    if(gameObject.transform.GetChild(i).tag == "MainCameraVR"){
+                        Debug.Log(gameObject.transform.GetChild(i).tag + " desactivada");
+                        gameObject.transform.GetChild(i).gameObject.SetActive(false); //Se desactivan todos los componentes hijos de los jugadores nuevos para que no se mezclen con el actual
+                    }
                 }
             }
         }
