@@ -8,7 +8,7 @@ using System.IO;
 public class RoomGuanacoManager : MonoBehaviourPunCallbacks
 {
     public GameObject playerPrefab;
-    public GameObject tortugaPrefab;
+    public GameObject enemyPrefab;
     public GameObject TortugaManager;
     public GameObject trampaPrefab;
 
@@ -18,6 +18,12 @@ public class RoomGuanacoManager : MonoBehaviourPunCallbacks
     public int total = 0;
     private bool wait = true;
     private int awa = 0;
+
+
+    public GameObject[] enemigos;
+    public int numeroDeEnemigos = 5;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,13 +53,10 @@ public class RoomGuanacoManager : MonoBehaviourPunCallbacks
             Debug.Log("Se spawneará un jugador");
             awa = 1; // Impide que se spawneen 2 tortugas por jugador.
             wait = false;
-            //PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerManager"), Vector3.zero, (Quaternion.identity));
-            //PhotonNetwork.Instantiate("PlayerManager", Vector3.zero, (Quaternion.identity));
-            GameObject player = PhotonNetwork.Instantiate(playerPrefab.name, playerPrefab.transform.position, Quaternion.identity);
-            //GameObject quirquincho = PhotonNetwork.Instantiate(TortugaManager.name, Vector3.zero, Quaternion.identity);
-            
+            GameObject player = PhotonNetwork.Instantiate(playerPrefab.name, playerPrefab.transform.position, Quaternion.identity);          
             if (PhotonNetwork.IsMasterClient){
                 StartCoroutine(SpawnItems());
+                StartCoroutine(GenerateNewEnemy());
             }
             
         }
@@ -63,8 +66,20 @@ public class RoomGuanacoManager : MonoBehaviourPunCallbacks
     {
         yield return new WaitForSeconds(1);
         GameObject quirquincho = PhotonNetwork.Instantiate(TortugaManager.name, Vector3.zero, Quaternion.identity);
-        //GameObject tortuga = PhotonNetwork.Instantiate(tortugaPrefab.name, new Vector3(Random.Range(-115, -110), 116, 513), Quaternion.identity);
-        //GameObject madriguera = PhotonNetwork.Instantiate(trampaPrefab.name, trampaPrefab.transform.position, Quaternion.identity);
+    }
+
+    IEnumerator GenerateNewEnemy(){
+        Vector3 portal = new Vector3(300.0f,34.126f,323.74f);
+        // GameObject enemy = PhotonNetwork.Instantiate(enemyPrefab.name, portal, Quaternion.identity);
+        // yield return new WaitForSeconds(Random.Range(10,20));
+        // alerta.SetActive(true);
+
+        for(int i=0; i < numeroDeEnemigos; i++){
+            GameObject enemy = PhotonNetwork.Instantiate(enemyPrefab.name, portal, Quaternion.identity);
+            enemy.AddComponent<Enemy>();
+            yield return new WaitForSeconds(Random.Range(10,20));
+            // alerta.SetActive(true);
+        }
     }
 
 
