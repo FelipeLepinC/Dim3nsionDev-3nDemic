@@ -540,7 +540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150815355a004ab44ac8f090be89da93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 7477088287983539099, guid: 1323bb346af3aef4e8b7c382af1222a6, type: 3}
+  playerPrefab: {fileID: 7477088287983539099, guid: cdf2b6602ccdb3048ae63bc2893444df, type: 3}
   hunterPrefab: {fileID: 3109350519016471037, guid: d38bcc67f2da1ab419975736de74421c, type: 3}
   QuirquinchoManager: {fileID: 5787050847938529809, guid: 37f6720e50c0c224cb49af1c168ea89d, type: 3}
   prefabMadriguera: {fileID: 727115480886269834, guid: c10603b4d0b0723468919117b621e30f, type: 3}

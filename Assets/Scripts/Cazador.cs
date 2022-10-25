@@ -66,8 +66,10 @@ public class Cazador : MonoBehaviour
         trapped = false;
         jugadores = GameObject.FindGameObjectsWithTag("Player1");
         jugadoras = GameObject.FindGameObjectsWithTag("Jugador");
-        perseguido= GameObject.FindWithTag("Player1");
-        controller = GameObject.FindWithTag("Player1").GetComponent<CharacterController>();
+        //perseguido= GameObject.FindWithTag("Player1");
+        perseguido = GameObject.FindWithTag("Jugador");
+        //controller = GameObject.FindWithTag("Player1").GetComponent<CharacterController>();
+        controller = GameObject.FindWithTag("Jugador").GetComponent<CharacterController>();
         interfaz = GameObject.FindWithTag("MainCamera").GetComponent<AppleCounter>();
         ui_contador = GameObject.FindWithTag("MainCamera").GetComponent<AppleCounter>();
         tiempo = GameObject.FindWithTag("PanelTiempo").GetComponent<TimeController>();
@@ -246,7 +248,8 @@ public class Cazador : MonoBehaviour
 
     void OnCollisionEnter(Collision player)
     {
-        if (player.gameObject.layer == 8)
+        Debug.Log(player.gameObject.tag);
+        if (player.gameObject.layer == 8 || player.gameObject.tag == "Capsula" || player.gameObject.tag == "Jugador")
         {
             trapped = true;
             perdido = true;

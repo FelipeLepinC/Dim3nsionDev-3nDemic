@@ -20,15 +20,7 @@ public class CameraCont : MonoBehaviour
     void Start()
     {
         view = GetComponent<PhotonView>();
-        for (int i = 0; i < gameObject.transform.childCount; i++)
-                {
-                    if(gameObject.transform.GetChild(i).tag != "Capsula"){
-                        Debug.Log(gameObject.transform.GetChild(i).tag + " desactivada");
-                        gameObject.transform.GetChild(i).gameObject.SetActive(false); //Se desactivan todos los componentes hijos de los jugadores nuevos para que no se mezclen con el actual
-                    }
-                    
-                    
-        }
+        //activar();
     }
     
     // Update is called once per frame
@@ -105,34 +97,15 @@ public class CameraCont : MonoBehaviour
 
         if (view.IsMine) // Se restringe la activación de componentes solo para el jugador entrante
         {
-            //Debug.Log("SOY YOOOOOO");
-            //Vector3 input = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), Input.GetAxisRaw("Up"));
-            //transform.position += input.normalized * 6 * Time.deltaTime;
-            if (gameObject.GetPhotonView().IsMine){
-                Debug.Log("SOY YOOOOOO");
-                for (int i = 0; i < gameObject.transform.childCount; i++)
-                {
-                    gameObject.transform.GetChild(i).gameObject.SetActive(true); //Se activan las componentes únicas del jugador entrante
-                    if(gameObject.transform.GetChild(i).tag == "MainCameraVR"){
-                        Debug.Log(gameObject.transform.GetChild(i).tag + " desactivada");
-                        gameObject.transform.GetChild(i).gameObject.SetActive(false); //Se desactivan todos los componentes hijos de los jugadores nuevos para que no se mezclen con el actual
-                    }
-                }
-            }
+            //desactivar();
         }
     }
 
     public void ContadorTotal(int t)
     {
-        //Debug.Log("Soy un jugador llamado por el cazador");
-        //contador = t + contador;
-        //contador = t + contador;
         Debug.Log(contador);
         if (view.IsMine){
             view.RPC("RPC_Function", RpcTarget.AllBuffered, t);
-            //Debug.Log("AAAAAAA");
-            //Debug.Log(RpcTarget.AllBuffered);
-            //Debug.Log("AAAAAAA");
         }
         
         //camera.gameObject.GetComponent<AppleCounter>().InHomeForAll(contador);
@@ -140,17 +113,10 @@ public class CameraCont : MonoBehaviour
 
     public void RepartirManzanas(){
         int t = counter;
-        //Debug.Log("Antes tenía tenemos:" + counter);
-        //view.RPC("RPC_Function2", RpcTarget.AllBuffered, t);
         if (view.IsMine){
             reset = 0;
-            //view.RPC("RPC_Function2", RpcTarget.AllBuffered, t);
         }
         view.RPC("RPC_Function2", RpcTarget.AllBuffered, ganador);
-        //Debug.Log("Repartimos manzanas");
-        //counter = 0;
-        //Debug.Log("Ahora tenemos:" + counter);
-        //Debug.Log("Finalmente: " + suma);
     }
 
 
@@ -158,9 +124,6 @@ public class CameraCont : MonoBehaviour
     void RPC_Function(int a)
     {
         contador = a + contador;
-        //Debug.Log(contador);
-        //Debug.Log("Soy la RPC Function");
-        //camera.gameObject.GetComponent<AppleCounter>().InHomeForAll(contador);
     }
 
     [PunRPC]
@@ -187,8 +150,31 @@ public class CameraCont : MonoBehaviour
             suma = suma -2;
         }
         Debug.Log("Se añadira" + suma + " al otro jugador");
-        //Debug.Log(contador);
-        //Debug.Log("Soy la RPC Function");
-        //camera.gameObject.GetComponent<AppleCounter>().InHomeForAll(contador);
     }
+
+    void activar(){
+        ////view = GetComponent<PhotonView>();
+        for (int i = 0; i < gameObject.transform.childCount; i++)
+                {
+                    if(gameObject.transform.GetChild(i).tag != "Capsula"){
+                        Debug.Log(gameObject.transform.GetChild(i).tag + " desactivada");
+                        gameObject.transform.GetChild(i).gameObject.SetActive(false); //Se desactivan todos los componentes hijos de los jugadores nuevos para que no se mezclen con el actual
+                    } 
+        }
+    }
+
+
+    void desactivar(){
+        //Debug.Log("SOY YOOOOOO");
+                for (int i = 0; i < gameObject.transform.childCount; i++)
+                {
+                    gameObject.transform.GetChild(i).gameObject.SetActive(true); //Se activan las componentes únicas del jugador entrante
+                    if(gameObject.transform.GetChild(i).tag == "MainCameraVR"){
+                        Debug.Log(gameObject.transform.GetChild(i).tag + " desactivada");
+                        gameObject.transform.GetChild(i).gameObject.SetActive(false); //Se desactivan todos los componentes hijos de los jugadores nuevos para que no se mezclen con el actual
+                    }
+                }
+    }
+
 }
+    

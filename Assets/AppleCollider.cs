@@ -20,7 +20,7 @@ public class AppleCollider : MonoBehaviour
     private void OnCollisionEnter(Collision other) {
         //Debug.Log(other.collider.tag);
         if (other.collider.tag == "Apple"){
-            //Debug.Log("ES UNA MANZANAA");
+            Debug.Log("ES UNA MANZANAA");
             //sonidos.SonidoNuevo(llaveSonido, transform.position);
             //cosa = other;
             //other.gameObject.GetComponent<man>().LightsOn();
