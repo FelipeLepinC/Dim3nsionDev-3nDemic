@@ -43,7 +43,11 @@ public class MenuBar : MonoBehaviour
                 slider.value = target.GetComponent<Health>().HealthPoints;
                 break;
             case BarType.energy:
-                slider.value = target.GetComponent<Disparar>().cooldown_saliva;
+                if (GameObject.Find("Rana") == null)
+                {
+                    // Estamos en el juego del guanaco
+                    slider.value = target.GetComponent<Disparar>().cooldown_saliva;
+                }
                 break;
         }
     }
