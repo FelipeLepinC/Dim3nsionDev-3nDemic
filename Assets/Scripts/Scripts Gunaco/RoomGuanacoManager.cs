@@ -9,7 +9,7 @@ public class RoomGuanacoManager : MonoBehaviourPunCallbacks
 {
     public GameObject playerPrefab;
     public GameObject enemyPrefab;
-    public GameObject TortugaManager;
+    public GameObject GuanacoManager;
     public GameObject trampaPrefab;
 
     public static RoomGuanacoManager Instance;
@@ -65,7 +65,7 @@ public class RoomGuanacoManager : MonoBehaviourPunCallbacks
     IEnumerator SpawnItems()
     {
         yield return new WaitForSeconds(1);
-        GameObject quirquincho = PhotonNetwork.Instantiate(TortugaManager.name, Vector3.zero, Quaternion.identity);
+        GameObject quirquincho = PhotonNetwork.Instantiate(GuanacoManager.name, Vector3.zero, Quaternion.identity);
     }
 
     IEnumerator GenerateNewEnemy(){
@@ -79,83 +79,6 @@ public class RoomGuanacoManager : MonoBehaviourPunCallbacks
             enemy.AddComponent<Enemy>();
             yield return new WaitForSeconds(Random.Range(10,20));
             // alerta.SetActive(true);
-        }
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (wait == false){
-            StartCoroutine(ActualizarContador(5));
-        }
-        
-    }
-
-    public void Llamar()
-    {
-        Debug.Log("Alooo");
-        
-        
-        plyr = GameObject.FindGameObjectsWithTag("MainCamera");
-        foreach(GameObject p in plyr){
-            Debug.Log("Tengo " + p.GetComponent<AppleCounter>().counter +" manzanas");
-            StartCoroutine(ActualizarContador2(p.GetComponent<AppleCounter>().counter));
-            p.GetComponent<AppleCounter>().counter = 0;
-        }
-        
-        
-    }
-
-    IEnumerator ActualizarContador(int t)
-    {
-        wait = true;
-        yield return new WaitForSeconds(2);
-        
-        //Debug.Log("El total de la sesión es: " + total);
-        
-        cameras = GameObject.FindGameObjectsWithTag("Jugador");
-        
-
-        //total += t;
-        
-        foreach(GameObject p in cameras){
-            //Debug.Log(cameras.Length);
-            //Debug.Log("Hola soy un jugador que va a jugar");
-            
-            //p.GetComponent<AppleCounter>().InHomeForAll(total);
-
-            //Debug.Log("Toy jugando");
-            //p.GetComponent<CameraCont>().ContadorTotal(t);
-        }
-        wait = false;
-    }
-
-    IEnumerator ActualizarContador2(int t)
-    {
-        wait = true;
-        yield return new WaitForSeconds(2);
-        total += t;
-        //Debug.Log("El total de la sesión es: " + total);
-        cameras = GameObject.FindGameObjectsWithTag("Jugador");
-        
-        foreach(GameObject p in cameras){
-            //Debug.Log(cameras.Length);
-            Debug.Log("Hola soy un jugador que va a jugar");
-            p.GetComponent<CameraCont>().ContadorTotal(t);
-            //p.GetComponent<AppleCounter>().InHomeForAll(total);
-        }
-        wait = false;
-    }
-
-    public void EntregarManzanas(){
-        Debug.Log("VAMOS A ENTREGAR MANZANAS");
-        cameras = GameObject.FindGameObjectsWithTag("Jugador");
-        foreach(GameObject p in cameras){
-            //Debug.Log(cameras.Length);
-            Debug.Log("Hola soy un jugador que va a jugar");
-            p.GetComponent<CameraCont>().RepartirManzanas();
-            //p.GetComponent<AppleCounter>().InHomeForAll(total);
         }
     }
 }

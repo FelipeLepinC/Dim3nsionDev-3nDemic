@@ -43,6 +43,7 @@ MonoBehaviour:
   - RPC_Function2
   - SumarOnline
   - RPC_SumarOnline
+  - GenerateNewEnemy
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

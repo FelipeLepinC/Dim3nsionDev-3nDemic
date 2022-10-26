@@ -592,7 +592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 8459212910590469671, guid: 9057a5caa55b96d4880d861f217a65d9, type: 3}
   enemyPrefab: {fileID: 444602283810840816, guid: faac0e7d41e22c24897552aa4656d4a7, type: 3}
-  TortugaManager: {fileID: 4934612140023223457, guid: 8bdee882352715247ae67b73efd39300, type: 3}
+  GuanacoManager: {fileID: 4934612140023223457, guid: 8bdee882352715247ae67b73efd39300, type: 3}
   trampaPrefab: {fileID: 0}
   cameras: []
   total: 0

@@ -1431,6 +1431,7 @@ GameObject:
   - component: {fileID: 5334989988354918388}
   - component: {fileID: 6708446773206304461}
   - component: {fileID: 1409538088828815451}
+  - component: {fileID: 4385074599464058175}
   m_Layer: 0
   m_Name: Walk
   m_TagString: punto
@@ -1526,7 +1527,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 444602283810840816}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 547ab238c11bd744db0bae6c65af38f9, type: 3}
   m_Name: 
@@ -1699,6 +1700,23 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &4385074599464058175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444602283810840816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf8c44fb09ebbe842928e069957cdd1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  derrotado: 0
+  guanacosMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &444602283810840820
 GameObject:
   m_ObjectHideFlags: 0

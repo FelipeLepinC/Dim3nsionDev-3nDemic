@@ -32,7 +32,8 @@ public class Health : MonoBehaviour
             if (healthPoints <= 0){
                 if (type == DamageType.enemy){
                     // Hacer que el personaje se destruya luego de alejarse
-                    GetComponent<Follow>().derrotado = true;
+                    // GetComponent<Follow>().derrotado = true;
+                    GetComponent<FollowGuanacos>().derrotado = true;
                     puntaje.SumarPuntos(1);
                 }
                 else

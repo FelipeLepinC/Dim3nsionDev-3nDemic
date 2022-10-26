@@ -27,6 +27,7 @@ TagManager:
   - punto
   - Saliva
   - MainCameraVR
+  - DisparoSaliva
   layers:
   - Default
   - TransparentFX
@@ -34,7 +35,7 @@ TagManager:
   - Terrain
   - Water
   - UI
-  - 
+  - Guanacos
   - 
   - Targets
   - 
