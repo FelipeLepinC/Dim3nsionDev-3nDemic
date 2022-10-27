@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum BarType {
+public enum BarType
+{
     health,
     energy
 }
@@ -26,7 +27,8 @@ public class MenuBar : MonoBehaviour
         {
             target = transform.parent.transform.parent.gameObject;
         }
-        switch(barType){
+        switch (barType)
+        {
             case BarType.health:
                 slider.maxValue = target.GetComponent<Health>().HealthPoints;
                 break;
@@ -38,16 +40,13 @@ public class MenuBar : MonoBehaviour
 
     void Update()
     {
-        switch(barType){
+        switch (barType)
+        {
             case BarType.health:
                 slider.value = target.GetComponent<Health>().HealthPoints;
                 break;
             case BarType.energy:
-                if (GameObject.Find("Rana") == null)
-                {
-                    // Estamos en el juego del guanaco
-                    slider.value = target.GetComponent<Disparar>().cooldown_saliva;
-                }
+                slider.value = target.GetComponent<Disparar>().cooldown_saliva;
                 break;
         }
     }

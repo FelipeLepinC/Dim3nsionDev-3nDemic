@@ -6,17 +6,18 @@ using UnityEngine.SceneManagement;
 
 public class TimeControllerRana : MonoBehaviour
 {
-    [SerializeField] int min, seg;
-    [SerializeField] Text tiempo, mensaje, puntaje, capturas, medalla, puntajeTexto, capturasTexto, medallaPNG;
+    [SerializeField] Text tiempo, mensaje, puntaje, rostizadas, medalla, puntajeTexto, rostizadasTexto, medallaPNG;
     [SerializeField] Image bronze, silver, gold;
-    private float restante;
+    public float cronometroActual;
     private bool enMarcha;
     public Image panel;
-    public CharacterController controller;
-    public Puntaje contadores;
+    public FirstPersonMovement controller;
     public bool finished;
     public Text button;
-    public int capturado;
+    public Text cantJugadoresColisionandoObstaculoText;
+    public int cantJugadoresColisionandoObstaculo;
+    public int cantTotalJugadores;
+    public int rostizado;
     private int puntos;
     private int calculo;
     private int medallaObtenida;
@@ -25,24 +26,24 @@ public class TimeControllerRana : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        restante = (min * 60) + seg;
+        cronometroActual = 0;
         enMarcha = true;
         mensaje.enabled = false;
         panel.enabled = false;
         puntaje.enabled = false;
-        capturas.enabled = false;
+        rostizadas.enabled = false;
         medalla.enabled = false;
         finished = false;
         button.enabled = false;
         puntajeTexto.enabled = false;
-        capturasTexto.enabled = false;
+        rostizadasTexto.enabled = false;
         bronze.enabled = false;
         silver.enabled = false;
         gold.enabled = false;
-        //puntajeTexto.text = "456";
-        //capturasTexto.text = "456";
-        capturado = 0;
-        //medallaObtenida = 0;
+        rostizado = 0;
+        cantJugadoresColisionandoObstaculoText.enabled = false;
+        cantTotalJugadores = GameObject.Find("Jugadores").transform.childCount;
+        cantJugadoresColisionandoObstaculo = 0;
     }
 
     // Update is called once per frame
@@ -50,22 +51,21 @@ public class TimeControllerRana : MonoBehaviour
     {
         if (enMarcha)
         {
-            restante -= Time.deltaTime;
-            if (restante < 1) finished = true;
-            int tempMin = Mathf.FloorToInt(restante / 60);
-            int tempSeg = Mathf.FloorToInt(restante % 60);
+            cronometroActual += Time.deltaTime;
+            int tempMin = Mathf.FloorToInt(cronometroActual / 60);
+            int tempSeg = Mathf.FloorToInt(cronometroActual % 60);
             tiempo.text = string.Format("{00:00}:{01:00}", tempMin, tempSeg);
+            if (tempMin >= 5) finished = true;
+            cantJugadoresColisionandoObstaculoText.text = $"{cantJugadoresColisionandoObstaculo}/{cantTotalJugadores} Moviendo";
         }
         if (finished == true && enMarcha == true)
         {
-            contadores = GameObject.FindWithTag("Player").GetComponent<Puntaje>();
             enMarcha = false;
             mensaje.enabled = true;
             panel.enabled = true;
             controller.enabled = false;
             StartCoroutine(puntuaciones());
-            Debug.Log("Se acabó el tiempo");
-
+            Debug.Log("Termino la partida");
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 SceneManager.LoadScene("MainMenu");
@@ -75,15 +75,15 @@ public class TimeControllerRana : MonoBehaviour
 
     IEnumerator puntuaciones()
     {
-        puntajeTexto.text = "" + (int)contadores.puntos;
+        puntajeTexto.text = "" + (int)(cronometroActual / 60); ;
         //capturasTexto.text = "" + capturado;
         medallaObtenida = CalculoMedalla();
         yield return new WaitForSeconds(1);
         puntaje.enabled = true;
         puntajeTexto.enabled = true;
         yield return new WaitForSeconds(1);
-        capturas.enabled = true;
-        capturasTexto.enabled = true;
+        rostizadas.enabled = true;
+        rostizadasTexto.enabled = true;
         yield return new WaitForSeconds(1);
         medalla.enabled = true;
         if (medallaObtenida == 3)
@@ -101,25 +101,24 @@ public class TimeControllerRana : MonoBehaviour
         yield return new WaitForSeconds(1);
         finished = true;
         yield return new WaitForSeconds(1);
-        //SceneManager.LoadScene("MainMenu");
         button.enabled = true;
         finished = true;
     }
 
-    public void pillado()
+    public void Rostizado()
     {
-        capturado += 1;
+        rostizado += 1;
     }
 
     private int CalculoMedalla()
     {
-        puntos = (int)contadores.puntos;
-        calculo = puntos - 5 * capturado;
-        if (calculo >= 20)
+        puntos = (int)(cronometroActual / 60);
+        calculo = puntos + (int)rostizado;
+        if (calculo <= 2)
         {
             return 1;
         }
-        if (calculo >= 10 && calculo < 20)
+        else if (calculo <= 4)
         {
             return 2;
         }
@@ -128,6 +127,15 @@ public class TimeControllerRana : MonoBehaviour
             return 3;
         }
     }
-
+    public void JugadorColisionandoObstaculo()
+    {
+        cantJugadoresColisionandoObstaculo++;
+        cantJugadoresColisionandoObstaculoText.enabled = true;
+    }
+    public void JugadorNoColisionandoObstaculo()
+    {
+        cantJugadoresColisionandoObstaculo--;
+        cantJugadoresColisionandoObstaculoText.enabled = false;
+    }
 }
 

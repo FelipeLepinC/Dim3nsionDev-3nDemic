@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-    public DamageType type; 
+    public DamageType type;
     public TimeControllerGuanaco terminar;
     Puntaje puntaje;
 
@@ -23,15 +23,21 @@ public class Health : MonoBehaviour
     }
 
 
-    public float HealthPoints{
-        get{
+    public float HealthPoints
+    {
+        get
+        {
             return healthPoints;
         }
-        set{
+        set
+        {
             healthPoints = value;
-            if (healthPoints <= 0){
-                if (type == DamageType.enemy){
+            if (healthPoints <= 0)
+            {
+                if (type == DamageType.enemy)
+                {
                     // Hacer que el personaje se destruya luego de alejarse
+                    // GetComponent<Follow>().derrotado = true;
                     GetComponent<Follow>().derrotado = true;
                     puntaje.SumarPuntos(1);
                 }
@@ -40,7 +46,7 @@ public class Health : MonoBehaviour
                     terminar.finished = true;
                     Debug.Log("Perdiste");
                 }
-            } 
+            }
         }
     }
 
