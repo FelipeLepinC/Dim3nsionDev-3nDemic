@@ -32,6 +32,9 @@ public class Charco : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             esAlcanzado = true;
+            //aqui obtengo la posicion del charco
+            HealthRana vidaRana = collision.gameObject.GetComponent<HealthRana>();
+            vidaRana.set_checkpoint(gameObject.transform.position);
         }
     }
 }
