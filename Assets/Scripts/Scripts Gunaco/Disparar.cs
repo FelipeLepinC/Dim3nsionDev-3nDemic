@@ -1,8 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using UnityEngine.SceneManagement;
+using System.IO;
 
-public class Disparar : MonoBehaviour
+public class Disparar : MonoBehaviourPunCallbacks
 {
     public float cooldown_saliva = 0.0f;
     public const float COOLDOWN = 1.0f;
@@ -11,7 +14,7 @@ public class Disparar : MonoBehaviour
     int cantidad_disparos = 0;
 
     GameObject playercamera;
-    GameObject saliva;
+    public GameObject saliva;
 
     public void Start()
     {
@@ -20,7 +23,7 @@ public class Disparar : MonoBehaviour
         {
             playercamera = GameObject.Find("CenterEyeAnchor");
         }
-        saliva = GameObject.Find("Saliva");
+        // saliva = GameObject.Find("Saliva");
     }
 
     void FixedUpdate()
@@ -37,7 +40,7 @@ public class Disparar : MonoBehaviour
 
     void Shoot(int num_disparo){
         cooldown_saliva = 0;
-        GameObject BalaTemporal = Instantiate(saliva, playercamera.transform.position, playercamera.transform.rotation) as GameObject;
+        GameObject BalaTemporal = PhotonNetwork.Instantiate(saliva.name, playercamera.transform.position, playercamera.transform.rotation) as GameObject;
         BalaTemporal.name = $"Disparo_{num_disparo}";
         BalaTemporal.tag = "Saliva";
         Rigidbody rbBalaTemporal = BalaTemporal.GetComponent<Rigidbody>();
