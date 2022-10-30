@@ -12,6 +12,7 @@ public class Disparar : MonoBehaviour
 
     GameObject playercamera;
     GameObject saliva;
+    GameObject[] guanacoManager;
 
     public void Start()
     {
@@ -21,20 +22,25 @@ public class Disparar : MonoBehaviour
             playercamera = GameObject.Find("CenterEyeAnchor");
         }
         saliva = GameObject.Find("Saliva");
+        
     }
 
     void FixedUpdate()
     {
+        guanacoManager = GameObject.FindGameObjectsWithTag("GameManager");
+        //Debug.Log(guanacoManager.Length);
         cooldown_saliva += Time.deltaTime;
         if (Input.GetKey(KeyCode.E) || OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0)
         { 
             if (cooldown_saliva > COOLDOWN) 
             {
-                Shoot(++cantidad_disparos);
+                cooldown_saliva = 0;
+                guanacoManager[0].GetComponent<GuanacosManager>().Shoot(++cantidad_disparos);
             }
         }
     }
 
+    /*
     void Shoot(int num_disparo){
         cooldown_saliva = 0;
         GameObject BalaTemporal = Instantiate(saliva, playercamera.transform.position, playercamera.transform.rotation) as GameObject;
@@ -45,4 +51,5 @@ public class Disparar : MonoBehaviour
         rbBalaTemporal.AddForce(direccion_disparo * velocidad_disparo);
         Destroy(BalaTemporal, 5.0f);
     }
+    */
 }

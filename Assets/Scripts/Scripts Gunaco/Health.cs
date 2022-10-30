@@ -11,6 +11,7 @@ public class Health : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("Mi vida inicial es: " + healthPoints);
         if (gameObject.tag == "Player")
         {
             type = DamageType.player;
@@ -47,7 +48,9 @@ public class Health : MonoBehaviour
 
     public void RecibirDano(float dano_recibido)
     {
+        dano_recibido = 20.0f;
         HealthPoints = HealthPoints - dano_recibido;
+        Debug.Log("Me quedan " + HealthPoints + "de vida");
     }
 
     [SerializeField]

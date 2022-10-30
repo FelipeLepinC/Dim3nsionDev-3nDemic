@@ -1,11 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class GuanacosManager : MonoBehaviour
 {
     public GameObject[] jugadores;
     public int total;
+    GameObject playercamera;
+    GameObject saliva;
+    public float cooldown_saliva = 0.0f;
+    public const float COOLDOWN = 1.0f;
+    float velocidad_disparo = 5000.0f;
+    int cantidad_disparos = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,9 +20,9 @@ public class GuanacosManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        cooldown_saliva += Time.deltaTime;
     }
 
     public void ActualizarContador(int t)
@@ -28,7 +35,22 @@ public class GuanacosManager : MonoBehaviour
             Debug.Log("Hola soy un jugador");
             //p.GetComponent<AppleCounter>().InHomeForAll(total);
         }
+    }
 
-
+    public void Shoot(int num_disparo){
+        playercamera = GameObject.Find("Main Camera");
+        if (playercamera == null)
+        {
+            playercamera = GameObject.Find("CenterEyeAnchor");
+        }
+        saliva = GameObject.Find("Saliva");
+        cooldown_saliva = 0;
+        GameObject BalaTemporal = PhotonNetwork.Instantiate(saliva.name+"1", playercamera.transform.position + new Vector3 (0,- 0.5f,0), playercamera.transform.rotation) as GameObject;
+        BalaTemporal.name = $"Disparo_{num_disparo}";
+        BalaTemporal.tag = "Saliva";
+        Rigidbody rbBalaTemporal = BalaTemporal.GetComponent<Rigidbody>();
+        Vector3 direccion_disparo = playercamera.transform.forward;
+        rbBalaTemporal.AddForce(direccion_disparo * velocidad_disparo);
+        Destroy(BalaTemporal, 5.0f);
     }
 }

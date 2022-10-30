@@ -64,7 +64,7 @@ public class RoomGuanacoManager : MonoBehaviourPunCallbacks
 
     IEnumerator SpawnItems()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0);
         GameObject quirquincho = PhotonNetwork.Instantiate(GuanacoManager.name, Vector3.zero, Quaternion.identity);
     }
 
@@ -76,7 +76,7 @@ public class RoomGuanacoManager : MonoBehaviourPunCallbacks
 
         for(int i=0; i < numeroDeEnemigos; i++){
             GameObject enemy = PhotonNetwork.Instantiate(enemyPrefab.name, portal, Quaternion.identity);
-            enemy.AddComponent<Enemy>();
+            //enemy.AddComponent<Enemy>();
             yield return new WaitForSeconds(Random.Range(10,20));
             // alerta.SetActive(true);
         }

@@ -22,9 +22,11 @@ public class ControllerPlayers : MonoBehaviour
         view = GetComponent<PhotonView>();
         for (int i = 0; i < gameObject.transform.childCount; i++)
         {
-            if(gameObject.transform.GetChild(i).tag != "Capsula"){
-                Debug.Log(gameObject.transform.GetChild(i).tag + " desactivada");
-                gameObject.transform.GetChild(i).gameObject.SetActive(false); //Se desactivan todos los componentes hijos de los jugadores nuevos para que no se mezclen con el actual
+            Debug.Log(gameObject.transform.GetChild(i).tag + " desactivada");
+            gameObject.transform.GetChild(i).gameObject.SetActive(false); //Se desactivan todos los componentes hijos de los jugadores nuevos para que no se mezclen con el actual
+            if(gameObject.transform.GetChild(i).tag == "Capsula" || gameObject.transform.GetChild(i).tag == "Capsula"){
+                Debug.Log(gameObject.transform.GetChild(i).tag + " reactivada");
+                gameObject.transform.GetChild(i).gameObject.SetActive(true); //Se desactivan todos los componentes hijos de los jugadores nuevos para que no se mezclen con el actual
             }  
         }
 
