@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Health : MonoBehaviour
+public class Health1 : MonoBehaviour
 {
     public DamageType type; 
     public TimeControllerGuanaco terminar;
     Puntaje puntaje;
-    Tutorial tuto;
+    Tutorial turo;
 
     void Start()
     {
@@ -20,11 +20,8 @@ public class Health : MonoBehaviour
         {
             type = DamageType.enemy;
             puntaje = GameObject.FindWithTag("Player").GetComponent<Puntaje>();
-            if(puntaje.tutorial){
-                tuto = GameObject.FindWithTag("Player").GetComponent<Tutorial>();
-            }
+            turo = GameObject.FindWithTag("Player").GetComponent<Tutorial>();
         }
-        
     }
 
 
@@ -39,7 +36,7 @@ public class Health : MonoBehaviour
                     // Hacer que el personaje se destruya luego de alejarse
                     GetComponent<Follow>().derrotado = true;
                     puntaje.SumarPuntos(1);
-                    tuto.murio = true;
+                    turo.murio = true;
                 }
                 else
                 {

@@ -8,6 +8,7 @@ public class Puntaje : MonoBehaviour
 {
     public int puntos = 0;
     TextMeshProUGUI puntajeGuanaco;
+    public bool tutorial = false;
 
     private void Start(){
         puntajeGuanaco = GameObject.Find("Puntaje").GetComponent<TextMeshProUGUI>();
