@@ -9304,6 +9304,8 @@ MonoBehaviour:
   obstacleMask:
     serializedVersion: 2
     m_Bits: 0
+  min: 100000000
+  targetMinimo: {fileID: 0}
   visibleTargets: []
 --- !u!195 &1379747595
 NavMeshAgent:
@@ -13557,6 +13559,14 @@ PrefabInstance:
     - target: {fileID: 5288008592917880283, guid: f753d5d1c77907c4b9b893259632a48d, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5288008593202595743, guid: f753d5d1c77907c4b9b893259632a48d, type: 3}
+      propertyPath: min
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5288008593202595743, guid: f753d5d1c77907c4b9b893259632a48d, type: 3}
+      propertyPath: seg
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5288008593205598948, guid: f753d5d1c77907c4b9b893259632a48d, type: 3}
       propertyPath: m_Sprite

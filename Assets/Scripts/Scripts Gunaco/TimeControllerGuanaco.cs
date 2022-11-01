@@ -66,7 +66,7 @@ public class TimeControllerGuanaco : MonoBehaviour
             Debug.Log("Se acabó el tiempo");
 
             if (Input.GetKeyDown(KeyCode.Return)){
-                SceneManager.LoadScene("MainMenu");
+                SceneManager.LoadScene("Museo VR");
             }
         }
     }

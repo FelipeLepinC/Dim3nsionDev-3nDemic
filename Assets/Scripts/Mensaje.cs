@@ -25,27 +25,37 @@ public class Mensaje : MonoBehaviour
             iniciar.SetActive(false);
         }
 
-        if(estadoMensaje && mensaje == "Presiona E para jugar"){
+        if(estadoMensaje && mensaje == "Presiona para jugar"){
             if (OVRInput.Get(OVRInput.Button.One))
             {
                 if(juego == "Quirquincho"){
                     audiol.Play();
-                    LimpiarMensajeTecla();
+                    Quirquincho();
                 }
-                if(juego == "Tortuga"){
+                else if(juego == "Tortuga"){
                     audiol.Play();
                     Tortuguita();
+                }
+                else if (juego == "Guanaco")
+                {
+                    audiol.Play();
+                    Guanaco();
                 }
             }
         }
     }
 
-    private void LimpiarMensajeTecla(){
+    private void Quirquincho(){
         SceneManager.LoadScene("Quirquincho VR");
     }
 
     private void Tortuguita(){
         SceneManager.LoadScene("JuegoTortuga VR");
+    }
+
+    private void Guanaco()
+    {
+        SceneManager.LoadScene("JuegoGuanaco VR");
     }
 
     private void OnTriggerEnter(Collider other){

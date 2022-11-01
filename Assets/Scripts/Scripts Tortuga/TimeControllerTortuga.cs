@@ -81,7 +81,7 @@ public class TimeControllerTortuga : MonoBehaviour
             tortuga.enabled = false;
             contador.enabled = false;
             if (Input.GetKeyDown(KeyCode.Return)){
-                SceneManager.LoadScene("MainMenu");
+                SceneManager.LoadScene("Museo VR");
             }
         }
     }

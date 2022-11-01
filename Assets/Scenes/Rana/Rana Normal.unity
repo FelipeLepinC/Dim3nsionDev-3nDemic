@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -532,7 +532,7 @@ MonoBehaviour:
   controller: {fileID: 114963311548906265}
   finished: 0
   button: {fileID: 835937829}
-  cantJugadoresColisionandoObstaculoText: {fileID: 0}
+  cantJugadoresColisionandoObstaculoText: {fileID: 101281644}
   cantJugadoresColisionandoObstaculo: 0
   cantTotalJugadores: 0
   rostizado: 0
@@ -620,7 +620,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20, y: -282}
+  m_AnchoredPosition: {x: -20, y: -235}
   m_SizeDelta: {x: 5.12, y: 5.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &700563244 stripped
@@ -2214,6 +2214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d202a48cf0dd6c847a4a26a5e4fc1337, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sin_tp: 0
+  ultimo_checkpoint: {x: 573, y: 20, z: 588}
   healthPoints: 100
 --- !u!4 &181155214335451496
 Transform:

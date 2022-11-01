@@ -13637,7 +13637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 397740cfc2bcbae4d8341eb9dbe72ba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  min: 4
+  min: 3
   seg: 0
   tiempo: {fileID: 1391338934}
   mensaje: {fileID: 1393872268}

@@ -62,7 +62,7 @@ public class TimeController : MonoBehaviour
         }
         if (finished == true){
             if (Input.GetKeyDown(KeyCode.Return)){
-                SceneManager.LoadScene("MainMenu");
+                SceneManager.LoadScene("Museo VR");
             }
         }
     }

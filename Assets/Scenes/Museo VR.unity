@@ -5016,6 +5016,10 @@ PrefabInstance:
       propertyPath: iniciar
       value: 
       objectReference: {fileID: 1276316809}
+    - target: {fileID: 5726635385068580153, guid: 6894728d774f81e4ea43f7d5b5fc7b6a, type: 3}
+      propertyPath: mensaje
+      value: Presiona para jugar
+      objectReference: {fileID: 0}
     - target: {fileID: 5726635385068580156, guid: 6894728d774f81e4ea43f7d5b5fc7b6a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.273
@@ -5262,11 +5266,15 @@ PrefabInstance:
     - target: {fileID: 5726635385068580153, guid: 6894728d774f81e4ea43f7d5b5fc7b6a, type: 3}
       propertyPath: audiol
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1231274337}
     - target: {fileID: 5726635385068580153, guid: 6894728d774f81e4ea43f7d5b5fc7b6a, type: 3}
       propertyPath: iniciar
       value: 
       objectReference: {fileID: 735363374}
+    - target: {fileID: 5726635385068580153, guid: 6894728d774f81e4ea43f7d5b5fc7b6a, type: 3}
+      propertyPath: mensaje
+      value: Presiona para jugar
+      objectReference: {fileID: 0}
     - target: {fileID: 5726635385968563128, guid: 6894728d774f81e4ea43f7d5b5fc7b6a, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -5325,6 +5333,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 722bc31552b85c1499fa73d959520ee5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6894728d774f81e4ea43f7d5b5fc7b6a, type: 3}
+--- !u!82 &1231274337 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5726635385068580152, guid: 6894728d774f81e4ea43f7d5b5fc7b6a, type: 3}
+  m_PrefabInstance: {fileID: 1231274336}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1236102578
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6869,6 +6882,10 @@ PrefabInstance:
       propertyPath: iniciar
       value: 
       objectReference: {fileID: 897101823}
+    - target: {fileID: 5726635385068580153, guid: 6894728d774f81e4ea43f7d5b5fc7b6a, type: 3}
+      propertyPath: mensaje
+      value: Presiona para jugar
+      objectReference: {fileID: 0}
     - target: {fileID: 5726635385968563128, guid: 6894728d774f81e4ea43f7d5b5fc7b6a, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -8674,6 +8691,10 @@ PrefabInstance:
       propertyPath: iniciar
       value: 
       objectReference: {fileID: 1501182751}
+    - target: {fileID: 5986811978777795954, guid: 08254b4d237a07041892af62bf691988, type: 3}
+      propertyPath: mensaje
+      value: Presiona para jugar
+      objectReference: {fileID: 0}
     - target: {fileID: 5986811978777795955, guid: 08254b4d237a07041892af62bf691988, type: 3}
       propertyPath: m_audioClip
       value: 
