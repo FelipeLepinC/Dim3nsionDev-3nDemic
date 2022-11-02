@@ -705,6 +705,7 @@ MonoBehaviour:
   com: 0
   contador: 0
   pasos: 1
+  jugador: {x: 0, y: 0, z: 0}
   bienhecho: {fileID: 440624695}
   muevase: {fileID: 828608230}
   dispara: {fileID: 1689294171}
@@ -2696,7 +2697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2709730986967102241, guid: 64150cf320349504788c88c871520c2a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.17
+      value: 2.99
       objectReference: {fileID: 0}
     - target: {fileID: 2709730986967102241, guid: 64150cf320349504788c88c871520c2a, type: 3}
       propertyPath: m_LocalRotation.w

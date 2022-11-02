@@ -16,6 +16,7 @@ public class Tutorial : MonoBehaviour
     public bool com = false;
     public float contador = 0.0f;
     public float pasos = 1.0f;
+    public Vector3 jugador;
 
     public GameObject bienhecho;
     public GameObject muevase;
@@ -24,13 +25,16 @@ public class Tutorial : MonoBehaviour
     public GameObject puma;
     public GameObject completado;
     
-
+    void Start(){
+        jugador = transform.position;
+    }
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical") ){
-            caminando += 0.2f;
-            if(!semovio && caminando >= 0.2f){
+        if(jugador != transform.position){
+            caminando += Time.deltaTime;
+            jugador = transform.position;
+            if(!semovio && caminando >= 2.0f){
                 semovio = true;
                 muevase.SetActive(false);
                 bienhecho.SetActive(true);
