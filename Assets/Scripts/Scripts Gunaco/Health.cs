@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
     public DamageType type; 
     public TimeControllerGuanaco terminar;
     Puntaje puntaje;
+    GuanacosManager puntos;
 
     void Start()
     {
@@ -33,9 +34,11 @@ public class Health : MonoBehaviour
             if (healthPoints <= 0){
                 if (type == DamageType.enemy){
                     // Hacer que el personaje se destruya luego de alejarse
+                    puntos = GameObject.FindWithTag("GameManager").GetComponent<GuanacosManager>();
+                    puntos.SumarPuntos(1);
                     // GetComponent<Follow>().derrotado = true;
                     GetComponent<FollowGuanacos>().derrotado = true;
-                    puntaje.SumarPuntos(1);
+                    //puntaje.SumarPuntos(1);
                 }
                 else
                 {
@@ -48,7 +51,7 @@ public class Health : MonoBehaviour
 
     public void RecibirDano(float dano_recibido)
     {
-        dano_recibido = 20.0f;
+        //dano_recibido = 20.0f;
         HealthPoints = HealthPoints - dano_recibido;
         Debug.Log("Me quedan " + HealthPoints + "de vida");
     }

@@ -597,7 +597,7 @@ MonoBehaviour:
   cameras: []
   total: 0
   enemigos: []
-  numeroDeEnemigos: 5
+  numeroDeEnemigos: 10
 --- !u!1 &308044597
 GameObject:
   m_ObjectHideFlags: 0

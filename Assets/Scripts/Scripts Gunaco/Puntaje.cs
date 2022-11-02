@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Photon.Pun;
 
 public class Puntaje : MonoBehaviour
 {
@@ -14,7 +15,9 @@ public class Puntaje : MonoBehaviour
     }
 
     private void Update(){
+        puntos = GameObject.FindWithTag("GameManager").GetComponent<GuanacosManager>().puntos;
         puntajeGuanaco.text = puntos.ToString();
+        
     }
 
     public void SumarPuntos(int cuantos){

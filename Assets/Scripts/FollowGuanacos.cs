@@ -15,6 +15,7 @@ public class FollowGuanacos : MonoBehaviourPunCallbacks
     Transform destination;
     GameObject player;
     GameObject alerta;
+    GuanacosManager puntos;
 
     public LayerMask guanacosMask;
     PhotonView view;
@@ -80,7 +81,11 @@ public class FollowGuanacos : MonoBehaviourPunCallbacks
             deltaTime = deltaTime + Time.deltaTime;
             if (deltaTime > segundosAlejandose) 
             {
-                if (view.IsMine) PhotonNetwork.Destroy(gameObject);
+                if (view.IsMine) {
+                    //puntos = GameObject.FindWithTag("GameManager").GetComponent<GuanacosManager>();
+                    //puntos.SumarPuntos(1);
+                    PhotonNetwork.Destroy(gameObject);
+                    }
             }
             else
             {

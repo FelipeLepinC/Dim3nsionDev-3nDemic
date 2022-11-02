@@ -13,6 +13,8 @@ public class GuanacosManager : MonoBehaviour
     public const float COOLDOWN = 1.0f;
     float velocidad_disparo = 5000.0f;
     int cantidad_disparos = 0;
+    public int puntos = 0;
+    PhotonView view;
     // Start is called before the first frame update
     void Start()
     {
@@ -53,4 +55,16 @@ public class GuanacosManager : MonoBehaviour
         rbBalaTemporal.AddForce(direccion_disparo * velocidad_disparo);
         Destroy(BalaTemporal, 5.0f);
     }
+
+    public void SumarPuntos(int cuantos){
+        puntos += cuantos;
+        //view.RPC("Actualizar", RpcTarget.OthersBuffered, puntos);
+    
+    }
+    /*
+    [PunRPC]
+    public void Actualizar(int valor){
+        puntos = valor;
+    }
+    */
 }

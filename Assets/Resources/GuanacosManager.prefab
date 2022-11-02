@@ -99,6 +99,7 @@ MonoBehaviour:
   jugadores: []
   total: 0
   cooldown_saliva: 0
+  puntos: 0
 --- !u!114 &-5900272002420924947
 MonoBehaviour:
   m_ObjectHideFlags: 0
