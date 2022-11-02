@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class Charco : MonoBehaviour
 {
-    Transform transformCharco;
+    Transform transformInicialCharco;
+    Vector3 escalaInicialCharco;
     bool esAlcanzado = false;
     const float tiempoRestanteCharco = 60f; // cantidad de segundos para que se desaparezca
     float tiempoActualCharco = 0f;
     void Start()
     {
-        transformCharco = gameObject.transform;
+        transformInicialCharco = gameObject.transform;
+        escalaInicialCharco = gameObject.transform.localScale;
     }
 
     // Update is called once per frame
@@ -20,6 +22,7 @@ public class Charco : MonoBehaviour
         {
             // Comenzar a achicar hasta desaparecer
             tiempoActualCharco = tiempoActualCharco + Time.deltaTime;
+            SecarLago();
             if (tiempoActualCharco > tiempoRestanteCharco)
             {
                 Destroy(gameObject);
@@ -36,5 +39,11 @@ public class Charco : MonoBehaviour
             HealthRana vidaRana = collision.gameObject.GetComponent<HealthRana>();
             vidaRana.set_checkpoint(gameObject.transform.position);
         }
+    }
+
+    private void SecarLago()
+    {
+        float proporcionTiempo = tiempoActualCharco / tiempoRestanteCharco;
+        gameObject.transform.localScale = new Vector3(escalaInicialCharco.x, escalaInicialCharco.y* (1-proporcionTiempo), escalaInicialCharco.z);
     }
 }

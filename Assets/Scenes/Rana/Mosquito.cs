@@ -122,7 +122,7 @@ public class Mosquito : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Lengua")
         {
             HealthRana vidaPlayer = collision.gameObject.GetComponent<HealthRana>();
             vidaPlayer.GanarVida(vidaAgregada);
