@@ -39,7 +39,7 @@ public class FollowGuanacos : MonoBehaviourPunCallbacks
 		}
 	}
 
-
+    [PunRPC]
     public void FindVisibleTargets()
 	{
         float disMin = 10000000.0f;
@@ -76,11 +76,12 @@ public class FollowGuanacos : MonoBehaviourPunCallbacks
         }
         else
         {
+            Debug.Log("El puma es derrotado");
             // alerta.SetActive(false);
             deltaTime = deltaTime + Time.deltaTime;
             if (deltaTime > segundosAlejandose) 
             {
-                if (view.IsMine) PhotonNetwork.Destroy(gameObject);
+                Destroy(gameObject);
             }
             else
             {

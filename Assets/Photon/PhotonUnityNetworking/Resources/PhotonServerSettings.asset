@@ -44,6 +44,10 @@ MonoBehaviour:
   - SumarOnline
   - RPC_SumarOnline
   - GenerateNewEnemy
+  - FindVisibleTargets
+  - Derrotado
+  - ModificarVida
+  - EjercerFuerza
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
