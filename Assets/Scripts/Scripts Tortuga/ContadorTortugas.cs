@@ -8,7 +8,7 @@ public class ContadorTortugas : MonoBehaviour
     public Text TortugaCounter;
     public GameObject PanelTiempo;
     private TimeControllerTortuga tiempo;
-    private int maxNPC;
+    public int maxNPC;
     public int rescatadas;
     // Update is called once per frame
     void Start()
