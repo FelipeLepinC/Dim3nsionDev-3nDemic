@@ -32,7 +32,7 @@ public class TutorialQ : MonoBehaviour
     void Update()
     {
         if(contador.GetComponent<AppleCounter1>().counter >= 1){
-            if(!tocamanzana){
+            if(!tocomanzana){
                 tocomanzana = true;
                 tocamanzana.SetActive(false);
                 bienhecho.SetActive(true);
