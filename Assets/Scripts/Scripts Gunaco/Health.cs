@@ -76,4 +76,9 @@ public class Health : MonoBehaviourPunCallbacks
 
     [SerializeField]
     private float healthPoints = 100.0f;
+
+    public void RecibirDano_Only_Player(float dano_recibido)
+    {
+        HealthPoints = HealthPoints - dano_recibido;
+    }
 }
