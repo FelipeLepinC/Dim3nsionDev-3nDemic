@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -5900272002420924947}
   m_Layer: 0
   m_Name: GuanacosManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,6 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jugadores: []
   total: 0
+  puntos: 0
 --- !u!114 &-5900272002420924947
 MonoBehaviour:
   m_ObjectHideFlags: 0

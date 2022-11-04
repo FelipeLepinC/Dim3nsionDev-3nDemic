@@ -15,6 +15,7 @@ public class FollowGuanacos : MonoBehaviourPunCallbacks
     Transform destination;
     GameObject player;
     GameObject alerta;
+    GuanacosManager Manager;
 
     public LayerMask guanacosMask;
     PhotonView view;
@@ -76,11 +77,14 @@ public class FollowGuanacos : MonoBehaviourPunCallbacks
         }
         else
         {
-            Debug.Log("El puma es derrotado");
+            //Debug.Log("El puma es derrotado");
             // alerta.SetActive(false);
             deltaTime = deltaTime + Time.deltaTime;
             if (deltaTime > segundosAlejandose) 
             {
+                Debug.Log("El puma es derrotado");
+                Manager = GameObject.FindWithTag("GameManager").GetComponent<GuanacosManager>();
+                Manager.SumarPuntos();
                 Destroy(gameObject);
             }
             else

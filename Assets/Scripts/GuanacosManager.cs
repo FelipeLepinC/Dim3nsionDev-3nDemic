@@ -6,6 +6,7 @@ public class GuanacosManager : MonoBehaviour
 {
     public GameObject[] jugadores;
     public int total;
+    public int puntos = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +29,9 @@ public class GuanacosManager : MonoBehaviour
             Debug.Log("Hola soy un jugador");
             //p.GetComponent<AppleCounter>().InHomeForAll(total);
         }
+    }
 
-
+    public void SumarPuntos(){
+        puntos = puntos + 1;
     }
 }

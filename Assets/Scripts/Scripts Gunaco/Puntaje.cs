@@ -8,16 +8,19 @@ public class Puntaje : MonoBehaviour
 {
     public int puntos = 0;
     TextMeshProUGUI puntajeGuanaco;
+    GameObject manager;
 
     private void Start(){
         puntajeGuanaco = GameObject.Find("Puntaje").GetComponent<TextMeshProUGUI>();
     }
 
     private void Update(){
+        manager = GameObject.FindWithTag("GameManager");
+        puntos = manager.GetComponent<GuanacosManager>().puntos;
         puntajeGuanaco.text = puntos.ToString();
     }
 
     public void SumarPuntos(int cuantos){
-        puntos += cuantos;
+        //puntos += cuantos;
     }
 }
