@@ -37,7 +37,7 @@ public class Charco : MonoBehaviour
             esAlcanzado = true;
             //aqui obtengo la posicion del charco
             HealthRana vidaRana = collision.gameObject.GetComponent<HealthRana>();
-            vidaRana.set_checkpoint(gameObject.transform.position);
+            vidaRana.set_checkpoint(transformInicialCharco.position);
         }
     }
 

@@ -13,7 +13,7 @@ public class MenuBarRana : MonoBehaviour
     void Start()
     {
         slider = GetComponent<Slider>();
-        target = transform.parent.transform.parent.transform.parent.gameObject;
+        if (target == null) target = transform.parent.transform.parent.transform.parent.gameObject;
         vida = target.GetComponent<HealthRana>();
     }
 

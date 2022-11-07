@@ -18,7 +18,7 @@ public class Rostizandose : MonoBehaviour
     private void OnCollisionStay(Collision collision)
     {
         string tag = collision.gameObject.tag;
-        if (tag != "Agua" && tag != "Finish" && tag != "Obstaculo") // Si no está pisando agua o está en la meta
+        if (tag != "Agua" && tag != "Finish" && tag != "Obstaculo" && tag != "Player") // Si no está pisando agua o está en la meta
         {
             vida.RecibirDano(0.5f);
             alerta.SetActive(true);

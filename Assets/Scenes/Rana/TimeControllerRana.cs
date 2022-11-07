@@ -63,7 +63,7 @@ public class TimeControllerRana : MonoBehaviour
             enMarcha = false;
             mensaje.enabled = true;
             panel.enabled = true;
-            controller.enabled = false;
+            if (controller != null) controller.enabled = false;
             StartCoroutine(puntuaciones());
             Debug.Log("Termino la partida");
             if (Input.GetKeyDown(KeyCode.Return))

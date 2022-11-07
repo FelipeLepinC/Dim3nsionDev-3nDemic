@@ -25,7 +25,7 @@ public class Jump : MonoBehaviour
     void LateUpdate()
     {
         // Jump when the Jump button is pressed and we are on the ground.
-        if (Input.GetButtonDown("Jump") && (!groundCheck || groundCheck.isGrounded))
+        if ((Input.GetButtonDown("Jump") || OVRInput.GetDown(OVRInput.Button.One)) && (!groundCheck || groundCheck.isGrounded)) // ver la posibilidad de que salte en el agua
         {
             rigidbody.AddForce(Vector3.up * 100 * jumpStrength);
             Jumped?.Invoke();

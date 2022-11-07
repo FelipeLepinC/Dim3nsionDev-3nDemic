@@ -13,6 +13,17 @@ public class Mosquito : MonoBehaviour
     private float y;
     private float z;
 
+    //Sonidos
+
+    private SoundManager soundManager;
+
+    // Update is called once per frame
+
+    private void Awake()
+    {
+        soundManager = FindObjectOfType<SoundManager>();
+    }
+
     void Start()
     {
         //vidaAgregada = 10f;
@@ -124,6 +135,7 @@ public class Mosquito : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Lengua")
         {
+            soundManager.SeleccionAudio(0, 1.0f);
             HealthRana vidaPlayer = collision.gameObject.GetComponent<HealthRana>();
             vidaPlayer.GanarVida(vidaAgregada);
             Destroy(gameObject);

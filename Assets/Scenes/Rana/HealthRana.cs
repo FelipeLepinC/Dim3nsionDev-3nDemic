@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Unity.XR.CoreUtils;
 
 public class HealthRana : MonoBehaviour
 {
     TimeControllerRana timeControllerRana;
     public int sin_tp = 0;
-    public Vector3 ultimo_checkpoint = new Vector3(573, 20, 588); //este vector debe tener el tp inicial
+    public Vector3 ultimoCheckpoint; //este vector debe tener el tp inicial
+    public bool necesitaSerTeletransportadoVR = false;
 
     void Start()
     {
         timeControllerRana = GameObject.Find("PanelTiempo").GetComponent<TimeControllerRana>();
+        ultimoCheckpoint = new Vector3(436.5181f, 9.9086f, 860.087f);
     }
 
 
@@ -36,8 +39,17 @@ public class HealthRana : MonoBehaviour
 
     void RpcRespawn()
     {
-        // move back to zero location
-        transform.position = ultimo_checkpoint;
+        float delta_x = gameObject.transform.position.x - ultimoCheckpoint.x;
+        float delta_y = gameObject.transform.position.y - ultimoCheckpoint.y;
+        float delta_z = gameObject.transform.position.z - ultimoCheckpoint.z;
+        Vector3 finalDirection = new Vector3(-delta_x,-delta_y,-delta_z);
+        Debug.Log(finalDirection);
+        gameObject.GetComponent<CharacterController>().Move(finalDirection);
+    }
+
+    public void setNecesitaSerTeletransportadoVR(bool opcion)
+    {
+        necesitaSerTeletransportadoVR = opcion;
     }
 
     public void RecibirDano(float dano_recibido)
@@ -52,7 +64,7 @@ public class HealthRana : MonoBehaviour
 
     public void set_checkpoint(Vector3 posicion)
     {
-        ultimo_checkpoint = posicion;
+        ultimoCheckpoint = posicion;
     }
 
     [SerializeField]
