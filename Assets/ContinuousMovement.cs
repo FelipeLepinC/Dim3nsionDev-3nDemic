@@ -17,6 +17,8 @@ public class ContinuousMovement : MonoBehaviour
     private CharacterController character;
     private bool primaryButtonState;
     private XROrigin rig;
+    public Disparar disparar;
+    int cantidad_disparos = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,9 +40,11 @@ public class ContinuousMovement : MonoBehaviour
         Quaternion headYaw = Quaternion.Euler(0, rig.Camera.transform.eulerAngles.y, 0);
         Vector4 direction = headYaw * new Vector3(inputAxis.x, 0, inputAxis.y);
         //character.Move(direction * Time.fixedDeltaTime * speed);
-        Debug.Log(primaryButtonState);
+        //Debug.Log(primaryButtonState);
         if (primaryButtonState){
             character.Move(direction * Time.fixedDeltaTime * speed * 2);
+            //disparar = gameObject.GetComponent<Disparar>();
+            //disparar.Shoot(++cantidad_disparos);
         }
         else{
             character.Move(direction * Time.fixedDeltaTime * speed);

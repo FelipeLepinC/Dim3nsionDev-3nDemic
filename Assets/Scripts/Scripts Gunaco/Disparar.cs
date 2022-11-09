@@ -4,6 +4,10 @@ using UnityEngine;
 using Photon.Pun;
 using UnityEngine.SceneManagement;
 using System.IO;
+using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit;
+using Unity.XR.CoreUtils;
+
 
 public class Disparar : MonoBehaviourPunCallbacks
 {
@@ -16,6 +20,13 @@ public class Disparar : MonoBehaviourPunCallbacks
     GameObject playercamera;
     GameObject saliva;
 
+    //Oculus
+    public XRNode inputSource;
+    private Vector2 inputAxis;
+    private bool primaryButtonState;
+    private XROrigin rig;
+
+    //Start
     public void Start()
     {
         playercamera = GameObject.Find("Main Camera");
@@ -28,8 +39,11 @@ public class Disparar : MonoBehaviourPunCallbacks
 
     void FixedUpdate()
     {
+        InputDevice device = InputDevices.GetDeviceAtXRNode(inputSource);
+        device.TryGetFeatureValue(CommonUsages.triggerButton, out primaryButtonState);
         cooldown_saliva += Time.deltaTime;
-        if (Input.GetKey(KeyCode.E) || OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0)
+        
+        if (Input.GetKey(KeyCode.E) || OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0 || primaryButtonState)
         { 
             if (cooldown_saliva > COOLDOWN) 
             {
@@ -38,7 +52,7 @@ public class Disparar : MonoBehaviourPunCallbacks
         }
     }
 
-    void Shoot(int num_disparo){
+    public void Shoot(int num_disparo){
         cooldown_saliva = 0;
         GameObject BalaTemporal = Instantiate(saliva, playercamera.transform.position, playercamera.transform.rotation) as GameObject;
         BalaTemporal.name = $"Disparo_{num_disparo}";

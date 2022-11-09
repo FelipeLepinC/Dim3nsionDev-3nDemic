@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit;
+using Unity.XR.CoreUtils;
 
 public class DisparoRayCast : MonoBehaviour
 {
@@ -11,6 +14,12 @@ public class DisparoRayCast : MonoBehaviour
     public const float COOLDOWN = 1.0f;
     public GameObject camera;
 
+    //Oculus
+    public XRNode inputSource;
+    private Vector2 inputAxis;
+    private bool primaryButtonState;
+    private XROrigin rig;
+
     private void Start() {
         
     }
@@ -18,8 +27,11 @@ public class DisparoRayCast : MonoBehaviour
     
     void Update()
     {
+        InputDevice device = InputDevices.GetDeviceAtXRNode(inputSource);
+        device.TryGetFeatureValue(CommonUsages.triggerButton, out primaryButtonState);
         cooldown_saliva += Time.deltaTime;
-        if (Input.GetKey(KeyCode.E) || OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0)
+        Debug.Log(primaryButtonState);
+        if (Input.GetKey(KeyCode.E) || OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0 || primaryButtonState)
         {
             if (cooldown_saliva > COOLDOWN)
             {
