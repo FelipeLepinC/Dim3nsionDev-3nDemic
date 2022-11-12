@@ -9,6 +9,7 @@ public class Health : MonoBehaviourPunCallbacks
     public DamageType type; 
     public TimeControllerGuanaco terminar;
     Puntaje puntaje;
+    Tutorial tuto;
 
     void Start()
     {
@@ -20,6 +21,10 @@ public class Health : MonoBehaviourPunCallbacks
         {
             type = DamageType.enemy;
             puntaje = GameObject.FindWithTag("Player").GetComponent<Puntaje>();
+
+            if(puntaje.tutorial){
+                tuto = GameObject.FindWithTag("Player").GetComponent<Tutorial>();
+            }
         }
     }
 
@@ -37,6 +42,7 @@ public class Health : MonoBehaviourPunCallbacks
                     this.photonView.RPC("Derrotado", RpcTarget.AllBuffered, true);
                     // GetComponent<FollowGuanacos>().derrotado = true;
                     // puntaje.SumarPuntos(1);
+                    tuto.murio = true;
                 }
                 else
                 {

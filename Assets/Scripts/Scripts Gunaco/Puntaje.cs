@@ -8,6 +8,7 @@ public class Puntaje : MonoBehaviour
 {
     public int puntos = 0;
     TextMeshProUGUI puntajeGuanaco;
+    public bool tutorial = false;
     GameObject manager;
 
     private void Start(){

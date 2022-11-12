@@ -31,7 +31,7 @@ public class Cazador1 : MonoBehaviour
     NavMeshAgent nav;
     private bool visto = false;
     private bool perdido;
-    private bool trapped;
+    public bool trapped;
 
     // Animaciones
     Animator animator;
