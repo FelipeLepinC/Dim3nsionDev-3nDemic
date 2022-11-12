@@ -6,8 +6,8 @@ using Photon.Pun;
 public class ControllerPlayers : MonoBehaviour
 {
     PhotonView view;
-    public GameObject camera;
-    public GameObject player;
+    //public GameObject camera;
+    //public GameObject player;
     public int contador;
 
      public int counter;
