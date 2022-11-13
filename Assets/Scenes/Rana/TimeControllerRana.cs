@@ -75,7 +75,9 @@ public class TimeControllerRana : MonoBehaviour
 
     IEnumerator puntuaciones()
     {
-        puntajeTexto.text = "" + (int)(cronometroActual / 60); ;
+        puntos = (int)(cronometroActual / 60);
+        calculo = puntos + (int)rostizado;
+        puntajeTexto.text = "" + $"{calculo}";
         //capturasTexto.text = "" + capturado;
         medallaObtenida = CalculoMedalla();
         yield return new WaitForSeconds(1);
