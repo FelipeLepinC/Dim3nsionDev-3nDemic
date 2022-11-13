@@ -10,6 +10,7 @@ public class HealthRana : MonoBehaviour
     public int sin_tp = 0;
     public Vector3 ultimoCheckpoint; //este vector debe tener el tp inicial
     public bool necesitaSerTeletransportadoVR = false;
+    public bool secomiomosquito1 = false;
 
     void Start()
     {
@@ -29,7 +30,7 @@ public class HealthRana : MonoBehaviour
             healthPoints = value;
             if (healthPoints <= 0)
             {
-                // Teletransportar hacia el último charco
+                // Teletransportar hacia el ï¿½ltimo charco
                 timeControllerRana.Rostizado();
                 RpcRespawn();
                 HealthPoints = 100.0f;
@@ -67,6 +68,7 @@ public class HealthRana : MonoBehaviour
     public void GanarVida(float vida_recibida)
     {
         HealthPoints = HealthPoints + vida_recibida;
+        secomiomosquito1 = true;
     }
 
     public void set_checkpoint(Vector3 posicion)
