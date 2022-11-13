@@ -9,10 +9,13 @@ public class Charco : MonoBehaviour
     bool esAlcanzado = false;
     const float tiempoRestanteCharco = 60f; // cantidad de segundos para que se desaparezca
     float tiempoActualCharco = 0f;
+    //Sonidos
+    private SoundManager soundManager;
     void Start()
     {
         transformInicialCharco = gameObject.transform;
         escalaInicialCharco = gameObject.transform.localScale;
+        soundManager = FindObjectOfType<SoundManager>();
     }
 
     // Update is called once per frame

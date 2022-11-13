@@ -24,12 +24,20 @@ public class SoundManager : MonoBehaviour
 
     void Musica()
     {
-        int r = Random.Range(2, audios.Length - 1);
-        controlAudio.PlayOneShot(audios[r], volumen);
+        if (GameObject.Find("RanaVR") == null)
+        {
+            int r = Random.Range(2, audios.Length - 1);
+            controlAudio.PlayOneShot(audios[r], volumen);
+        }
+        else
+        {
+            controlAudio.PlayOneShot(audios[2], 0.1f);
+        }
     }
 
     public void SeleccionAudio(int indice, float volumen)
     {
+        Debug.Log($"Seleccionando audio con indice {indice}: {audios[indice].name}");
         controlAudio.PlayOneShot(audios[indice], volumen);
     }
 }
