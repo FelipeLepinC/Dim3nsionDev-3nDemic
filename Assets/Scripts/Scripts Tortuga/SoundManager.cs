@@ -37,7 +37,6 @@ public class SoundManager : MonoBehaviour
 
     public void SeleccionAudio(int indice, float volumen)
     {
-        Debug.Log($"Seleccionando audio con indice {indice}: {audios[indice].name}");
         controlAudio.PlayOneShot(audios[indice], volumen);
     }
 }

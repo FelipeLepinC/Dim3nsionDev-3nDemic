@@ -39,12 +39,19 @@ public class HealthRana : MonoBehaviour
 
     void RpcRespawn()
     {
-        float delta_x = gameObject.transform.position.x - ultimoCheckpoint.x;
-        float delta_y = gameObject.transform.position.y - ultimoCheckpoint.y;
-        float delta_z = gameObject.transform.position.z - ultimoCheckpoint.z;
-        Vector3 finalDirection = new Vector3(-delta_x,-delta_y,-delta_z);
-        Debug.Log(finalDirection);
-        gameObject.GetComponent<CharacterController>().Move(finalDirection);
+        Debug.Log("Respawneando");
+        if(GameObject.Find("RanaVR") != null)
+        {
+            float delta_x = gameObject.transform.position.x - ultimoCheckpoint.x;
+            float delta_y = gameObject.transform.position.y - ultimoCheckpoint.y;
+            float delta_z = gameObject.transform.position.z - ultimoCheckpoint.z;
+            Vector3 finalDirection = new Vector3(-delta_x, -delta_y, -delta_z);
+            gameObject.GetComponent<CharacterController>().Move(finalDirection);
+        }
+        else
+        {
+            gameObject.transform.position = ultimoCheckpoint;
+        }
     }
 
     public void setNecesitaSerTeletransportadoVR(bool opcion)
@@ -64,7 +71,7 @@ public class HealthRana : MonoBehaviour
 
     public void set_checkpoint(Vector3 posicion)
     {
-        ultimoCheckpoint = posicion;
+        ultimoCheckpoint = posicion + new Vector3(0,2,0);
     }
 
     [SerializeField]
