@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class TimeControllerGuanaco : MonoBehaviour
+public class Tiempo : MonoBehaviour
 {
     [SerializeField] int min, seg;
     [SerializeField] Text tiempo, mensaje, puntaje, capturas, medalla, puntajeTexto, capturasTexto, medallaPNG;
     [SerializeField] Image bronze, silver, gold;
-    private float restante;
+    public float restante;
     private bool enMarcha;
     public Image panel;
     public CharacterController controller;
@@ -20,7 +20,6 @@ public class TimeControllerGuanaco : MonoBehaviour
     private int puntos;
     private int calculo;
     private int medallaObtenida;
-    GameObject manager;
 
     
     // Start is called before the first frame update
@@ -49,10 +48,9 @@ public class TimeControllerGuanaco : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(restante);
         if (enMarcha){
-            manager = GameObject.FindWithTag("GameManager");
-            restante = manager.GetComponent<Tiempo>().restante;
-            //restante -= Time.deltaTime;
+            restante -= Time.deltaTime;
             if (restante < 1) finished = true;
             int tempMin = Mathf.FloorToInt(restante / 60);
             int tempSeg = Mathf.FloorToInt(restante % 60);

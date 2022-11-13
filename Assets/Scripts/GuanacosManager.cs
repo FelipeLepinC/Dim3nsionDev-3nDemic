@@ -11,6 +11,7 @@ public class GuanacosManager : MonoBehaviour
     void Start()
     {
         Debug.Log("Hola soy el Guanacos Manager");
+        this.GetComponent<Tiempo>().enabled = true;
     }
 
     // Update is called once per frame

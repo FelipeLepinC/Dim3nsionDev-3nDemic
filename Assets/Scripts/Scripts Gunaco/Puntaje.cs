@@ -7,12 +7,15 @@ using TMPro;
 public class Puntaje : MonoBehaviour
 {
     public int puntos = 0;
-    TextMeshProUGUI puntajeGuanaco;
+    public TextMeshProUGUI puntajeGuanaco;
     public bool tutorial = false;
     GameObject manager;
 
     private void Start(){
-        puntajeGuanaco = GameObject.Find("Puntaje").GetComponent<TextMeshProUGUI>();
+        //puntajeGuanaco = GameObject.Find("Puntaje").GetComponent<TextMeshProUGUI>();
+        manager = GameObject.FindWithTag("GameManager");
+        puntos = manager.GetComponent<GuanacosManager>().puntos;
+        Debug.Log(puntos);
     }
 
     private void Update(){

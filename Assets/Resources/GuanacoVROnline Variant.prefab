@@ -1121,7 +1121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3251935421220064607, guid: 13aacb6e282d39b4a90241b393438e8b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -7
+      value: -7.0000305
       objectReference: {fileID: 0}
     - target: {fileID: 3251935421220064607, guid: 13aacb6e282d39b4a90241b393438e8b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1903,6 +1903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puntos: 0
+  puntajeGuanaco: {fileID: 14370344386108375}
   tutorial: 0
 --- !u!114 &1464630160
 MonoBehaviour:
