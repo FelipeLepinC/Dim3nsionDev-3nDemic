@@ -20,7 +20,8 @@ public class MenuBar : MonoBehaviour
 
         if (transform.parent.gameObject.tag == "Player")
         {
-            target = transform.parent.transform.parent.transform.parent.transform.parent.gameObject;
+            //target = transform.parent.transform.parent.transform.parent.transform.parent.gameObject; //Para VR
+            target = transform.parent.transform.parent.transform.parent.gameObject; //para Normal
         }
         else
         {

@@ -537,6 +537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   terminar: {fileID: 8820937357659736601}
+  ghost: {fileID: 9162791611043516428, guid: aaf4986b6cea62c4b9ff3b48d32fca4e, type: 3}
   healthPoints: 100
 --- !u!114 &2321327897335177600
 MonoBehaviour:
@@ -551,6 +552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puntos: 0
+  tutorial: 0
 --- !u!114 &2588037051105381446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -564,6 +566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown_saliva: 1
+  inputSource: 0
 --- !u!114 &3155120024419601479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,6 +581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldown_saliva: 0
   camera: {fileID: 8459212910733459728}
+  inputSource: 0
 --- !u!114 &4639828117262868327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -772,8 +776,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2966198183c638a48b5e99eeb16285f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 8459212910733459728}
-  player: {fileID: 8459212910590469671}
   contador: 0
   counter: 0
   local: 0

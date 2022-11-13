@@ -10,9 +10,12 @@ public class Health : MonoBehaviourPunCallbacks
     public TimeControllerGuanaco terminar;
     Puntaje puntaje;
     Tutorial tuto;
+    public GameObject ghost;
+    PhotonView view;
 
     void Start()
     {
+        view = GetComponent<PhotonView>();
         if (gameObject.tag == "Player")
         {
             type = DamageType.player;
@@ -47,7 +50,13 @@ public class Health : MonoBehaviourPunCallbacks
                 else
                 {
                     // SINCRONIZAR !!!
-                    terminar.finished = true;
+                    Destroy(gameObject);
+                    if (view.IsMine){
+                        Debug.Log(this.tag + ": Se va a instanciar al fantasma");
+                        Instantiate(ghost,this.transform.position, transform.rotation);
+                    }
+                    //Destroy(gameObject);
+                    //terminar.finished = true;
                     Debug.Log("Perdiste");
                 }
             } 
