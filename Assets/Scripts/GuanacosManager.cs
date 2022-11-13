@@ -16,7 +16,10 @@ public class GuanacosManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        jugadores = GameObject.FindGameObjectsWithTag("Player");
+        if (jugadores.Length == 0){
+            Debug.Log("Perdieron :( el puntaje logrado fue: " + puntos);
+        }
     }
 
     public void ActualizarContador(int t)

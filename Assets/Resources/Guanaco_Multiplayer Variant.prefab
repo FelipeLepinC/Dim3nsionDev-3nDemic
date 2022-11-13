@@ -537,7 +537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   terminar: {fileID: 8820937357659736601}
-  ghost: {fileID: 9162791611043516428, guid: aaf4986b6cea62c4b9ff3b48d32fca4e, type: 3}
+  ghost: {fileID: 2006433188280670063, guid: b4a79a60fac3ebf4f995f01aed74e62e, type: 3}
   healthPoints: 100
 --- !u!114 &2321327897335177600
 MonoBehaviour:
