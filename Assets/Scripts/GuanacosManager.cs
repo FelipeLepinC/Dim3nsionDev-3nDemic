@@ -11,12 +11,16 @@ public class GuanacosManager : MonoBehaviour
     void Start()
     {
         Debug.Log("Hola soy el Guanacos Manager");
+        this.GetComponent<Tiempo>().enabled = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        jugadores = GameObject.FindGameObjectsWithTag("Player");
+        if (jugadores.Length == 0){
+            Debug.Log("Perdieron :( el puntaje logrado fue: " + puntos);
+        }
     }
 
     public void ActualizarContador(int t)

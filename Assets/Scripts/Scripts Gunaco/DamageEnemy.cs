@@ -19,7 +19,7 @@ public class DamageEnemy : MonoBehaviourPunCallbacks
     private void OnTriggerEnter(Collider other){
         if(other.GetComponent<Health>() != null){
             if(other.GetComponent<Health>().type != type){
-                other.GetComponent<Health>().RecibirDano_Only_Player(damageEnemy);
+                other.GetComponent<Health>().RecibirDano_Only_Player(6 * damageEnemy);
                 // GetComponent<Follow>().derrotado = true;
                 //GetComponent<FollowGuanacos>().derrotado = true;
                 this.photonView.RPC("DerrotadoPlayer", RpcTarget.AllBuffered, true);

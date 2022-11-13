@@ -1503,6 +1503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   terminar: {fileID: 0}
+  ghost: {fileID: 0}
   healthPoints: 50
 --- !u!54 &3130551127142973048
 Rigidbody:

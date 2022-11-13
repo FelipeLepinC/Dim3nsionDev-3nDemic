@@ -64,8 +64,10 @@ public class RoomGuanacoManager : MonoBehaviourPunCallbacks
 
     IEnumerator SpawnItems()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
         GameObject quirquincho = PhotonNetwork.Instantiate(GuanacoManager.name, Vector3.zero, Quaternion.identity);
+        //this.photonView.RPC("HabilitarTiempo", RpcTarget.AllBuffered, quirquincho);
+        //quirquincho.GetComponent<Tiempo>().enabled = true;
     }
 
     IEnumerator GenerateNewEnemy(){
@@ -80,5 +82,10 @@ public class RoomGuanacoManager : MonoBehaviourPunCallbacks
             yield return new WaitForSeconds(Random.Range(10,20));
             // alerta.SetActive(true);
         }
+    }
+
+    [PunRPC]
+    void HabilitarTiempo(GameObject tiempo){
+        tiempo.GetComponent<Tiempo>().enabled = true;
     }
 }
