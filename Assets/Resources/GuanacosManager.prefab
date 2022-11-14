@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugadores: []
+  fantasmas: []
   total: 0
   puntos: 0
 --- !u!114 &-5900272002420924947

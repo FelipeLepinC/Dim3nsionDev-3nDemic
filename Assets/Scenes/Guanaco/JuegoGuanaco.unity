@@ -270,6 +270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   terminar: {fileID: 594127465}
+  ghost: {fileID: 0}
   healthPoints: 100
 --- !u!114 &662877035
 MonoBehaviour:
@@ -284,6 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown_saliva: 1
+  inputSource: 0
 --- !u!114 &662877044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,6 +460,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puntos: 0
+  puntajeGuanaco: {fileID: 0}
+  tutorial: 0
 --- !u!1 &683890351
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,7 +1568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6839569649472339307, guid: 26247820b33ec5c4a8c3fcc02e0d6f17, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Apple
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6839569649472339297, guid: 26247820b33ec5c4a8c3fcc02e0d6f17, type: 3}

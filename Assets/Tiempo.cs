@@ -48,7 +48,7 @@ public class Tiempo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(restante);
+        //Debug.Log(restante);
         if (enMarcha){
             restante -= Time.deltaTime;
             if (restante < 1) finished = true;

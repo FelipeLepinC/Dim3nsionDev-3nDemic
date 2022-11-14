@@ -121,5 +121,9 @@ public class TimeControllerGuanaco : MonoBehaviour
         }
     }
 
+    public void Listo(){
+        finished = true;
+    }
+
 }
 
