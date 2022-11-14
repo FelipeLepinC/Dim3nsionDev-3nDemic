@@ -64,6 +64,9 @@ public class TimeControllerGuanaco : MonoBehaviour
             enMarcha = false;
             mensaje.enabled = true;
             panel.enabled = true;
+            puntajeTexto.text = "" + (int)manager.GetComponent<GuanacosManager>().puntos;
+            puntaje.enabled = true;
+            puntajeTexto.enabled = true;
             controller.enabled = false;
             StartCoroutine(puntuaciones());
             Debug.Log("Se acabó el tiempo");
@@ -75,10 +78,12 @@ public class TimeControllerGuanaco : MonoBehaviour
     }
 
     IEnumerator puntuaciones(){
-        puntajeTexto.text = "" + (int)contadores.puntos;
+        // = "" + (int)contadores.puntos;
         //capturasTexto.text = "" + capturado;
         medallaObtenida = CalculoMedalla();
         yield return new WaitForSeconds(1);
+        manager = GameObject.FindWithTag("GameManager");
+        puntajeTexto.text = "" + (int)manager.GetComponent<GuanacosManager>().puntos;
         puntaje.enabled = true;
         puntajeTexto.enabled = true;
         yield return new WaitForSeconds(1);
