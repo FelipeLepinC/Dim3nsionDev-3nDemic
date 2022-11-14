@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/JuegoTortuga/LobbyTortuga.unity
     guid: eb20546751a2c0c498432782fcc5b404
   - enabled: 1
+    path: Assets/Scenes/Rana/RanaLobby.unity
+    guid: 07073e615637c4d42845ffe6bbb04abb
+  - enabled: 0
     path: Assets/Scenes/Guanaco/GuanacoLobby.unity
     guid: 97ec66746950a72419efa25abac668de
   - enabled: 0
@@ -29,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Guanaco/JuegoGuanaco.unity
     guid: 9abe738462349bf4f82a770da21ab592
+  - enabled: 1
+    path: Assets/Scenes/Rana/JuegoRanaMultiplayer.unity
+    guid: 5cbc018f74b6fcf409d0e1349f614d3b
   - enabled: 0
     path: Assets/Scenes/Empty.unity
     guid: 1a71dfa5bdeec854e82f9a69a973543e
