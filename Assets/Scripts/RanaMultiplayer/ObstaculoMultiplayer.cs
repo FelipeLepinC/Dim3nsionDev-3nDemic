@@ -7,6 +7,8 @@ public class ObstaculoMultiplayer : MonoBehaviour
     GameObject[] Paneles;
     TimeControllerRanaMultiplayer ControlerReferencia;
 
+    public LayerMask targetMask;
+
     void Start()
     {
         Paneles = GameObject.FindGameObjectsWithTag("PanelTiempo");
@@ -19,30 +21,54 @@ public class ObstaculoMultiplayer : MonoBehaviour
         // if (ControlerReferencia.cantTotalJugadores == ControlerReferencia.cantJugadoresColisionandoObstaculo)
         // {
         //     // Mover obstaculo
-        //     Rigidbody rb = GetComponent<Rigidbody>();
-        //     rb.mass = 1;
+            // Rigidbody rb = GetComponent<Rigidbody>();
+            // rb.mass = 1;
         // }
+        FindVisibleTargets();
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Player")
+
+    public void FindVisibleTargets()
+	{
+		// visibleTargets.Clear();
+		// Collider[] targetsInViewRadius = Physics.OverlapSphere(transform.position, viewRadius, targetMask);
+        Collider[] targetsInViewRadius = Physics.OverlapBox(gameObject.transform.position, transform.localScale / 2, Quaternion.identity, targetMask);
+        Debug.Log("Se han detectado : "+targetsInViewRadius.Length+" jugadores");
+		if(gameObject.tag == "Tronco")
         {
-            for (int i = 0; i < ControlerReferencia.cantTotalJugadores; i++)
-            {
-                GameObject panel = Paneles[i];
-                panel.GetComponent<TimeControllerRanaMultiplayer>().JugadorColisionandoObstaculo();
-            }
+            if(targetsInViewRadius.Length >= 2) moverObstaculo();
+            else Debug.Log("Se requiere de mas jugadores para mover este obstaculo");
         }
-    }
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.tag == "Player")
+        else if(gameObject.tag == "Branches")
         {
-            for (int i = 0; i < ControlerReferencia.cantTotalJugadores; i++)
-            {
-                GameObject panel = Paneles[i];
-                panel.GetComponent<TimeControllerRanaMultiplayer>().JugadorNoColisionandoObstaculo();
-            }
+            if(targetsInViewRadius.Length >= 1) moverObstaculo();
         }
+	}
+
+    public void moverObstaculo(){
+        Rigidbody rb = GetComponent<Rigidbody>();
+        rb.mass = 1;
     }
+
+    // private void OnCollisionEnter(Collision collision)
+    // {
+    //     if (collision.gameObject.tag == "Player")
+    //     {
+    //         for (int i = 0; i < ControlerReferencia.cantTotalJugadores; i++)
+    //         {
+    //             GameObject panel = Paneles[i];
+    //             panel.GetComponent<TimeControllerRanaMultiplayer>().JugadorColisionandoObstaculo();
+    //         }
+    //     }
+    // }
+    // private void OnCollisionExit(Collision collision)
+    // {
+    //     if (collision.gameObject.tag == "Player")
+    //     {
+    //         for (int i = 0; i < ControlerReferencia.cantTotalJugadores; i++)
+    //         {
+    //             GameObject panel = Paneles[i];
+    //             panel.GetComponent<TimeControllerRanaMultiplayer>().JugadorNoColisionandoObstaculo();
+    //         }
+    //     }
+    // }
 }

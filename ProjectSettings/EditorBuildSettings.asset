@@ -74,6 +74,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutoriales/JuegoGuanaco VR Tutorial.unity
     guid: e0b850deeea780844b3d14f89b47dcc3
+  - enabled: 1
+    path: Assets/Scenes/Museo VR.unity
+    guid: 6eb8525a3e987e040bac940e16cd2231
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6213c6ede81ee2c4ca770743295a0a51, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}

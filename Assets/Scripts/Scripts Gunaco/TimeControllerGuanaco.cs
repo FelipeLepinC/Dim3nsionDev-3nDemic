@@ -60,7 +60,8 @@ public class TimeControllerGuanaco : MonoBehaviour
         }
         if (finished == true && enMarcha == true)
         {
-            contadores = GameObject.FindWithTag("Player").GetComponent<Puntaje>();
+            Debug.Log("Se acabo la partida");
+            //contadores = GameObject.FindWithTag("Player").GetComponent<Puntaje>();
             enMarcha = false;
             mensaje.enabled = true;
             panel.enabled = true;
@@ -127,6 +128,7 @@ public class TimeControllerGuanaco : MonoBehaviour
     }
 
     public void Listo(){
+        Debug.Log("Está listo");
         finished = true;
     }
 

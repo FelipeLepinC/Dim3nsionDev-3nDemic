@@ -904,7 +904,7 @@ GameObject:
   - component: {fileID: 2747232343909176723}
   - component: {fileID: 3666064063248626958}
   - component: {fileID: 4392407415227158154}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rana_Multiplayer
   m_TagString: Player
   m_Icon: {fileID: 0}

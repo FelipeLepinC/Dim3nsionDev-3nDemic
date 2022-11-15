@@ -1919,7 +1919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   terminar: {fileID: 3730782484382533867}
-  ghost: {fileID: 8459212910590469671, guid: 9057a5caa55b96d4880d861f217a65d9, type: 3}
+  ghost: {fileID: 7208146830163970929, guid: 3dcd7143d5d242849bd4f4e8eb351930, type: 3}
   healthPoints: 100
 --- !u!114 &1464630161
 MonoBehaviour:

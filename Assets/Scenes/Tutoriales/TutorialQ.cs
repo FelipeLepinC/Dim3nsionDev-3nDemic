@@ -57,10 +57,10 @@ public class TutorialQ : MonoBehaviour
                 if(pasos == 2){
                     reune10 = true;
                 }
-                if(pasos == 4){
+                if(pasos == 5){
                     activa = true;
                 }
-                if(pasos == 5){
+                if(pasos == 4){
                     com = true;
                 }
             }
@@ -95,8 +95,7 @@ public class TutorialQ : MonoBehaviour
 
         if(reune10){
             reune.SetActive(true);
-            contador.GetComponent<AppleCounter1>().counter = 0;
-            if(contador.GetComponent<AppleCounter1>().counter >= 10){
+            if(contador.GetComponent<AppleCounter1>().counter >= 5){
                 reune10 = false;
                 reune.SetActive(false);
                 bienhecho.SetActive(true);

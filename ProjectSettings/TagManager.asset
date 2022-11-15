@@ -28,6 +28,10 @@ TagManager:
   - Saliva
   - MainCameraVR
   - DisparoSaliva
+  - Ghost
+  - Agua
+  - Tronco
+  - Branches
   layers:
   - Default
   - TransparentFX
@@ -36,7 +40,7 @@ TagManager:
   - Water
   - UI
   - Guanacos
-  - 
+  - Ranas
   - Targets
   - 
   - 
