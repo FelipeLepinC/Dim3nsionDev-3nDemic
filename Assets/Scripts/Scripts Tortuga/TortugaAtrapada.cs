@@ -8,6 +8,7 @@ public class TortugaAtrapada : MonoBehaviour
     Rigidbody rbTortugaAtrapada;
     float tiempoLiberada = 0.0f;
     float tiempoLiberacion = 5.0f;
+    public bool liberarTortuga = false;
 
     void Start()
     {
@@ -25,6 +26,7 @@ public class TortugaAtrapada : MonoBehaviour
             {
                 Destroy(this.gameObject);
                 Debug.Log("Liberada");
+                liberarTortuga = true;
                 // A�adir la l�gica de contar tortugas
             }
             //Debug.Log("Corriendo por su vida - " + tiempoLiberada);

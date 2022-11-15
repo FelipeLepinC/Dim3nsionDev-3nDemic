@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 4777795}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1782,6 +1782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &108822233
 Animator:
   serializedVersion: 4
@@ -3827,6 +3828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &325866941
 Animator:
   serializedVersion: 4
@@ -9974,6 +9976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &1108264723
 Animator:
   serializedVersion: 4
@@ -10187,6 +10190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &1137618373
 Animator:
   serializedVersion: 4
@@ -10800,6 +10804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &1201599076
 Animator:
   serializedVersion: 4
@@ -13313,6 +13318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &1473832136
 Animator:
   serializedVersion: 4
@@ -14841,6 +14847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!54 &1613923479
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15847,6 +15854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &1687010602
 Animator:
   serializedVersion: 4
@@ -16494,6 +16502,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1735701541}
+  - component: {fileID: 1735701542}
   m_Layer: 0
   m_Name: Tortugas NPC
   m_TagString: Untagged
@@ -16523,6 +16532,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1735701542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735701540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!1 &1743081061
 GameObject:
   m_ObjectHideFlags: 0
@@ -17873,6 +17895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &1961506876
 Animator:
   serializedVersion: 4
@@ -18561,6 +18584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &2009869324
 Animator:
   serializedVersion: 4
@@ -18836,6 +18860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &2021436391
 Animator:
   serializedVersion: 4
@@ -19107,6 +19132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &2065742806
 Animator:
   serializedVersion: 4
@@ -20373,6 +20399,7 @@ MonoBehaviour:
   estoyatrapado: 0
   deboliberarme: 0
   com: 0
+  tiempocompletado: 0
   moverse: {fileID: 834452804}
   jugador: {x: 0, y: 0, z: 0}
   bienhecho: {fileID: 1648992785}
@@ -20382,7 +20409,13 @@ MonoBehaviour:
   liberar: {fileID: 899471197}
   trampas: {fileID: 464705098}
   tortuguitas: {fileID: 1735701540}
-  contador: {fileID: 8390854599111802196}
+  contador7: {fileID: 2021436390}
+  contador1: {fileID: 108822232}
+  contador2: {fileID: 2009869323}
+  contador3: {fileID: 1137618372}
+  contador4: {fileID: 2065742805}
+  contador5: {fileID: 325866940}
+  contador6: {fileID: 1108264722}
   quedaratrapado: {fileID: 403757316}
   atrapado: {fileID: 969802342}
   liberarsede: {fileID: 142885046}

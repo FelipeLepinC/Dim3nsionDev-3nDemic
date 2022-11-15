@@ -32,7 +32,13 @@ public class TutorialT : MonoBehaviour
     public GameObject liberar;
     public GameObject trampas;
     public GameObject tortuguitas;
-    public ContadorTortugas contador;
+    public TortugaAtrapada contador7;
+    public TortugaAtrapada contador1;
+    public TortugaAtrapada contador2;
+    public TortugaAtrapada contador3;
+    public TortugaAtrapada contador4;
+    public TortugaAtrapada contador5;
+    public TortugaAtrapada contador6;
     public GameObject quedaratrapado;
     public GameObject atrapado;
     public GameObject liberarsede;
@@ -108,7 +114,7 @@ public class TutorialT : MonoBehaviour
             liberar.SetActive(true);
             tortuguitas.SetActive(true);
             trampas.SetActive(true);
-            if(contador.rescatadas > 0){
+            if(contador1.liberarTortuga || contador2.liberarTortuga || contador3.liberarTortuga || contador4.liberarTortuga || contador5.liberarTortuga || contador6.liberarTortuga || contador7.liberarTortuga){
                 liberartortugas = false;
                 liberar.SetActive(false);
                 tortuguitas.SetActive(false);
