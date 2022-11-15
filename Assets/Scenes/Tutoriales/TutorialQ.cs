@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TutorialQ : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class TutorialQ : MonoBehaviour
     public bool reune10 = false;
     public bool activa = false;
     public bool com = false;
+    public float tiempocompletado = 0.0f;
 
     public GameObject bienhecho;
     public GameObject tocamanzana;
@@ -49,10 +51,10 @@ public class TutorialQ : MonoBehaviour
                 if(pasos == 1){
                     madri = true;
                 }
-                if(pasos == 2){
+                if(pasos == 3){
                     dejaque = true;
                 }
-                if(pasos == 3){
+                if(pasos == 2){
                     reune10 = true;
                 }
                 if(pasos == 4){
@@ -116,6 +118,10 @@ public class TutorialQ : MonoBehaviour
 
         if(com){
             completado.SetActive(true);
+            tiempocompletado += Time.deltaTime;
+            if(tiempocompletado >= 5.0f){
+                SceneManager.LoadScene("Museo VR");
+            }
         }
     }
 }

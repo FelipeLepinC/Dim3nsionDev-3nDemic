@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TutorialT : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class TutorialT : MonoBehaviour
     public bool estoyatrapado = false;
     public bool deboliberarme = false;
     public bool com = false;
+    public float tiempocompletado = 0.0f;
     
     public GameObject moverse;
     public Vector3 jugador;
@@ -141,6 +143,10 @@ public class TutorialT : MonoBehaviour
 
         if(com){
             completado.SetActive(true);
+            tiempocompletado += Time.deltaTime;
+            if(tiempocompletado >= 5.0f){
+                SceneManager.LoadScene("Museo VR");
+            }
         }
     }
 
