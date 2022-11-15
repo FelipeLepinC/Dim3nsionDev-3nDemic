@@ -45,7 +45,6 @@ public class Health : MonoBehaviourPunCallbacks
                     this.photonView.RPC("Derrotado", RpcTarget.AllBuffered, true);
                     // GetComponent<FollowGuanacos>().derrotado = true;
                     // puntaje.SumarPuntos(1);
-                    tuto.murio = true;
                 }
                 else
                 {
@@ -67,6 +66,7 @@ public class Health : MonoBehaviourPunCallbacks
     public void Derrotado(bool valor)
     {
         GetComponent<FollowGuanacos>().derrotado = valor;
+        tuto.murio = true;
     }
 
     public void RecibirDano(float dano_recibido)
