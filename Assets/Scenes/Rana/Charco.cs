@@ -6,7 +6,7 @@ public class Charco : MonoBehaviour
 {
     Transform transformInicialCharco;
     Vector3 escalaInicialCharco;
-    bool esAlcanzado = false;
+    public bool esAlcanzado = false;
     const float tiempoRestanteCharco = 60f; // cantidad de segundos para que se desaparezca
     float tiempoActualCharco = 0f;
     //Sonidos

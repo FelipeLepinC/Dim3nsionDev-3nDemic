@@ -14,6 +14,9 @@ public class TutorialRana : MonoBehaviour
     public bool ranasaltando = false;
     public float contador = 0.0f;
     public bool secomiomosquito = false;
+    public bool tocoObstaculo1 = false;
+    public bool tococharco = false;
+    public bool com = false;
     public Vector3 jugador;
     
     public GameObject bienhecho;
@@ -22,6 +25,13 @@ public class TutorialRana : MonoBehaviour
     public GameObject mosquito;
     public HealthRana rana;
     public GameObject moscas;
+    public Obstaculo obs;
+    public GameObject tocarObstaculo;
+    public GameObject obstaculos;
+    public Charco charquito;
+    public GameObject tocarCharco;
+    public GameObject completado;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +62,12 @@ public class TutorialRana : MonoBehaviour
                     ranasaltando = true;
                 } else if(pasos == 2){
                     secomiomosquito = true;
+                } else if(pasos == 3){
+                    tocoObstaculo1 = true;
+                } else if(pasos == 4){
+                    tococharco = true;
+                } else if(pasos == 5){
+                    com = true;
                 }
                 tiempobienhecho = 0.0f;
             }
@@ -81,6 +97,33 @@ public class TutorialRana : MonoBehaviour
                 pasos += 1;
                 comprobarbienhecho = true;
             }
+        }
+
+        if(tocoObstaculo1){
+            tocarObstaculo.SetActive(true);
+            obstaculos.SetActive(true);
+            if(obs.GetComponent<Obstaculo>().tocoObstaculo){
+                tocoObstaculo1 = false;
+                tocarObstaculo.SetActive(false);
+                bienhecho.SetActive(true);
+                pasos += 1;
+                comprobarbienhecho = true;
+            }
+        }
+
+        if(tococharco){
+            tocarCharco.SetActive(true);
+            if(charquito.GetComponent<Charco>().esAlcanzado){
+                tococharco = false;
+                tocarCharco.SetActive(false);
+                bienhecho.SetActive(true);
+                pasos += 1;
+                comprobarbienhecho = true;
+            }
+        }
+
+        if(com){
+            completado.SetActive(true);
         }
     }
 }

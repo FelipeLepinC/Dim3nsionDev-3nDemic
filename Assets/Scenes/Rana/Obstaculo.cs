@@ -6,6 +6,7 @@ public class Obstaculo : MonoBehaviour
 {
     GameObject[] Paneles;
     TimeControllerRana ControlerReferencia;
+    public bool tocoObstaculo = false;
 
     void Start()
     {
@@ -31,6 +32,7 @@ public class Obstaculo : MonoBehaviour
             {
                 GameObject panel = Paneles[i];
                 panel.GetComponent<TimeControllerRana>().JugadorColisionandoObstaculo();
+                tocoObstaculo = true;
             }
         }
     }
