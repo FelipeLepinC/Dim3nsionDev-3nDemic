@@ -5,12 +5,12 @@ using UnityEngine;
 public class ObstaculoMultiplayer : MonoBehaviour
 {
     GameObject[] Paneles;
-    TimeControllerRana ControlerReferencia;
+    TimeControllerRanaMultiplayer ControlerReferencia;
 
     void Start()
     {
         Paneles = GameObject.FindGameObjectsWithTag("PanelTiempo");
-        ControlerReferencia = Paneles[0].GetComponent<TimeControllerRana>();
+        ControlerReferencia = Paneles[0].GetComponent<TimeControllerRanaMultiplayer>();
     }
 
     // Update is called once per frame
@@ -30,7 +30,7 @@ public class ObstaculoMultiplayer : MonoBehaviour
             for (int i = 0; i < ControlerReferencia.cantTotalJugadores; i++)
             {
                 GameObject panel = Paneles[i];
-                panel.GetComponent<TimeControllerRana>().JugadorColisionandoObstaculo();
+                panel.GetComponent<TimeControllerRanaMultiplayer>().JugadorColisionandoObstaculo();
             }
         }
     }
@@ -41,7 +41,7 @@ public class ObstaculoMultiplayer : MonoBehaviour
             for (int i = 0; i < ControlerReferencia.cantTotalJugadores; i++)
             {
                 GameObject panel = Paneles[i];
-                panel.GetComponent<TimeControllerRana>().JugadorNoColisionandoObstaculo();
+                panel.GetComponent<TimeControllerRanaMultiplayer>().JugadorNoColisionandoObstaculo();
             }
         }
     }

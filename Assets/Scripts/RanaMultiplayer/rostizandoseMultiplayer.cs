@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class rostizandoseMultiplayer : MonoBehaviour
 {
-    GameObject alerta;
+    public GameObject alerta;
     HealthRanaMultiplayer vida;
     // Start is called before the first frame update
     //Sonidos
@@ -15,7 +15,7 @@ public class rostizandoseMultiplayer : MonoBehaviour
     void Start()
     {
         vida = GetComponent<HealthRanaMultiplayer>();
-        alerta = GameObject.Find("alert");
+        // alerta = GameObject.Find("alert");
         alerta.SetActive(false);
         soundManager = FindObjectOfType<SoundManager>();
     }
