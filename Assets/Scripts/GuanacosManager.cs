@@ -23,7 +23,7 @@ public class GuanacosManager : MonoBehaviour
     {
         jugadores = GameObject.FindGameObjectsWithTag("Player");
         Debug.Log(jugadores.Length);
-        if (jugadores.Length == inicio - 2 || jugadores.Length == 0){
+        if (jugadores.Length == 0){
             Debug.Log("Perdieron :( el puntaje logrado fue: " + puntos);
             fantasmas = GameObject.FindGameObjectsWithTag("Ghost");
             foreach (GameObject f in fantasmas){

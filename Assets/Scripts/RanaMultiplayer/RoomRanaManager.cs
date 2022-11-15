@@ -18,6 +18,7 @@ public class RoomRanaManager : MonoBehaviourPunCallbacks
     public int total = 0;
     private bool wait = true;
     private int awa = 0;
+    private Vector3 rot;
 
 
     public GameObject[] enemigos;
@@ -27,6 +28,7 @@ public class RoomRanaManager : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
+        rot =  new Vector3(0,0,180);
         if(Instance) //verifica si ya existe otro RoomManager
         {
             Destroy(gameObject); //si hay solo 1, lo destruye
