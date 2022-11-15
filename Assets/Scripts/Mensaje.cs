@@ -36,6 +36,27 @@ public class Mensaje : MonoBehaviour
                     audiol.Play();
                     Tortuguita();
                 }
+                if(juego == "Rana"){
+                    RanaJuego();
+                }
+                if(juego == "Guanaco"){
+                    SceneManager.LoadScene("JuegoGuanaco VR");
+                }
+            }
+
+            if(OVRInput.Get(OVRInput.Button.Two)){
+                if(juego == "Quirquincho"){
+                    SceneManager.LoadScene("Quirquincho VR Tutorial");
+                }
+                if(juego == "Tortuga"){
+                    SceneManager.LoadScene("JuegoTortuga VR Tutorial");
+                }
+                if(juego == "Rana"){
+                    SceneManager.LoadScene("JuegoRanaVR Tutorial");
+                }
+                if(juego == "Guanaco"){
+                    SceneManager.LoadScene("JuegoGuanaco VR Tutorial");
+                }
             }
         }
     }
@@ -46,6 +67,10 @@ public class Mensaje : MonoBehaviour
 
     private void Tortuguita(){
         SceneManager.LoadScene("JuegoTortuga VR");
+    }
+
+    private void RanaJuego(){
+        SceneManager.LoadScene("JuegoRanaVR");
     }
 
     private void OnTriggerEnter(Collider other){
