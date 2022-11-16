@@ -41,7 +41,18 @@ public class CharcoMultiplayer : MonoBehaviour
             //aqui obtengo la posicion del charco
             HealthRanaMultiplayer vidaRana = collision.gameObject.GetComponent<HealthRanaMultiplayer>();
             vidaRana.set_checkpoint(transformInicialCharco.position);
-        }
+        } 
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            esAlcanzado = false;
+            //aqui obtengo la posicion del charco
+            //HealthRanaMultiplayer vidaRana = collision.gameObject.GetComponent<HealthRanaMultiplayer>();
+            //vidaRana.set_checkpoint(transformInicialCharco.position);
+        } 
     }
 
     private void SecarLago()

@@ -6,11 +6,14 @@ public class ObstaculoMultiplayer : MonoBehaviour
 {
     GameObject[] Paneles;
     TimeControllerRanaMultiplayer ControlerReferencia;
-
+    private Vector3 currentPos;
+    private Quaternion currentRot;
     public LayerMask targetMask;
 
     void Start()
     {
+        currentPos = gameObject.transform.localPosition ;
+        currentRot = gameObject.transform.localRotation;
         Paneles = GameObject.FindGameObjectsWithTag("PanelTiempo");
         ControlerReferencia = Paneles[0].GetComponent<TimeControllerRanaMultiplayer>();
     }
@@ -35,7 +38,7 @@ public class ObstaculoMultiplayer : MonoBehaviour
         Debug.Log("Se han detectado : "+targetsInViewRadius.Length+" jugadores");
 		if(gameObject.tag == "Tronco")
         {
-            if(targetsInViewRadius.Length >= 2)
+            if(targetsInViewRadius.Length >= 4)
             {
                 Debug.Log("Se esta moviendo el obstaculo");
                 moverObstaculo();
@@ -47,7 +50,7 @@ public class ObstaculoMultiplayer : MonoBehaviour
         }
         else if(gameObject.tag == "Branches")
         {
-            if(targetsInViewRadius.Length >= 1) 
+            if(targetsInViewRadius.Length >= 2) 
             {
                 Debug.Log("Se esta moviendo el obstaculo");
                 moverObstaculo();
@@ -57,13 +60,19 @@ public class ObstaculoMultiplayer : MonoBehaviour
 	}
 
     public void moverObstaculo(){
+        gameObject.transform.position = gameObject.transform.position;
+        gameObject.transform.rotation =  gameObject.transform.rotation;
+        currentPos = gameObject.transform.position;
+        currentRot = gameObject.transform.rotation;
         Rigidbody rb = GetComponent<Rigidbody>();
         rb.mass = 1;
     }
 
     public void noMoverObstaculo(){
+        gameObject.transform.position = currentPos;
+        gameObject.transform.rotation = currentRot;
         Rigidbody rb = GetComponent<Rigidbody>();
-        rb.mass = 500;
+        rb.mass = 5000000;
     }
 
     // private void OnCollisionEnter(Collision collision)
