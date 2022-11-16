@@ -24,7 +24,7 @@ public class MetaMultiplayer : MonoBehaviourPunCallbacks
         foreach (GameObject jugador in jugadores)
         {
             Debug.Log("Nombre del jugador : "+jugador.name);
-            if(jugador.name == "Rana_Multiplayer(Clone)")
+            if(jugador.name == "RanaVR(Clone)")
             {
                 view = jugador.GetComponent<PhotonView>();
                 if(view.IsMine) onePlayer = jugador;
