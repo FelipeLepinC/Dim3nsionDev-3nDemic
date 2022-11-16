@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit;
+using Unity.XR.CoreUtils;
 
 public class TutorialRana : MonoBehaviour
 {
@@ -19,8 +23,11 @@ public class TutorialRana : MonoBehaviour
     public bool tococharco = false;
     public bool com = false;
     public bool esAlcanzado = false;
+    public bool secomiomosquito1 = false;
+    public float tiempocompletado = 0.0f;
     public Vector3 jugador;
     
+    bool estadoBotonApretado; 
     public GameObject bienhecho;
     public GameObject muevase;
     public GameObject saltar;
@@ -42,7 +49,7 @@ public class TutorialRana : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick) != Vector2.zero){
+        if(jugador != transform.position){
             caminando += Time.deltaTime;
             jugador = transform.position;
             if(!semovio && caminando >= 5.0f){
@@ -74,23 +81,21 @@ public class TutorialRana : MonoBehaviour
         }
 
         if(ranasaltando){
+            estadoBotonApretado = gameObject.GetComponent<ContinuousMovement>().primaryButtonState;
             saltar.SetActive(true);
-            if((OVRInput.Get(OVRInput.Button.One) || Input.GetKey(KeyCode.E))){
-                contador += 1;
-                if(contador >= 100){
-                    ranasaltando = false;
-                    saltar.SetActive(false);
-                    bienhecho.SetActive(true);
-                    pasos += 1;
-                    comprobarbienhecho = true;
-                }
+            if((estadoBotonApretado || Input.GetKey(KeyCode.E))){
+                ranasaltando = false;
+                saltar.SetActive(false);
+                bienhecho.SetActive(true);
+                pasos += 1;
+                comprobarbienhecho = true;
             }
         }
 
         if(secomiomosquito){
             mosquito.SetActive(true);
             moscas.SetActive(true);
-            if(rana.GetComponent<HealthRana>().secomiomosquito1){
+            if(secomiomosquito1){
                 secomiomosquito = false;
                 mosquito.SetActive(false);
                 bienhecho.SetActive(true);
@@ -124,6 +129,10 @@ public class TutorialRana : MonoBehaviour
 
         if(com){
             completado.SetActive(true);
+            tiempocompletado += Time.deltaTime;
+            if(tiempocompletado >= 5.0f){
+                SceneManager.LoadScene("Museo VR");
+            }
         }
     }
 
@@ -138,6 +147,13 @@ public class TutorialRana : MonoBehaviour
             if (collision.gameObject.tag == "charco")
             {
                 esAlcanzado = true;
+            }
+        }
+
+        if(secomiomosquito){
+            if (collision.gameObject.tag == "mosca")
+            {
+                secomiomosquito1 = true;
             }
         }
     }

@@ -34,6 +34,7 @@ TagManager:
   - Branches
   - obsta
   - charco
+  - mosca
   layers:
   - Default
   - TransparentFX

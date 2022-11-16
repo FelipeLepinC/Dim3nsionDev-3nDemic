@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7878,7 +7878,10 @@ MonoBehaviour:
   tococharco: 0
   com: 0
   esAlcanzado: 0
+  secomiomosquito1: 0
+  tiempocompletado: 0
   jugador: {x: 0, y: 0, z: 0}
+  inputSource2: 5
   bienhecho: {fileID: 1570535714}
   muevase: {fileID: 766229506}
   saltar: {fileID: 1350365986}
@@ -7896,6 +7899,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1210023689093039130, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
     - target: {fileID: 2020911114319948993, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -7947,6 +7954,234 @@ PrefabInstance:
     - target: {fileID: 2020911114319948994, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603811340878249, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603811405443912, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603811408007399, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603811429543599, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603811468045437, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603811471829368, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603811549933005, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603811580659374, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603811591814786, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603811598497643, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603811604263718, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603811615805008, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603811742129605, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603811778030472, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603811926881744, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603811947534324, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603811967994544, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603811976603886, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812007240142, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812009812073, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812009975232, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812034349465, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812180926910, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812209665158, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812210814305, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812230370795, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812265127365, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812325107967, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812326869340, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812357680134, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812370751741, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812420133861, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812466211768, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812480131507, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812483265072, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812549389744, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812588794237, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812614878830, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812637830016, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812657744016, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812673110856, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812876444587, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812884178647, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603812951252061, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603813008654341, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603813054838113, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603813066410991, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603813103297172, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603813152067707, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603813171208339, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603813180616461, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603813182697723, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603813220668843, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603813341355735, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603813356749766, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603813433981311, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133603813460383192, guid: 782251327d8df14439310f5bdb0afe02, type: 3}
+      propertyPath: m_TagString
+      value: mosca
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 782251327d8df14439310f5bdb0afe02, type: 3}

@@ -58,6 +58,21 @@ public class Mensaje : MonoBehaviour
                     SceneManager.LoadScene("JuegoGuanaco VR Tutorial");
                 }
             }
+
+            if(OVRInput.Get(OVRInput.Button.Three)){
+                if(juego == "Quirquincho"){
+                    SceneManager.LoadScene("QuirquinchoLobbyVR");
+                }
+                if(juego == "Tortuga"){
+                    SceneManager.LoadScene("TortugaLobbyVR");
+                }
+                if(juego == "Rana"){
+                    SceneManager.LoadScene("RanaLobbyVR");
+                }
+                if(juego == "Guanaco"){
+                    SceneManager.LoadScene("GuanacoLobbyVR");
+                }
+            }
         }
     }
 

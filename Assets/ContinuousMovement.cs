@@ -10,7 +10,7 @@ public class ContinuousMovement : MonoBehaviour
     public float speed = 4;
     public float jumpingForce = 600f;
     private float jumpingSpeed;
-    bool saltando = false;
+    public bool saltando = false;
     bool cayendo = false;
     public float gravity = -10;
     private float fallingSpeed;
@@ -19,7 +19,7 @@ public class ContinuousMovement : MonoBehaviour
     public XRNode inputSource2;
     private Vector2 inputAxis;
     private CharacterController character;
-    private bool primaryButtonState;
+    public bool primaryButtonState;
     private XROrigin rig;
     // Start is called before the first frame update
     void Start()

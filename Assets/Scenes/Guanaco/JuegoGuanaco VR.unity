@@ -1010,7 +1010,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 925487533576748669, guid: 76b3af24e9eb6614298db27aa65e69c3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3529184090314722731, guid: 76b3af24e9eb6614298db27aa65e69c3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -7.000061
       objectReference: {fileID: 0}
     - target: {fileID: 6827725877607930047, guid: 76b3af24e9eb6614298db27aa65e69c3, type: 3}
       propertyPath: sceneViewId
