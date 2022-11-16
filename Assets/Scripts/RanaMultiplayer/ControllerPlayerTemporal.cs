@@ -9,6 +9,32 @@ public class ControllerPlayerTemporal : MonoBehaviour
     PhotonView view;
     void Start()
     {
+        this.GetComponent<CharacterController>().enabled = false;
+        //this.GetComponent<XROrigin>().enabled = false;
+        //this.GetComponent<ContinuousMovement>().enabled = false;
+        //this.GetComponent<LocomotionSystem>().enabled = false;
+        //this.GetComponent<LocomotionController>().enabled = false;
+        //this.GetComponent<TeleportationProvider>().enabled = false;
+        MonoBehaviour[] comps = GetComponents<MonoBehaviour>();
+        
+        foreach(MonoBehaviour c in comps)
+        {
+            if(c.GetType().Name == "XROrigin"){
+                c.enabled = false;
+            }
+            if(c.GetType().Name == "ContinuousMovement"){
+                c.enabled = false;
+            }
+            if(c.GetType().Name == "LocomotionSystem"){
+                c.enabled = false;
+            }
+            if(c.GetType().Name == "LocomotionController"){
+                c.enabled = false;
+            }
+            if(c.GetType().Name == "TeleportationProvider"){
+                c.enabled = false;
+            }
+        }
         transform.Rotate(0,0,180);
         view = GetComponent<PhotonView>();
 
@@ -24,7 +50,8 @@ public class ControllerPlayerTemporal : MonoBehaviour
         if (view.IsMine)
         {
             // this.GetComponent<CharacterController>().enabled = true;
-            MonoBehaviour[] comps = GetComponents<MonoBehaviour>();
+            //MonoBehaviour[] comps = GetComponents<MonoBehaviour>();
+            this.GetComponent<CharacterController>().enabled = true;
             foreach(MonoBehaviour c in comps)
             {
                 if(c.GetType().Name == "XROrigin"){
