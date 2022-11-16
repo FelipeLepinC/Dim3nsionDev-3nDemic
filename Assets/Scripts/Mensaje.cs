@@ -40,7 +40,7 @@ public class Mensaje : MonoBehaviour
                     RanaJuego();
                 }
                 if(juego == "Guanaco"){
-                    SceneManager.LoadScene("JuegoGuanaco VR");
+                    SceneManager.LoadScene("Carga Guanaco");
                 }
             }
 
@@ -62,15 +62,15 @@ public class Mensaje : MonoBehaviour
     }
 
     private void LimpiarMensajeTecla(){
-        SceneManager.LoadScene("Quirquincho VR");
+        SceneManager.LoadScene("CargaQuirquincho");
     }
 
     private void Tortuguita(){
-        SceneManager.LoadScene("JuegoTortuga VR");
+        SceneManager.LoadScene("CargaTortuga");
     }
 
     private void RanaJuego(){
-        SceneManager.LoadScene("JuegoRanaVR");
+        SceneManager.LoadScene("CargaRana");
     }
 
     private void OnTriggerEnter(Collider other){
