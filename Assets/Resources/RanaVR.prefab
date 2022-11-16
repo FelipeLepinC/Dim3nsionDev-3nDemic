@@ -1300,7 +1300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  jumpingForce: 600
+  jumpingForce: 0
   gravity: -10
   groundLayer:
     serializedVersion: 2

@@ -38,7 +38,7 @@ public class ObstaculoMultiplayer : MonoBehaviour
         Debug.Log("Se han detectado : "+targetsInViewRadius.Length+" jugadores");
 		if(gameObject.tag == "Tronco")
         {
-            if(targetsInViewRadius.Length >= 4)
+            if(targetsInViewRadius.Length >= 3)
             {
                 Debug.Log("Se esta moviendo el obstaculo");
                 moverObstaculo();
