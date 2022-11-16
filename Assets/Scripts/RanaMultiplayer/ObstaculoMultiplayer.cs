@@ -31,7 +31,7 @@ public class ObstaculoMultiplayer : MonoBehaviour
 	{
 		// visibleTargets.Clear();
 		// Collider[] targetsInViewRadius = Physics.OverlapSphere(transform.position, viewRadius, targetMask);
-        Collider[] targetsInViewRadius = Physics.OverlapBox(gameObject.transform.position, transform.localScale / 2, Quaternion.identity, targetMask);
+        Collider[] targetsInViewRadius = Physics.OverlapBox(gameObject.transform.position, transform.localScale, Quaternion.identity, targetMask);
         Debug.Log("Se han detectado : "+targetsInViewRadius.Length+" jugadores");
 		if(gameObject.tag == "Tronco")
         {

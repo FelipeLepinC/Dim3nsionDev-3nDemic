@@ -70,7 +70,7 @@ public class HealthRanaMultiplayer : MonoBehaviour
 
     public void set_checkpoint(Vector3 posicion)
     {
-        ultimoCheckpoint = posicion;
+        ultimoCheckpoint = posicion + new Vector3(0,2,0);
     }
 
     [SerializeField]
