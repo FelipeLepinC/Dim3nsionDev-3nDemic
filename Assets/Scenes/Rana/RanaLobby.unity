@@ -2492,6 +2492,7 @@ GameObject:
   - component: {fileID: 1473204157}
   - component: {fileID: 1473204159}
   - component: {fileID: 1473204160}
+  - component: {fileID: 1473204161}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2605,6 +2606,7 @@ MonoBehaviour:
   - {fileID: 342739394}
   - {fileID: 1796712582}
   - {fileID: 1540418556}
+  textoNombreSala: {fileID: 1124971041}
 --- !u!114 &1473204159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2632,12 +2634,33 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1473204151}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87c71218611487642864fd71b32d5187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   roomNameInputField: {fileID: 1665823044}
+  errorText: {fileID: 1533477581}
+  roomNameText: {fileID: 1124971041}
+  roomListContent: {fileID: 1166201997}
+  playerListContent: {fileID: 679671473}
+  roomListItemPrefab: {fileID: 2896924541658010991, guid: 3d2ac56eaac33d74d8e5e0db9e60476f, type: 3}
+  playerListItemPrefab: {fileID: 2138200201995256142, guid: 8e10a26ecf9475847861255351511db3, type: 3}
+  startGameButton: {fileID: 1411334608}
+--- !u!114 &1473204161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473204151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b690ab2832388b14baf25a05a453e4ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreSala: Sala Rana del Loa
+  codigoJuego: 5
   errorText: {fileID: 1533477581}
   roomNameText: {fileID: 1124971041}
   roomListContent: {fileID: 1166201997}
