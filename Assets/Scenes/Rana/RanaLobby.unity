@@ -590,7 +590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 382f5f15539bbe84e9f2f276e3b39cd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 7139588706192061313, guid: 3245821c48a1d5e4385bd608b912c4b3, type: 3}
+  playerPrefab: {fileID: 7891725267724764299, guid: 161a81ebaa67e5b45b5e189c407ec8c1, type: 3}
   enemyPrefab: {fileID: 0}
   RanaManager: {fileID: 3141331815733017743, guid: c96cae6567f0a0943ab80e851df702c0, type: 3}
   trampaPrefab: {fileID: 0}

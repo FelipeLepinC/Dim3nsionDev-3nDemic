@@ -9,6 +9,7 @@ public class ControllerPlayerTemporal : MonoBehaviour
     PhotonView view;
     void Start()
     {
+        transform.Rotate(0,0,180);
         view = GetComponent<PhotonView>();
 
 
