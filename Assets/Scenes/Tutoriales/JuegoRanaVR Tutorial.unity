@@ -190,6 +190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -306,6 +310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -421,6 +429,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Name
       value: Branches (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
@@ -679,6 +691,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -794,6 +810,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Name
       value: Branches (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
@@ -1049,6 +1069,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -1177,6 +1201,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -1293,6 +1321,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -1358,7 +1390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &471401927
 Transform:
   m_ObjectHideFlags: 0
@@ -1415,7 +1447,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 13c3ca38313141047b43adac5ef75186, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 19caf9b51c5c44149bd43dc0453d8a09, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1492,6 +1524,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Name
       value: Branches (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
@@ -1609,6 +1645,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -1724,6 +1764,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Name
       value: Branches (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
@@ -1925,6 +1969,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -2041,6 +2089,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Log
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13448d46a01f9264ea60d7956a4fc87f, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: 13448d46a01f9264ea60d7956a4fc87f, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -2118,6 +2170,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Name
       value: Branches (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
@@ -2235,6 +2291,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -2350,6 +2410,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Name
       value: Branches (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
@@ -2467,6 +2531,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -2582,6 +2650,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Name
       value: Branches (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
@@ -2755,6 +2827,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Name
       value: Branches (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
@@ -3045,6 +3121,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -3245,6 +3325,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -3360,6 +3444,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Name
       value: Branches (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
@@ -3605,7 +3693,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Toca obstaculo
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3741,7 +3829,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Comer mosquito
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3960,7 +4048,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1117530912
 Transform:
   m_ObjectHideFlags: 0
@@ -4017,7 +4105,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 13c3ca38313141047b43adac5ef75186, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86653cc1f187cd94698c81079fc70f56, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4095,6 +4183,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -4160,7 +4252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1176343298
 Transform:
   m_ObjectHideFlags: 0
@@ -4217,7 +4309,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 13c3ca38313141047b43adac5ef75186, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 36f4ebfc1f237754f9e11acb383bbabe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4228,6 +4320,144 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1188137336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188137337}
+  - component: {fileID: 1188137341}
+  - component: {fileID: 1188137340}
+  - component: {fileID: 1188137339}
+  - component: {fileID: 1188137338}
+  m_Layer: 5
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1188137337
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188137336}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0036472015}
+  m_LocalScale: {x: 199.99944, y: 199.99948, z: 0.9993244}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1350365987}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 315.00018, y: -260.00012}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!328 &1188137338
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188137336}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 4416c4edebae93048b10cee7dcd3bea6, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 3
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 01
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
+--- !u!65 &1188137339
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188137336}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1188137340
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188137336}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1188137341
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188137336}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1189777701
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4294,6 +4524,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Name
       value: Branches (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
@@ -4410,6 +4644,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 13448d46a01f9264ea60d7956a4fc87f, type: 3}
       propertyPath: m_Name
       value: Log (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13448d46a01f9264ea60d7956a4fc87f, type: 3}
+      propertyPath: m_TagString
+      value: obsta
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: 13448d46a01f9264ea60d7956a4fc87f, type: 3}
       propertyPath: m_Convex
@@ -4573,6 +4811,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Log (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13448d46a01f9264ea60d7956a4fc87f, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: 13448d46a01f9264ea60d7956a4fc87f, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -4650,6 +4892,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Name
       value: Branches (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
@@ -4767,6 +5013,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -4883,6 +5133,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -4964,6 +5218,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Name
       value: Branches (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
@@ -5081,6 +5339,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -5161,6 +5423,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1350581429}
+  - {fileID: 1188137337}
   m_Father: {fileID: 7008836321631395093}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5189,7 +5452,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SALTAR
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5282,7 +5545,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1350581429
 Transform:
   m_ObjectHideFlags: 0
@@ -5339,7 +5602,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 13c3ca38313141047b43adac5ef75186, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7db0ef137f51841468337136140a8d55, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5416,6 +5679,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Name
       value: Branches (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
@@ -5533,6 +5800,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -5591,7 +5862,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1483403174}
-  - component: {fileID: 1483403175}
   m_Layer: 0
   m_Name: Obstaculos
   m_TagString: Untagged
@@ -5660,19 +5930,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1483403175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1483403173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tocoObstaculo: 0
 --- !u!1001 &1543299750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5739,6 +5996,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Name
       value: Branches (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
@@ -6026,6 +6287,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -6141,6 +6406,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Name
       value: Branches (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
@@ -6319,6 +6588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -6434,6 +6707,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Name
       value: Branches (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
@@ -6551,6 +6828,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -6666,6 +6947,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Name
       value: Branches (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
@@ -6822,6 +7107,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -6937,6 +7226,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Name
       value: Branches (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
@@ -7122,6 +7415,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -7237,6 +7534,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Name
       value: Branches (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
       objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
@@ -7354,6 +7655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -7470,6 +7775,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Branches (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
+      propertyPath: m_TagString
+      value: obsta
+      objectReference: {fileID: 0}
     - target: {fileID: 3451118302482216456, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -7565,8 +7874,10 @@ MonoBehaviour:
   contador: 0
   secomiomosquito: 0
   tocoObstaculo1: 0
+  tocoObstaculo: 0
   tococharco: 0
   com: 0
+  esAlcanzado: 0
   jugador: {x: 0, y: 0, z: 0}
   bienhecho: {fileID: 1570535714}
   muevase: {fileID: 766229506}
@@ -7574,10 +7885,8 @@ MonoBehaviour:
   mosquito: {fileID: 1076949795}
   rana: {fileID: 543450651618968377}
   moscas: {fileID: 1896699600}
-  obs: {fileID: 1483403175}
   tocarObstaculo: {fileID: 1062827201}
   obstaculos: {fileID: 1483403173}
-  charquito: {fileID: 2773650877862468998}
   tocarCharco: {fileID: 938707047}
   completado: {fileID: 66013761}
 --- !u!1001 &2020911114470969027
@@ -7648,6 +7957,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2773650877365443322, guid: b381d9a57725d8c4ca60dbca4328cc8b, type: 3}
+      propertyPath: m_TagString
+      value: charco
+      objectReference: {fileID: 0}
+    - target: {fileID: 2773650877554266296, guid: b381d9a57725d8c4ca60dbca4328cc8b, type: 3}
+      propertyPath: m_TagString
+      value: charco
+      objectReference: {fileID: 0}
     - target: {fileID: 2773650877873368416, guid: b381d9a57725d8c4ca60dbca4328cc8b, type: 3}
       propertyPath: m_Name
       value: Charcos
@@ -7700,26 +8017,44 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2773650877922212680, guid: b381d9a57725d8c4ca60dbca4328cc8b, type: 3}
+      propertyPath: m_TagString
+      value: charco
+      objectReference: {fileID: 0}
+    - target: {fileID: 2773650878170814569, guid: b381d9a57725d8c4ca60dbca4328cc8b, type: 3}
+      propertyPath: m_TagString
+      value: charco
+      objectReference: {fileID: 0}
+    - target: {fileID: 2773650878249623849, guid: b381d9a57725d8c4ca60dbca4328cc8b, type: 3}
+      propertyPath: m_TagString
+      value: charco
+      objectReference: {fileID: 0}
+    - target: {fileID: 2773650878311335375, guid: b381d9a57725d8c4ca60dbca4328cc8b, type: 3}
+      propertyPath: m_TagString
+      value: charco
+      objectReference: {fileID: 0}
+    - target: {fileID: 2773650878315034774, guid: b381d9a57725d8c4ca60dbca4328cc8b, type: 3}
+      propertyPath: m_TagString
+      value: charco
+      objectReference: {fileID: 0}
+    - target: {fileID: 2773650878467148141, guid: b381d9a57725d8c4ca60dbca4328cc8b, type: 3}
+      propertyPath: m_TagString
+      value: charco
+      objectReference: {fileID: 0}
+    - target: {fileID: 2773650878494694166, guid: b381d9a57725d8c4ca60dbca4328cc8b, type: 3}
+      propertyPath: m_TagString
+      value: charco
+      objectReference: {fileID: 0}
+    - target: {fileID: 2773650878849140257, guid: b381d9a57725d8c4ca60dbca4328cc8b, type: 3}
+      propertyPath: m_TagString
+      value: charco
+      objectReference: {fileID: 0}
+    - target: {fileID: 2773650879246235078, guid: b381d9a57725d8c4ca60dbca4328cc8b, type: 3}
+      propertyPath: m_TagString
+      value: charco
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b381d9a57725d8c4ca60dbca4328cc8b, type: 3}
---- !u!1 &2773650877862468997 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2773650877873368416, guid: b381d9a57725d8c4ca60dbca4328cc8b, type: 3}
-  m_PrefabInstance: {fileID: 2773650877862468996}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2773650877862468998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2773650877862468997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c940bd40e866ce948942958b851bb0e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  esAlcanzado: 0
 --- !u!1001 &7008836321631395092
 PrefabInstance:
   m_ObjectHideFlags: 0

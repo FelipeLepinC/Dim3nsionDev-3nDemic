@@ -15,8 +15,10 @@ public class TutorialRana : MonoBehaviour
     public float contador = 0.0f;
     public bool secomiomosquito = false;
     public bool tocoObstaculo1 = false;
+    public bool tocoObstaculo = false;
     public bool tococharco = false;
     public bool com = false;
+    public bool esAlcanzado = false;
     public Vector3 jugador;
     
     public GameObject bienhecho;
@@ -25,10 +27,8 @@ public class TutorialRana : MonoBehaviour
     public GameObject mosquito;
     public HealthRana rana;
     public GameObject moscas;
-    public Obstaculo obs;
     public GameObject tocarObstaculo;
     public GameObject obstaculos;
-    public Charco charquito;
     public GameObject tocarCharco;
     public GameObject completado;
     
@@ -42,7 +42,7 @@ public class TutorialRana : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(jugador != transform.position){
+        if(OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick) != Vector2.zero){
             caminando += Time.deltaTime;
             jugador = transform.position;
             if(!semovio && caminando >= 5.0f){
@@ -75,9 +75,9 @@ public class TutorialRana : MonoBehaviour
 
         if(ranasaltando){
             saltar.SetActive(true);
-            if(Input.GetButtonDown("One")){
+            if((OVRInput.Get(OVRInput.Button.One) || Input.GetKey(KeyCode.E))){
                 contador += 1;
-                if(contador >= 200){
+                if(contador >= 100){
                     ranasaltando = false;
                     saltar.SetActive(false);
                     bienhecho.SetActive(true);
@@ -102,7 +102,7 @@ public class TutorialRana : MonoBehaviour
         if(tocoObstaculo1){
             tocarObstaculo.SetActive(true);
             obstaculos.SetActive(true);
-            if(obs.GetComponent<Obstaculo>().tocoObstaculo){
+            if(tocoObstaculo){
                 tocoObstaculo1 = false;
                 tocarObstaculo.SetActive(false);
                 bienhecho.SetActive(true);
@@ -113,7 +113,7 @@ public class TutorialRana : MonoBehaviour
 
         if(tococharco){
             tocarCharco.SetActive(true);
-            if(charquito.GetComponent<Charco>().esAlcanzado){
+            if(esAlcanzado){
                 tococharco = false;
                 tocarCharco.SetActive(false);
                 bienhecho.SetActive(true);
@@ -124,6 +124,21 @@ public class TutorialRana : MonoBehaviour
 
         if(com){
             completado.SetActive(true);
+        }
+    }
+
+    void OnCollisionEnter(Collision collision){
+        if(tocoObstaculo1){
+            if (collision.gameObject.tag == "obsta")
+            {
+                tocoObstaculo = true;
+            }
+        }
+        if(tococharco){
+            if (collision.gameObject.tag == "charco")
+            {
+                esAlcanzado = true;
+            }
         }
     }
 }
