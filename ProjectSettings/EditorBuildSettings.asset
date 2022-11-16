@@ -62,19 +62,19 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/JuegoTortuga/JuegoTortuga VR.unity
     guid: 5316be5e1dbd42348a79315c4e7e6c22
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tutoriales/Quirquincho VR Tutorial.unity
     guid: 093e24e418d52c14da740926c1774f3e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tutoriales/JuegoTortuga VR Tutorial.unity
     guid: 9c945bd82695ad64db615fc86a13d540
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tutoriales/JuegoRanaVR Tutorial.unity
     guid: 020d607001c818143bddfc933d1a25fb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tutoriales/JuegoGuanaco VR Tutorial.unity
     guid: e0b850deeea780844b3d14f89b47dcc3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Museo VR.unity
     guid: 6eb8525a3e987e040bac940e16cd2231
   m_configObjects:

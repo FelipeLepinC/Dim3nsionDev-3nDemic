@@ -35,18 +35,35 @@ public class ObstaculoMultiplayer : MonoBehaviour
         Debug.Log("Se han detectado : "+targetsInViewRadius.Length+" jugadores");
 		if(gameObject.tag == "Tronco")
         {
-            if(targetsInViewRadius.Length >= 2) moverObstaculo();
-            else Debug.Log("Se requiere de mas jugadores para mover este obstaculo");
+            if(targetsInViewRadius.Length >= 2)
+            {
+                Debug.Log("Se esta moviendo el obstaculo");
+                moverObstaculo();
+            }
+            else 
+            {
+                noMoverObstaculo();
+            }
         }
         else if(gameObject.tag == "Branches")
         {
-            if(targetsInViewRadius.Length >= 1) moverObstaculo();
+            if(targetsInViewRadius.Length >= 1) 
+            {
+                Debug.Log("Se esta moviendo el obstaculo");
+                moverObstaculo();
+            }
+            else noMoverObstaculo();
         }
 	}
 
     public void moverObstaculo(){
         Rigidbody rb = GetComponent<Rigidbody>();
         rb.mass = 1;
+    }
+
+    public void noMoverObstaculo(){
+        Rigidbody rb = GetComponent<Rigidbody>();
+        rb.mass = 500;
     }
 
     // private void OnCollisionEnter(Collision collision)
