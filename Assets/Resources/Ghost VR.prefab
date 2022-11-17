@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5489339955254995573
 RectTransform:
   m_ObjectHideFlags: 0
@@ -152,7 +152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3511432325530268296
 RectTransform:
   m_ObjectHideFlags: 0
@@ -578,12 +578,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   jumpingForce: 0
+  saltando: 0
   gravity: 0
   groundLayer:
     serializedVersion: 2
     m_Bits: 2147483647
   inputSource: 4
   inputSource2: 5
+  primaryButtonState: 0
 --- !u!114 &7208146830163970932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1592,6 +1594,10 @@ PrefabInstance:
       value: -196
       objectReference: {fileID: 0}
     - target: {fileID: 2709730986996985899, guid: 64150cf320349504788c88c871520c2a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709730987010203230, guid: 64150cf320349504788c88c871520c2a, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}

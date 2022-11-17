@@ -75,6 +75,13 @@ public class ObstaculoMultiplayer : MonoBehaviour
         rb.mass = 5000000;
     }
 
+    private void OnCollisionEnter(Collision other) {
+        if(other.gameObject.tag == "mosca")
+        {
+            Physics.IgnoreCollision(other.gameObject.GetComponent<CapsuleCollider>(), GetComponent<MeshCollider>());
+        }
+    }
+
     /*
     public void moverObstaculo(){
         gameObject.transform.position = gameObject.transform.position;
