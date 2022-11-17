@@ -8697,8 +8697,8 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8570830174958104956}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 373baa62a80a7c240874a862e51dd205, type: 3}
-  m_Controller: {fileID: 9100000, guid: 3a3b3df87db5b844b9e044c02c8e2650, type: 2}
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c1253b5da7760074eba419c2ac8fb3cd, type: 2}
   m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8733,6 +8733,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  terminar: {fileID: 0}
+  ghost: {fileID: 0}
   healthPoints: 100
 --- !u!54 &9002820476892541557
 Rigidbody:

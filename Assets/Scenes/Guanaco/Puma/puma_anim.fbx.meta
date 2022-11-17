@@ -8,110 +8,30 @@ ModelImporter:
     second: rig.003|rig.003Action
   externalObjects:
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ChinFur.001
-    second: {fileID: 2100000, guid: 84ddd05ec63806a43ac68cfbfbf0b062, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Claws.001
-    second: {fileID: 2100000, guid: 4e99343a1571c294ea9a714a71c55a9f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: EarFur.001
-    second: {fileID: 2100000, guid: ab9e2dad98670a043af01d681896702f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: EyeBall.001
-    second: {fileID: 2100000, guid: e8e8733699c16784aaa8147aa57dfe2a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: EyeWhite.001
-    second: {fileID: 2100000, guid: f74ae911ff9b9424aa9440553547df0b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: InnerEye.001
-    second: {fileID: 2100000, guid: 54d8a44054035064387279c27026664f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: InnerMouth.001
-    second: {fileID: 2100000, guid: 8a539f6e5df9f824380f900d7e393f21, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Iris.001
-    second: {fileID: 2100000, guid: 8a9e72f7000995044af71b9407cecd53, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: IrisRing.001
-    second: {fileID: 2100000, guid: ae3283c95b19d9842a85baf1aa7ebf9c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Lips.001
-    second: {fileID: 2100000, guid: aee22a159b6b83447814dcd08cf3e156, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Nose.001
-    second: {fileID: 2100000, guid: b98b5a978c3902b408d2444b1a01474a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Pads.001
-    second: {fileID: 2100000, guid: 2187811f56088ae438476ea177c945ad, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Pupils.001
-    second: {fileID: 2100000, guid: 3ff48087379c2e24aa1a132ef4bbad32, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Skin.001
-    second: {fileID: 2100000, guid: b6e686a1fca043f439f16aad22589ee6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Teeth.001
-    second: {fileID: 2100000, guid: d79692e03d16e7743a3a558853a52e06, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Whiskers.001
-    second: {fileID: 2100000, guid: 8643b100f9578f14487b38a51a704103, type: 2}
-  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: EyeBlueM
-    second: {fileID: 2800000, guid: cd7ba321fdaf14f42a62f7196b72c102, type: 3}
+    second: {fileID: 2800000, guid: 8b6765a98a31c834c888b8be27158d06, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: PumaM2
-    second: {fileID: 2800000, guid: 2baa6ec7914e4d04ba8bdb5d707050fd, type: 3}
+    second: {fileID: 2800000, guid: 03e971fc64c17644eae3a27f134a8c7d, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: ShortHairB
-    second: {fileID: 2800000, guid: f961764075e0d3d42959db865bbec0a1, type: 3}
+    second: {fileID: 2800000, guid: 73e06398f11655a4e9a95f1b5dff5bd4, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Shortfftr
-    second: {fileID: 2800000, guid: eecb4827b09643245bc89974a629338b, type: 3}
+    second: {fileID: 2800000, guid: 662ac5e9d2b5ad34caf87ccb76ed9a00, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: gpumaff
-    second: {fileID: 2800000, guid: ff94e9c09d2bffd46b27a722a9f755eb, type: 3}
+    second: {fileID: 2800000, guid: 5938fa759b950374187862ff4dc64456, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -132,7 +52,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -145,14 +65,14 @@ ModelImporter:
       takeName: rig.003|rig.003Action
       internalID: 0
       firstFrame: 0
-      lastFrame: 140
+      lastFrame: 65
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -198,7 +118,7 @@ ModelImporter:
     bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
-    maxBonesPerVertex: 4
+    maxBonesPerVertex: 6
     minBoneWeight: 0.001
     optimizeBones: 1
     meshOptimizationFlags: -1
@@ -235,13 +155,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: rig.003
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   additionalBone: 0
   userData: 
