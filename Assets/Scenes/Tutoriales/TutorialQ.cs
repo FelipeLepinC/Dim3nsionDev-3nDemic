@@ -57,10 +57,10 @@ public class TutorialQ : MonoBehaviour
                 if(pasos == 2){
                     reune10 = true;
                 }
-                if(pasos == 5){
+                if(pasos == 4){
                     activa = true;
                 }
-                if(pasos == 4){
+                if(pasos == 5){
                     com = true;
                 }
             }
