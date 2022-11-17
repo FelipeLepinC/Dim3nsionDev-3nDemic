@@ -1121,7 +1121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3251935421220064607, guid: 13aacb6e282d39b4a90241b393438e8b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -7.0000305
+      value: -7.000061
       objectReference: {fileID: 0}
     - target: {fileID: 3251935421220064607, guid: 13aacb6e282d39b4a90241b393438e8b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1258,8 +1258,8 @@ MonoBehaviour:
   silver: {fileID: 3529184089937384529}
   gold: {fileID: 3529184090769697572}
   panel: {fileID: 3529184089837374683}
-  controller: {fileID: 0}
-  contadores: {fileID: 0}
+  controller: {fileID: 925487533576748666}
+  contadores: {fileID: 1464630159}
   finished: 0
   button: {fileID: 3529184090621621483}
   capturado: 0
@@ -1713,6 +1713,11 @@ Transform:
 --- !u!4 &925487533576748662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7208146830163970938, guid: c66820164e3bbde4380f152ca3c533b0, type: 3}
+  m_PrefabInstance: {fileID: 7556905313395078412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!143 &925487533576748666 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 7208146830163970934, guid: c66820164e3bbde4380f152ca3c533b0, type: 3}
   m_PrefabInstance: {fileID: 7556905313395078412}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &925487533576748669 stripped

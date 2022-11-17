@@ -106,7 +106,7 @@ public class TutorialQ : MonoBehaviour
 
         if(activa){
             boost.SetActive(true);
-            if(OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0){
+            if(OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) > 0){
                 activa = false;
                 boost.SetActive(false);
                 bienhecho.SetActive(true);

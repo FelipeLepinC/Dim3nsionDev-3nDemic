@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7712534262532512155}
   - component: {fileID: -5900272002420924947}
   - component: {fileID: 5702623318559246463}
+  - component: {fileID: 7372973067852946792}
   m_Layer: 0
   m_Name: GuanacosManager
   m_TagString: GameManager
@@ -131,7 +132,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4934612140023223457}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 339b5f319cc4e3846a1476eb38c7e1c2, type: 3}
   m_Name: 
@@ -150,6 +151,37 @@ MonoBehaviour:
   silver: {fileID: 0}
   gold: {fileID: 0}
   restante: 0
+  panel: {fileID: 0}
+  controller: {fileID: 0}
+  contadores: {fileID: 0}
+  finished: 0
+  button: {fileID: 0}
+  capturado: 0
+--- !u!114 &7372973067852946792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4934612140023223457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7451d73341226304ca4b5a11ec2c001b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  min: 0
+  seg: 0
+  tiempo: {fileID: 0}
+  mensaje: {fileID: 0}
+  puntaje: {fileID: 0}
+  capturas: {fileID: 0}
+  medalla: {fileID: 0}
+  puntajeTexto: {fileID: 0}
+  capturasTexto: {fileID: 0}
+  medallaPNG: {fileID: 0}
+  bronze: {fileID: 0}
+  silver: {fileID: 0}
+  gold: {fileID: 0}
   panel: {fileID: 0}
   controller: {fileID: 0}
   contadores: {fileID: 0}
