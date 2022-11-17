@@ -1564,7 +1564,6 @@ GameObject:
   - component: {fileID: 1115993286}
   - component: {fileID: 1115993285}
   - component: {fileID: 1115993284}
-  - component: {fileID: 1115993283}
   - component: {fileID: 1115993288}
   m_Layer: 0
   m_Name: RoomManager (1)
@@ -1573,24 +1572,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1115993283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115993282}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 607302d9a9281204f80048f0b90908e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 5807141828938653865, guid: 97b583fd92555094a905f8c20ce7e590, type: 3}
-  tortugaPrefab: {fileID: 0}
-  TortugaManager: {fileID: 5787050847938529809, guid: 2341d9727423bba4fb961bbf401d8c48, type: 3}
-  trampaPrefab: {fileID: 0}
-  cameras: []
-  total: 0
 --- !u!114 &1115993284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1627,7 +1608,7 @@ MonoBehaviour:
   observableSearch: 0
   ObservedComponents:
   - {fileID: 1115993284}
-  sceneViewId: 2
+  sceneViewId: 997
   InstantiationId: 0
   isRuntimeInstantiated: 0
 --- !u!114 &1115993286

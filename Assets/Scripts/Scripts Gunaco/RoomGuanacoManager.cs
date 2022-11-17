@@ -55,8 +55,8 @@ public class RoomGuanacoManager : MonoBehaviourPunCallbacks
             wait = false;
             GameObject player = PhotonNetwork.Instantiate(playerPrefab.name, playerPrefab.transform.position, Quaternion.identity);          
             if (PhotonNetwork.IsMasterClient){
-                StartCoroutine(SpawnItems());
-                StartCoroutine(GenerateNewEnemy());
+                //StartCoroutine(SpawnItems());
+                GameObject quirquincho = PhotonNetwork.Instantiate(GuanacoManager.name, Vector3.zero, Quaternion.identity);
             }
             
         }
@@ -70,19 +70,19 @@ public class RoomGuanacoManager : MonoBehaviourPunCallbacks
         //quirquincho.GetComponent<Tiempo>().enabled = true;
     }
 
-    IEnumerator GenerateNewEnemy(){
-        Vector3 portal = new Vector3(300.0f,34.126f,323.74f);
-        // GameObject enemy = PhotonNetwork.Instantiate(enemyPrefab.name, portal, Quaternion.identity);
-        // yield return new WaitForSeconds(Random.Range(10,20));
-        // alerta.SetActive(true);
+    //IEnumerator GenerateNewEnemy(){
+    //    Vector3 portal = new Vector3(300.0f,34.126f,323.74f);
+    //    // GameObject enemy = PhotonNetwork.Instantiate(enemyPrefab.name, portal, Quaternion.identity);
+    //    // yield return new WaitForSeconds(Random.Range(10,20));
+    //    // alerta.SetActive(true);
 
-        for(int i=0; i < numeroDeEnemigos; i++){
-            GameObject enemy = PhotonNetwork.Instantiate(enemyPrefab.name, portal, Quaternion.identity);
-            // enemy.AddComponent<Enemy>();
-            yield return new WaitForSeconds(Random.Range(10,20));
-            // alerta.SetActive(true);
-        }
-    }
+    //    for(int i=0; i < numeroDeEnemigos; i++){
+    //        GameObject enemy = PhotonNetwork.Instantiate(enemyPrefab.name, portal, Quaternion.identity);
+    //        // enemy.AddComponent<Enemy>();
+    //        yield return new WaitForSeconds(Random.Range(10,20));
+    //        // alerta.SetActive(true);
+    //    }
+    //}
 
     [PunRPC]
     void HabilitarTiempo(GameObject tiempo){

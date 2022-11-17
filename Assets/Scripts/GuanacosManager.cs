@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+
 
 public class GuanacosManager : MonoBehaviour
 {
@@ -9,9 +11,14 @@ public class GuanacosManager : MonoBehaviour
     public int total;
     public int puntos = 0;
     int inicio;
+
+    public int numeroDeEnemigos = 5;
+    public GameObject enemyPrefab;
+
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine(GenerateNewEnemy());
         Debug.Log("Hola soy el Guanacos Manager");
         this.GetComponent<Tiempo>().enabled = true;
         jugadores = GameObject.FindGameObjectsWithTag("Player");
@@ -47,5 +54,21 @@ public class GuanacosManager : MonoBehaviour
 
     public void SumarPuntos(){
         puntos = puntos + 1;
+    }
+
+    IEnumerator GenerateNewEnemy()
+    {
+        Vector3 portal = new Vector3(300.0f, 34.126f, 323.74f);
+        // GameObject enemy = PhotonNetwork.Instantiate(enemyPrefab.name, portal, Quaternion.identity);
+        // yield return new WaitForSeconds(Random.Range(10,20));
+        // alerta.SetActive(true);
+
+        for (int i = 0; i < numeroDeEnemigos; i++)
+        {
+            GameObject enemy = PhotonNetwork.Instantiate(enemyPrefab.name, portal, Quaternion.identity);
+            // enemy.AddComponent<Enemy>();
+            yield return new WaitForSeconds(Random.Range(10, 20));
+            // alerta.SetActive(true);
+        }
     }
 }

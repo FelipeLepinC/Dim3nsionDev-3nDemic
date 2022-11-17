@@ -1561,10 +1561,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1115993287}
-  - component: {fileID: 1115993286}
   - component: {fileID: 1115993285}
   - component: {fileID: 1115993284}
-  - component: {fileID: 1115993283}
   - component: {fileID: 1115993288}
   m_Layer: 0
   m_Name: RoomManager (1)
@@ -1573,24 +1571,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1115993283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115993282}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 607302d9a9281204f80048f0b90908e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 5807141828938653865, guid: 97b583fd92555094a905f8c20ce7e590, type: 3}
-  tortugaPrefab: {fileID: 0}
-  TortugaManager: {fileID: 5787050847938529809, guid: 2341d9727423bba4fb961bbf401d8c48, type: 3}
-  trampaPrefab: {fileID: 0}
-  cameras: []
-  total: 0
 --- !u!114 &1115993284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1627,27 +1607,9 @@ MonoBehaviour:
   observableSearch: 0
   ObservedComponents:
   - {fileID: 1115993284}
-  sceneViewId: 996
+  sceneViewId: 995
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &1115993286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115993282}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 150815355a004ab44ac8f090be89da93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 7582061563991482125, guid: f240cf4b228f89e43a8fbe3891d5547d, type: 3}
-  hunterPrefab: {fileID: 3109350519016471037, guid: d38bcc67f2da1ab419975736de74421c, type: 3}
-  QuirquinchoManager: {fileID: 5787050847938529809, guid: 37f6720e50c0c224cb49af1c168ea89d, type: 3}
-  prefabMadriguera: {fileID: 5709715432578299747, guid: 5702de4f001dc0e4cb30a8f807d473db, type: 3}
-  cameras: []
-  total: 0
 --- !u!4 &1115993287
 Transform:
   m_ObjectHideFlags: 0

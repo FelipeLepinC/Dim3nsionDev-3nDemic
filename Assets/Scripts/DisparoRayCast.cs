@@ -8,7 +8,7 @@ using Unity.XR.CoreUtils;
 public class DisparoRayCast : MonoBehaviour
 {
     bool shooting;
-    float dano_saliva = 40.0f;
+    float dano_saliva = 15.0f;
 
     public float cooldown_saliva = 0.0f;
     public const float COOLDOWN = 1.0f;
