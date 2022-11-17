@@ -4,7 +4,7 @@ using UnityEngine;
 using Photon.Pun;
 
 
-public class GuanacosManager : MonoBehaviour
+public class GuanacosManager : MonoBehaviourPunCallbacks
 {
     public GameObject[] jugadores;
     public GameObject[] fantasmas;
@@ -18,7 +18,10 @@ public class GuanacosManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(GenerateNewEnemy());
+        if (PhotonNetwork.IsMasterClient){
+            StartCoroutine(GenerateNewEnemy());
+        }
+        
         Debug.Log("Hola soy el Guanacos Manager");
         this.GetComponent<Tiempo>().enabled = true;
         jugadores = GameObject.FindGameObjectsWithTag("Player");
