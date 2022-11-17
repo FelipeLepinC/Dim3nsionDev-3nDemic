@@ -33,6 +33,18 @@ public class PantallasCarga : MonoBehaviour
             if(juego == "Quirquincho"){
                 SceneManager.LoadScene("Quirquincho VR");
             }
+            if(juego == "TutorialGuanaco"){
+                SceneManager.LoadScene("JuegoGuanaco VR Tutorial");
+            }
+            if(juego == "TutorialTortuga"){
+                SceneManager.LoadScene("JuegoTortuga VR Tutorial");
+            }
+            if(juego == "TutorialRana"){
+                SceneManager.LoadScene("JuegoRanaVR Tutorial");
+            }
+            if(juego == "TutorialQuirquincho"){
+                SceneManager.LoadScene("Quirquincho VR Tutorial");
+            }
         }
 
         
