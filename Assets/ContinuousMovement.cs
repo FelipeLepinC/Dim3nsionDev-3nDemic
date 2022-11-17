@@ -8,7 +8,7 @@ using Unity.XR.CoreUtils;
 public class ContinuousMovement : MonoBehaviour
 {
     public float speed = 4;
-    public float jumpingForce = 600f;
+    public float jumpingForce = 300f;
     private float jumpingSpeed;
     public bool saltando = false;
     bool cayendo = false;
@@ -102,7 +102,7 @@ public class ContinuousMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Terrain" || collision.gameObject.tag == "Agua")
         {
-            saltando = true;
+            //saltando = true;
         }
     }
 }
