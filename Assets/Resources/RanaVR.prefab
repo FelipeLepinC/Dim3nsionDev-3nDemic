@@ -1302,12 +1302,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   jumpingForce: 600
+  saltando: 0
   gravity: -10
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
   inputSource: 4
   inputSource2: 5
+  primaryButtonState: 0
 --- !u!54 &5863969737126105493
 Rigidbody:
   m_ObjectHideFlags: 0

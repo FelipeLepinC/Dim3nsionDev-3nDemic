@@ -60,6 +60,23 @@ public class ObstaculoMultiplayer : MonoBehaviour
 	}
 
     public void moverObstaculo(){
+        Rigidbody rb = GetComponent<Rigidbody>();
+        rb.mass = 1;
+        gameObject.transform.position = gameObject.transform.position;
+        gameObject.transform.rotation =  gameObject.transform.rotation;
+        currentPos = gameObject.transform.position;
+        currentRot = gameObject.transform.rotation;
+    }
+
+    public void noMoverObstaculo(){
+        // gameObject.transform.position = currentPos;
+        // gameObject.transform.rotation = currentRot;
+        Rigidbody rb = GetComponent<Rigidbody>();
+        rb.mass = 5000000;
+    }
+
+    /*
+    public void moverObstaculo(){
         gameObject.transform.position = gameObject.transform.position;
         gameObject.transform.rotation =  gameObject.transform.rotation;
         currentPos = gameObject.transform.position;
@@ -74,6 +91,7 @@ public class ObstaculoMultiplayer : MonoBehaviour
         Rigidbody rb = GetComponent<Rigidbody>();
         rb.mass = 5000000;
     }
+    */
 
     // private void OnCollisionEnter(Collision collision)
     // {
