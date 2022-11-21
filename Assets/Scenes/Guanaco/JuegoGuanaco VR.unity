@@ -781,6 +781,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2595929798264612523, guid: 9057a5caa55b96d4880d861f217a65d9, type: 3}
+      propertyPath: jugador
+      value: 
+      objectReference: {fileID: 1905716256}
     - target: {fileID: 5154485428607418524, guid: 9057a5caa55b96d4880d861f217a65d9, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -855,6 +859,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9057a5caa55b96d4880d861f217a65d9, type: 3}
+--- !u!1 &1905716256 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8459212910590469671, guid: 9057a5caa55b96d4880d861f217a65d9, type: 3}
+  m_PrefabInstance: {fileID: 1905716255}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1982578838
 GameObject:
   m_ObjectHideFlags: 0

@@ -568,6 +568,7 @@ GameObject:
   - component: {fileID: 3251935421220064600}
   - component: {fileID: 3251935421220064601}
   - component: {fileID: 3251935421220064603}
+  - component: {fileID: 6372573972088593911}
   m_Layer: 8
   m_Name: PanelTiempo
   m_TagString: Untagged
@@ -673,6 +674,26 @@ MonoBehaviour:
   porcentaje: {fileID: 0}
   tortuga: {fileID: 0}
   contador: {fileID: 0}
+--- !u!114 &6372573972088593911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3251935421220064604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62378331a7f60542985d4dfd792c085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoEsperaPantallaFinal: 10
+  tiempoTranscurrido: 0
+  jugador: {fileID: 0}
+  juegoQuirquincho: 0
+  juegoGuanaco: 0
+  juegoRana: 0
+  juegoRanaMultiplayer: 0
+  juegoTortuga: 0
 --- !u!1 &3251935421328016545
 GameObject:
   m_ObjectHideFlags: 0

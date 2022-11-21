@@ -1071,6 +1071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tiempoEsperaPantallaFinal: 10
+  tiempoTranscurrido: 0
   jugador: {fileID: 1773623561427589}
   juegoQuirquincho: 0
   juegoGuanaco: 0
@@ -12483,6 +12484,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4490258198046413}
     m_Modifications:
+    - target: {fileID: 1360971115181053900, guid: 7992608a320158d449c6d54794a5a77a, type: 3}
+      propertyPath: jugador
+      value: 
+      objectReference: {fileID: 1773623561427589}
     - target: {fileID: 5371890862330196099, guid: 7992608a320158d449c6d54794a5a77a, type: 3}
       propertyPath: m_Pivot.x
       value: 0

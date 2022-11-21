@@ -6235,6 +6235,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6018622748359788354, guid: f240cf4b228f89e43a8fbe3891d5547d, type: 3}
+      propertyPath: sceneViewId
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6950901900073718465, guid: f240cf4b228f89e43a8fbe3891d5547d, type: 3}
       propertyPath: sceneViewId
       value: 5
@@ -8430,6 +8434,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6106205764619560512, guid: 5702de4f001dc0e4cb30a8f807d473db, type: 3}
+      propertyPath: sceneViewId
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5709715432578299747, guid: 5702de4f001dc0e4cb30a8f807d473db, type: 3}
       propertyPath: m_Name
       value: Madriguera Simulator (3)

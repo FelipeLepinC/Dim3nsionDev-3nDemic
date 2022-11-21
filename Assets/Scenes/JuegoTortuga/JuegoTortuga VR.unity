@@ -1646,6 +1646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &108822233
 Animator:
   serializedVersion: 4
@@ -3302,6 +3303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &325866941
 Animator:
   serializedVersion: 4
@@ -8736,6 +8738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &1108264723
 Animator:
   serializedVersion: 4
@@ -8949,6 +8952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &1137618373
 Animator:
   serializedVersion: 4
@@ -9424,6 +9428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &1201599076
 Animator:
   serializedVersion: 4
@@ -11845,6 +11850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &1473832136
 Animator:
   serializedVersion: 4
@@ -13015,6 +13021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!54 &1613923479
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13558,6 +13565,7 @@ GameObject:
   - component: {fileID: 1659420533}
   - component: {fileID: 1659420532}
   - component: {fileID: 1659420534}
+  - component: {fileID: 1659420535}
   m_Layer: 8
   m_Name: PanelTiempo
   m_TagString: Untagged
@@ -13663,6 +13671,26 @@ MonoBehaviour:
   porcentaje: {fileID: 0}
   tortuga: {fileID: 755073863}
   contador: {fileID: 1193844134}
+--- !u!114 &1659420535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659420529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62378331a7f60542985d4dfd792c085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoEsperaPantallaFinal: 10
+  tiempoTranscurrido: 0
+  jugador: {fileID: 1828995132}
+  juegoQuirquincho: 0
+  juegoGuanaco: 0
+  juegoRana: 0
+  juegoRanaMultiplayer: 0
+  juegoTortuga: 0
 --- !u!1001 &1681896739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13885,6 +13913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &1687010602
 Animator:
   serializedVersion: 4
@@ -15822,6 +15851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &1961506876
 Animator:
   serializedVersion: 4
@@ -16510,6 +16540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &2009869324
 Animator:
   serializedVersion: 4
@@ -16785,6 +16816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &2021436391
 Animator:
   serializedVersion: 4
@@ -17056,6 +17088,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7c52b3650b7f54e9bea63ee0633d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liberarTortuga: 0
 --- !u!95 &2065742806
 Animator:
   serializedVersion: 4
@@ -18192,6 +18225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TortugaCounter: {fileID: 1193844134}
   PanelTiempo: {fileID: 1659420529}
+  maxNPC: 0
   rescatadas: 0
 --- !u!4 &8390854599111802200 stripped
 Transform:

@@ -3645,6 +3645,11 @@ CapsuleCollider:
   m_Height: 0.20629448
   m_Direction: 1
   m_Center: {x: 0.01517118, y: 0.008602688, z: -0.010639191}
+--- !u!1 &508672766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5288008593202595737, guid: f753d5d1c77907c4b9b893259632a48d, type: 3}
+  m_PrefabInstance: {fileID: 1862568910}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &512035536 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3ec42aa31461f8d4e9d2137295176da9, type: 3}
@@ -7503,12 +7508,32 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5288008593202595743, guid: f753d5d1c77907c4b9b893259632a48d, type: 3}
   m_PrefabInstance: {fileID: 1862568910}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 508672766}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e4412f0f870e7c45b3d356d4d0b4f53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1077500234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508672766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62378331a7f60542985d4dfd792c085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoEsperaPantallaFinal: 10
+  tiempoTranscurrido: 0
+  jugador: {fileID: 1862568911}
+  juegoQuirquincho: 0
+  juegoGuanaco: 0
+  juegoRana: 0
+  juegoRanaMultiplayer: 0
+  juegoTortuga: 0
 --- !u!1 &1084406824 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3ec42aa31461f8d4e9d2137295176da9, type: 3}
@@ -9304,6 +9329,8 @@ MonoBehaviour:
   obstacleMask:
     serializedVersion: 2
     m_Bits: 0
+  min: 100000000
+  targetMinimo: {fileID: 0}
   visibleTargets: []
 --- !u!195 &1379747595
 NavMeshAgent:
@@ -9466,6 +9493,7 @@ MonoBehaviour:
   tiempo: {fileID: 1077500233}
   campoVision: {fileID: 1379747593}
   target: {fileID: 1862568915}
+  trapped: 0
   madriguera: {fileID: 0}
   controller: {fileID: 1862568918}
   ui_contador: {fileID: 1862568917}
