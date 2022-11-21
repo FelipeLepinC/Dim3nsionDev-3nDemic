@@ -225,6 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 938761413207878389}
+  camera: {fileID: 0}
 --- !u!114 &3086306936499840816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2033,7 +2034,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5126527961139664765, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5126527961139664767, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_Enabled
@@ -2599,6 +2600,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7094977340588366727, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
   m_PrefabInstance: {fileID: 814738798040433802}
   m_PrefabAsset: {fileID: 0}
+--- !u!143 &1220382336440894974
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7582061563991482125}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1
+  m_Radius: 0.7
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1.1, z: 0.3}
 --- !u!82 &2935438905738882604
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2876,6 +2895,10 @@ PrefabInstance:
       value: quirquincho_animado
       objectReference: {fileID: 0}
     - target: {fileID: 7189785752574487063, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7189785752574487063, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
       propertyPath: m_TagString
       value: Capsula
       objectReference: {fileID: 0}
@@ -2931,6 +2954,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8000127817378612173, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
+      propertyPath: m_Height
+      value: 0.46111554
+      objectReference: {fileID: 0}
+    - target: {fileID: 8000127817378612173, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
+      propertyPath: m_Radius
+      value: 0.23055775
+      objectReference: {fileID: 0}
+    - target: {fileID: 8000127817378612173, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8000127817378612173, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
+      propertyPath: m_Center.y
+      value: -0.11401638
+      objectReference: {fileID: 0}
+    - target: {fileID: 8000127817378612173, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
+      propertyPath: m_Center.z
+      value: 0.10376231
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
 --- !u!1 &6373392157545228001 stripped
@@ -2951,6 +2994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 938761413207878389}
+  camera: {fileID: 5506669354310931447}
 --- !u!114 &6018622748359788354
 MonoBehaviour:
   m_ObjectHideFlags: 0
