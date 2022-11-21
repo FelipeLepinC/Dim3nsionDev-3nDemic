@@ -57,7 +57,7 @@ public class Cazador : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        
+        movementSpeed = movementSpeed / 2;
         nav = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
@@ -123,6 +123,7 @@ public class Cazador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(movementSpeed);
         StartCoroutine(verificar());
         Debug.Log(campoVision.GetComponent<FieldOfView>().visibleTargets.Count);
         if (campoVision.GetComponent<FieldOfView>().visibleTargets.Count == 0)
@@ -242,7 +243,7 @@ public class Cazador : MonoBehaviour
     private void MoveToPerseguido()
     {
         animator.SetBool("isRunning", true);
-        rb.AddForce(Vector3.Normalize(direccionPersecucion) * movementSpeed);
+        //rb.AddForce(Vector3.Normalize(direccionPersecucion) * movementSpeed);
         transform.forward = Vector3.Normalize(direccionPersecucion);
     }
 
@@ -251,6 +252,7 @@ public class Cazador : MonoBehaviour
         Debug.Log(player.gameObject.tag);
         if (player.gameObject.layer == 8 || player.gameObject.tag == "Capsula" || player.gameObject.tag == "Jugador")
         {
+            movementSpeed = 14;
             trapped = true;
             perdido = true;
             campoVision.GetComponent<FieldOfView>().minimo();
