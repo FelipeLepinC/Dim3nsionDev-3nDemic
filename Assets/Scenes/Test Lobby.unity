@@ -386,7 +386,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00012207031, y: 1.1218262}
+  m_AnchoredPosition: {x: 0.00012207031, y: 1.1217041}
   m_SizeDelta: {x: -309.67505, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &107250021
@@ -540,7 +540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150815355a004ab44ac8f090be89da93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 7477088287983539099, guid: 1323bb346af3aef4e8b7c382af1222a6, type: 3}
+  playerPrefab: {fileID: 7477088287983539099, guid: cdf2b6602ccdb3048ae63bc2893444df, type: 3}
   hunterPrefab: {fileID: 3109350519016471037, guid: d38bcc67f2da1ab419975736de74421c, type: 3}
   QuirquinchoManager: {fileID: 5787050847938529809, guid: 37f6720e50c0c224cb49af1c168ea89d, type: 3}
   prefabMadriguera: {fileID: 727115480886269834, guid: c10603b4d0b0723468919117b621e30f, type: 3}
@@ -2394,8 +2394,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1473204156}
-        m_TargetAssemblyTypeName: Launcher, Assembly-CSharp
+      - m_Target: {fileID: 1473204158}
+        m_TargetAssemblyTypeName: RoomLauncher, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -2470,6 +2470,7 @@ GameObject:
   - component: {fileID: 1473204152}
   - component: {fileID: 1473204156}
   - component: {fileID: 1473204157}
+  - component: {fileID: 1473204158}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2603,6 +2604,28 @@ MonoBehaviour:
   - {fileID: 342739394}
   - {fileID: 1796712582}
   - {fileID: 1540418556}
+  textoNombreSala: {fileID: 1124971041}
+--- !u!114 &1473204158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473204151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b690ab2832388b14baf25a05a453e4ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreSala: Sala Quirquincho
+  codigoJuego: 1
+  errorText: {fileID: 1533477581}
+  roomNameText: {fileID: 1124971041}
+  roomListContent: {fileID: 1166201997}
+  playerListContent: {fileID: 679671473}
+  roomListItemPrefab: {fileID: 2896924541658010991, guid: 3d2ac56eaac33d74d8e5e0db9e60476f, type: 3}
+  playerListItemPrefab: {fileID: 2138200201995256142, guid: 8e10a26ecf9475847861255351511db3, type: 3}
+  startGameButton: {fileID: 1411334608}
 --- !u!1 &1482390218
 GameObject:
   m_ObjectHideFlags: 0

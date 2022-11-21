@@ -45,7 +45,7 @@ public class SphereRayCast : MonoBehaviour
     void FixedUpdate(){
         Apples = Physics.OverlapSphere(this.transform.position, radius);
         foreach(Collider apple in Apples){
-            if (apple.tag == "Player1"){
+            if (apple.tag == "Jugador"){
                 if (candado == 1){
                     candado = 0;
                     cazadores = GameObject.FindGameObjectsWithTag("Cazador");
