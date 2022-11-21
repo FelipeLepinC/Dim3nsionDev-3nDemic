@@ -92,7 +92,7 @@ public class AppleCounter : MonoBehaviour
     public void Apple(){
         counter += 1;
         PersonalCounter.text = "" + (int)counter;
-        Instantiate(Sonido);
+        //Instantiate(Sonido); //ASIGNAR SONIDO
     }
 
     public int InHome(){
