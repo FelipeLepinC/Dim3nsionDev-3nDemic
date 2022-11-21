@@ -61,7 +61,7 @@ public class Mensaje : MonoBehaviour
 
             if(OVRInput.Get(OVRInput.Button.Three)){
                 if(juego == "Quirquincho"){
-                    SceneManager.LoadScene("QuirquinchoLobbyVR");
+                    SceneManager.LoadScene("LobbyQuirquinchoVR");
                 }
                 if(juego == "Tortuga"){
                     SceneManager.LoadScene("TortugaLobbyVR");

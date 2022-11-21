@@ -81,6 +81,9 @@ EditorBuildSettings:
     path: Assets/GuanacoLobbyVR.unity
     guid: fa24b649cc090784c918534d66d8bbee
   - enabled: 1
+    path: Assets/Scenes/LobbyQuirquinchoVR.unity
+    guid: 5cf72b3e81e5cb64d9760d1880fd5494
+  - enabled: 1
     path: Assets/QuirquinchoLobbyVR.unity
     guid: fa33704a97cbade44aee84b60ed13020
   - enabled: 1
