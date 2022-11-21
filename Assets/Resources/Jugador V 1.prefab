@@ -2018,15 +2018,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5126527961139664760, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.3600006
+      value: 51.25123
       objectReference: {fileID: 0}
     - target: {fileID: 5126527961139664760, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.9449997
+      value: -9.129105
       objectReference: {fileID: 0}
     - target: {fileID: 5126527961139664760, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -23.948792
+      value: 2.0306091
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126527961139664760, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7114625
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126527961139664760, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.05208389
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126527961139664760, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6989607
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126527961139664760, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.05061971
       objectReference: {fileID: 0}
     - target: {fileID: 5126527961139664765, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_Layer
@@ -2102,7 +2118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094977340588366727, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7094977340588366727, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_TagString
@@ -2617,7 +2633,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1.1, z: 0.3}
+  m_Center: {x: 0, y: 0, z: 0.3}
 --- !u!82 &2935438905738882604
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2963,12 +2979,16 @@ PrefabInstance:
       value: 0.23055775
       objectReference: {fileID: 0}
     - target: {fileID: 8000127817378612173, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8000127817378612173, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
       propertyPath: m_Center.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8000127817378612173, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
       propertyPath: m_Center.y
-      value: -0.11401638
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8000127817378612173, guid: 22506d92a940e4c42b9e6c2dbe355fa7, type: 3}
       propertyPath: m_Center.z

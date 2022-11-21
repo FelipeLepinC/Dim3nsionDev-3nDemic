@@ -254,13 +254,16 @@ public class Cazador : MonoBehaviour
             trapped = true;
             perdido = true;
             campoVision.GetComponent<FieldOfView>().minimo();
+            rb.velocity = new Vector3(0f, 0f, 0f);
             nav.ResetPath();
             interfaz.GetComponent<AppleCounter>().not_persued();
             Debug.Log("Han pillado al jugador");
             tiempo.GetComponent<TimeController>().pillado();
-            controller.enabled = false;
+            //controller.enabled = false;
+            player.gameObject.GetComponent<CharacterController>().enabled = false;
             perseguido.transform.position = new Vector3(-107.7f, 124.26f, 428.17f);
-            controller.enabled = true;
+            player.gameObject.GetComponent<CharacterController>().enabled = true;
+            //controller.enabled = true;
             ui_contador.GetComponent<AppleCounter>().Reset();
         }
         if (player.gameObject.tag == "Apple"){
