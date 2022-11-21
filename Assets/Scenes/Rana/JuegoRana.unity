@@ -274,6 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &2019015
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -451,6 +452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &24274178
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -566,6 +568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &37530445
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -801,6 +804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c940bd40e866ce948942958b851bb0e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  esAlcanzado: 0
 --- !u!1001 &86907390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1049,6 +1053,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3323064554680967234, guid: 5834274d8f4376a47a8781e914435170, type: 3}
   m_PrefabInstance: {fileID: 141285722}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &142254670 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7470900371381520231, guid: 7992608a320158d449c6d54794a5a77a, type: 3}
+  m_PrefabInstance: {fileID: 5371890863344724247}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &142254675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142254670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62378331a7f60542985d4dfd792c085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoEsperaPantallaFinal: 10
+  jugador: {fileID: 1773623561427589}
+  juegoQuirquincho: 0
+  juegoGuanaco: 0
+  juegoRana: 0
+  juegoRanaMultiplayer: 0
+  juegoTortuga: 0
 --- !u!1001 &160977085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1205,6 +1233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &187578350
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1382,6 +1411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &217593208
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1648,6 +1678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &288409751
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1775,6 +1806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &322414536
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1927,6 +1959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &325990486
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2252,6 +2285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c940bd40e866ce948942958b851bb0e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  esAlcanzado: 0
 --- !u!1 &372328561 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2690396340722285304, guid: 5834274d8f4376a47a8781e914435170, type: 3}
@@ -2743,6 +2777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &518739221
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2858,6 +2893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &528181153
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2973,6 +3009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &548940940
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3088,6 +3125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &560141252
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3437,6 +3475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &624279161
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3568,6 +3607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c940bd40e866ce948942958b851bb0e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  esAlcanzado: 0
 --- !u!1001 &633868975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3662,6 +3702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &633868978
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3839,6 +3880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &650085782
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3954,6 +3996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &661568393
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4074,6 +4117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &675908887
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4251,6 +4295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &753489636
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4556,6 +4601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &782149369
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4859,6 +4905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &891254716
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5098,6 +5145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &919032655
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5775,6 +5823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &1120507722
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6076,6 +6125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &1189777704
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6414,6 +6464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &1287662464
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6529,6 +6580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &1288744921
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6660,6 +6712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c940bd40e866ce948942958b851bb0e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  esAlcanzado: 0
 --- !u!1001 &1313869421
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6964,6 +7017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &1331402432
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7141,6 +7195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &1348239875
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7442,6 +7497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &1404903028
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7635,6 +7691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c940bd40e866ce948942958b851bb0e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  esAlcanzado: 0
 --- !u!1001 &1451523699
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7729,6 +7786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &1451523702
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8107,6 +8165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &1543299753
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8207,6 +8266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &1571054385
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8317,6 +8377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &1614047896
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8494,6 +8555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &1635224983
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8752,6 +8814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c940bd40e866ce948942958b851bb0e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  esAlcanzado: 0
 --- !u!1001 &1705440693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8846,6 +8909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &1705440696
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8961,6 +9025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &1713055117
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9092,6 +9157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c940bd40e866ce948942958b851bb0e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  esAlcanzado: 0
 --- !u!4 &1727205223 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 446978, guid: df07fe54e4cd51547a63cde71ab5910d, type: 3}
@@ -9288,6 +9354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &1801139257
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9488,6 +9555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c940bd40e866ce948942958b851bb0e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  esAlcanzado: 0
 --- !u!1 &1833162827
 GameObject:
   m_ObjectHideFlags: 0
@@ -9598,6 +9666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c940bd40e866ce948942958b851bb0e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  esAlcanzado: 0
 --- !u!1001 &1845081971
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9759,6 +9828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &1881752967
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9916,6 +9986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &1899947096
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10026,6 +10097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &1921651068
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10203,6 +10275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &1928572915
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10319,6 +10392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!1 &1936693003 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e7d03b3044189cb4b8d2b751d34fc16c, type: 3}
@@ -10336,6 +10410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &1936693005
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10508,6 +10583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &1972348191
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10685,6 +10761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &2003627067
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10862,6 +10939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &2020053747
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11170,6 +11248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a07b914e829de4f88727440939c9e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tocoObstaculo: 0
 --- !u!54 &2042501360
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11644,6 +11723,7 @@ MonoBehaviour:
   sin_tp: 0
   ultimoCheckpoint: {x: 0, y: 0, z: 0}
   necesitaSerTeletransportadoVR: 0
+  secomiomosquito1: 0
   healthPoints: 100
 --- !u!114 &136877097240810650
 MonoBehaviour:
