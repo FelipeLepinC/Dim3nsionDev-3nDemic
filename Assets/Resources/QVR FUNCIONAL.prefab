@@ -308,7 +308,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: c7df3847ca1113e4fa89eab062bdb065, type: 3}
     m_FontSize: 50
     m_FontStyle: 1
     m_BestFit: 0
@@ -556,7 +556,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xA1Presiona \"Enter\" para volver al men\xFA!"
+  m_Text: "\xA1Volveras al museo en unos segundos!"
 --- !u!1 &2697945324329426285
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,8 +1312,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e4412f0f870e7c45b3d356d4d0b4f53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  min: 5
-  seg: 20
+  min: 1
+  seg: 10
   tiempo: {fileID: 2134060072914998300}
   mensaje: {fileID: 9215255755121965589}
   puntaje: {fileID: 3529062583794837144}
@@ -1326,11 +1326,12 @@ MonoBehaviour:
   silver: {fileID: 5640917496511287917}
   gold: {fileID: 5060054389681280335}
   panel: {fileID: 8169459029443551332}
-  controller: {fileID: 0}
-  contadores: {fileID: 0}
+  controller: {fileID: 7477088287983539100}
+  contadores: {fileID: 3331050059805933968}
   finished: 0
   button: {fileID: 6225209899580049323}
   capturado: 0
+  cameraCont: {fileID: 7295483459668212935}
 --- !u!1 &5680887807367075436
 GameObject:
   m_ObjectHideFlags: 0
@@ -2408,6 +2409,11 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!143 &7477088287983539100 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 4551979710593022826, guid: 774eb086c1ff6364d8d339b894220cd8, type: 3}
+  m_PrefabInstance: {fileID: 6406393848881260790}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7477088288993203178 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4551979709583129372, guid: 774eb086c1ff6364d8d339b894220cd8, type: 3}

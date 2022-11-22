@@ -20,6 +20,7 @@ public class TimeController : MonoBehaviour
     private int puntos;
     private int calculo;
     private int medallaObtenida;
+    public CameraCont cameraCont;
     // Start is called before the first frame update
     void Awake()
     {
@@ -68,7 +69,7 @@ public class TimeController : MonoBehaviour
     }
 
     IEnumerator puntuaciones(){
-        puntajeTexto.text = "" + (int)contadores.GetComponent<AppleCounter>().total;
+        puntajeTexto.text = "" + (int)cameraCont.contador;
         capturasTexto.text = "" + capturado;
         medallaObtenida = CalculoMedalla();
         yield return new WaitForSeconds(1);
@@ -101,12 +102,13 @@ public class TimeController : MonoBehaviour
     }
 
     private int CalculoMedalla(){
-        puntos = (int)contadores.GetComponent<AppleCounter>().total;
+        //puntos = (int)contadores.GetComponent<AppleCounter>().total;
+        puntos = (int)cameraCont.contador;
         calculo = puntos - 5 * capturado;
-        if (calculo >= 20){
+        if (calculo >= 150){
             return 1;
         }
-        if (calculo >= 10 && calculo < 20){
+        if (calculo >= 100 && calculo < 150){
             return 2;
         }
         else{
