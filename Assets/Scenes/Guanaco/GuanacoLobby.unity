@@ -590,8 +590,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 482e6057d1061c4449288e4f2ba744d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 925487533576748669, guid: 76b3af24e9eb6614298db27aa65e69c3, type: 3}
-  enemyPrefab: {fileID: 444602283810840816, guid: faac0e7d41e22c24897552aa4656d4a7, type: 3}
+  playerPrefab: {fileID: 8459212910590469671, guid: 9057a5caa55b96d4880d861f217a65d9, type: 3}
+  enemyPrefab: {fileID: 3486835207649306539, guid: abf63bfc523c4704a8e1fd7dd8d3ee97, type: 3}
   GuanacoManager: {fileID: 4934612140023223457, guid: 8bdee882352715247ae67b73efd39300, type: 3}
   trampaPrefab: {fileID: 0}
   cameras: []
@@ -2660,7 +2660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombreSala: Sala Guanaco
-  codigoJuego: 4
+  codigoJuego: 3
   errorText: {fileID: 1533477581}
   roomNameText: {fileID: 1124971041}
   roomListContent: {fileID: 1166201997}
