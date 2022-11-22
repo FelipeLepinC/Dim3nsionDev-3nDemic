@@ -105,4 +105,14 @@ public class ContinuousMovement : MonoBehaviour
             //saltando = true;
         }
     }
+
+    public void Boost(){
+        StartCoroutine("aumentarVelocidad");
+    }
+
+    IEnumerator aumentarVelocidad(){
+        speed = speed * 2;
+        yield return new WaitForSeconds(.9f);
+        speed = speed / 2;
+    }
 }

@@ -2069,6 +2069,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d25d8c2b18d161d49b9e85aa7e99a8bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2538549568460184576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7477088287983539099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50a53fd37e59240489930309ebb5552c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  jumpingForce: 300
+  saltando: 0
+  gravity: -10
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  inputSource: 5
+  inputSource2: 5
+  primaryButtonState: 0
+  camera: {fileID: 7477088288993203182}
 --- !u!114 &4425069053572094455
 MonoBehaviour:
   m_ObjectHideFlags: 0

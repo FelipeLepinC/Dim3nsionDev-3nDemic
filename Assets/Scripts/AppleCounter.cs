@@ -81,6 +81,18 @@ public class AppleCounter : MonoBehaviour
         }
     }
 
+    public bool Boost2(){
+        if(counter >=10){
+            counter -= 10;
+            PersonalCounter.text = "" + (int)counter;
+            Debug.Log("Restado");
+            return true;
+        }else{
+            Debug.Log("No tienes suficiente comida");
+            return false;
+        }
+    }
+
     public void persued(){
         alert.enabled = true;
     }
