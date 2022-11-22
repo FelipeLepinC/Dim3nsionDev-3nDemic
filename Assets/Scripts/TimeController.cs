@@ -8,7 +8,7 @@ public class TimeController : MonoBehaviour
 {
     [SerializeField] int min, seg;
     [SerializeField] Text tiempo, mensaje, puntaje, capturas, medalla, puntajeTexto, capturasTexto, medallaPNG;
-    [SerializeField] Image bronze, silver, gold;
+    [SerializeField] Image bronze, silver, gold, marco;
     private float restante;
     private bool enMarcha;
     public Image panel;
@@ -38,6 +38,7 @@ public class TimeController : MonoBehaviour
         bronze.enabled = false;
         silver.enabled = false;
         gold.enabled = false;
+        marco.enabled = false;
         //puntajeTexto.text = "456";
         //capturasTexto.text = "456";
         capturado = 0;
@@ -53,6 +54,7 @@ public class TimeController : MonoBehaviour
                 enMarcha = false;
                 mensaje.enabled = true;
                 panel.enabled = true;
+                marco.enabled = true;
                 controller.enabled = false;
                 StartCoroutine(puntuaciones());
                 Debug.Log("Se acabó el tiempo");

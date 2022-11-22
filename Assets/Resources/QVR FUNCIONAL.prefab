@@ -42,6 +42,7 @@ RectTransform:
   - {fileID: 2686449901087507725}
   - {fileID: 3652695032913649779}
   - {fileID: 2653847619917025500}
+  - {fileID: 2125743492802448284}
   m_Father: {fileID: 6686886442593931474}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -71,7 +72,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9811321, g: 0.87153065, b: 0.1342115, a: 0.7294118}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -276,8 +277,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.2, y: 82.5}
-  m_SizeDelta: {x: 540.4548, y: 110.8736}
+  m_AnchoredPosition: {x: 31, y: 56}
+  m_SizeDelta: {x: 568.89, y: 110.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5314663437714028434
 CanvasRenderer:
@@ -309,7 +310,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c7df3847ca1113e4fa89eab062bdb065, type: 3}
-    m_FontSize: 50
+    m_FontSize: 48
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 3
@@ -980,6 +981,82 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Medalla obtenida:'
+--- !u!1 &3595698033408215309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2125743492802448284}
+  - component: {fileID: 3319327017022160123}
+  - component: {fileID: 4803375925112286550}
+  m_Layer: 8
+  m_Name: Marco
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2125743492802448284
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3595698033408215309}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2150327400755566962}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.9, y: 1.0978851}
+  m_SizeDelta: {x: 685.4, y: 328.7}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &3319327017022160123
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3595698033408215309}
+  m_CullTransparentMesh: 1
+--- !u!114 &4803375925112286550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3595698033408215309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 25175dd1b170e4a44bbd5970b2ad652a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &5242469241324440038
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,7 +1389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e4412f0f870e7c45b3d356d4d0b4f53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  min: 1
+  min: 0
   seg: 10
   tiempo: {fileID: 2134060072914998300}
   mensaje: {fileID: 9215255755121965589}
@@ -1325,6 +1402,7 @@ MonoBehaviour:
   bronze: {fileID: 6561618608248791083}
   silver: {fileID: 5640917496511287917}
   gold: {fileID: 5060054389681280335}
+  marco: {fileID: 4803375925112286550}
   panel: {fileID: 8169459029443551332}
   controller: {fileID: 7477088287983539100}
   contadores: {fileID: 3331050059805933968}
