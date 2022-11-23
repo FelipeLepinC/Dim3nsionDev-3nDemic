@@ -39,17 +39,45 @@ public class RoomRanaManager : MonoBehaviourPunCallbacks
     }
 
     public override void OnEnable() {
-        base.OnEnable();
-        SceneManager.sceneLoaded += OnSceneLoaded;
+        if(SceneManager.sceneCount == 1)
+        {
+            Debug.Log("Cantidad de scenas antes del OnEnable : "+SceneManager.sceneCount);
+            base.OnEnable();
+            Debug.Log("Cantidad de scenas despues del OnEnable : "+SceneManager.sceneCount);
+            SceneManager.sceneLoaded += OnSceneLoaded;
+            verificar = true;
+        }
+        // Debug.Log("Cantidad de scenas antes del OnEnable : "+SceneManager.sceneCount);
+        // base.OnEnable();
+        // Debug.Log("Cantidad de scenas despues del OnEnable : "+SceneManager.sceneCount);
+        // SceneManager.sceneLoaded += OnSceneLoaded;
+        // verificar = true;
+        // if(SceneManager.sceneCount > 1)
+        // {
+        //     Debug.Log("Mas de una scena ha sido cargada");
+        // }
+        // else if (SceneManager.sceneCount == 1)
+        // {
+        //     Debug.Log("Solo una scena ha sido cargada");
+        // }
+        // if(SceneManager.sceneCountInBuildSettings > 1)
+        // {
+        //     Debug.Log("Build setting tiene una o mas scenas");
+        // }
+        // else if(SceneManager.sceneCountInBuildSettings == 1)
+        // {
+        //     Debug.Log("Solo una scena en el build setting");
+        // }
     }
 
     public override void OnDisable() {
         base.OnDisable();
-        SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
+        // Ver https://vionixstudio.com/2021/03/26/unity-scene-manager-tutorial/
         if(scene.buildIndex == 5 && awa == 0) //Número de escena asiciada al juego que queremos cargar, y aquí es donde instanciamos el Prefab del PlayerManager
         {
             Debug.Log("Se spawneará un jugador");
