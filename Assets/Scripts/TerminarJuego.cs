@@ -7,18 +7,20 @@ public class TerminarJuego : MonoBehaviour
 {
     public float tiempoEsperaPantallaFinal = 10.0f;
     public float tiempoTranscurrido = 0f;
-    bool juegoTerminado = false;
+    public bool juegoTerminado = false;
 
     public GameObject jugador;
 
     public bool juegoQuirquincho;
     public bool juegoGuanaco;
+    public bool juegoGuanacoArreglado;
     public bool juegoRana;
     public bool juegoRanaMultiplayer;
     public bool juegoTortuga;
 
     TimeController controllerQuirquicho;
     TimeControllerGuanaco controllerGuanaco;
+    TimeControllerGuanaco1 controllerGuanaco1; // Juego del guanaco arreglado
     TimeControllerRana controllerRana;
     TimeControllerRanaMultiplayer controllerRanaMultiplayer;
     TimeControllerTortuga controllerTortuga;
@@ -31,16 +33,20 @@ public class TerminarJuego : MonoBehaviour
             juegoGuanaco = gameObject.TryGetComponent(out controllerGuanaco);
             if (!juegoGuanaco)
             {
-                juegoRana = gameObject.TryGetComponent(out controllerRana);
-                if (!juegoRana)
+                juegoGuanacoArreglado = gameObject.TryGetComponent(out controllerGuanaco1);
+                if (!juegoGuanacoArreglado)
                 {
-                    juegoRanaMultiplayer = gameObject.TryGetComponent(out controllerRanaMultiplayer);
-                    if (!juegoRanaMultiplayer)
+                    juegoRana = gameObject.TryGetComponent(out controllerRana);
+                    if (!juegoRana)
                     {
-                        juegoTortuga = gameObject.TryGetComponent(out controllerTortuga);
-                        if (!juegoTortuga)
+                        juegoRanaMultiplayer = gameObject.TryGetComponent(out controllerRanaMultiplayer);
+                        if (!juegoRanaMultiplayer)
                         {
-                            Debug.Log("Ha habido un error en encontrar el juego");
+                            juegoTortuga = gameObject.TryGetComponent(out controllerTortuga);
+                            if (!juegoTortuga)
+                            {
+                                Debug.Log("Ha habido un error en encontrar el juego");
+                            }
                         }
                     }
                 }
@@ -60,6 +66,10 @@ public class TerminarJuego : MonoBehaviour
             else if (juegoGuanaco)
             {
                 juegoTerminado = controllerGuanaco.finished;
+            }
+            else if (juegoGuanacoArreglado)
+            {
+                juegoTerminado = controllerGuanaco1.finished;
             }
             else if (juegoRana)
             {

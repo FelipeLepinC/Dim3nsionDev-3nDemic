@@ -39,7 +39,7 @@ public class Health1 : MonoBehaviour
                     // Hacer que el personaje se destruya luego de alejarse
                     GetComponent<Follow1>().derrotado = true;
                     puntaje.SumarPuntos(1);
-                    tuto.murio = true;
+                    if (tuto != null) tuto.murio = true;
                 }
                 else
                 {
