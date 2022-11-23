@@ -26,6 +26,7 @@ public class CameraCont : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("Contador : "+contador);
         if (counter == 1 && reset == 2){
             counter = 1;
         }

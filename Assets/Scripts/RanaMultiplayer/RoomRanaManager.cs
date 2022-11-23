@@ -45,7 +45,6 @@ public class RoomRanaManager : MonoBehaviourPunCallbacks
             base.OnEnable();
             Debug.Log("Cantidad de scenas despues del OnEnable : "+SceneManager.sceneCount);
             SceneManager.sceneLoaded += OnSceneLoaded;
-            verificar = true;
         }
         // Debug.Log("Cantidad de scenas antes del OnEnable : "+SceneManager.sceneCount);
         // base.OnEnable();

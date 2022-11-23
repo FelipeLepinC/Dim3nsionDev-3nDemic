@@ -15,6 +15,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
     public static RoomManager Instance;
     public GameObject[] cameras;
     private GameObject[] plyr;
+    private int awa = 0;
     public int total = 0;
     private bool wait = true;
     // Start is called before the first frame update
@@ -30,13 +31,18 @@ public class RoomManager : MonoBehaviourPunCallbacks
     }
 
     public override void OnEnable() {
-        base.OnEnable();
-        SceneManager.sceneLoaded += OnSceneLoaded;
+        // base.OnEnable();
+        // SceneManager.sceneLoaded += OnSceneLoaded;
+        if(SceneManager.sceneCount == 1)
+        {
+            base.OnEnable();
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
     }
 
     public override void OnDisable() {
         base.OnDisable();
-        SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
@@ -44,14 +50,17 @@ public class RoomManager : MonoBehaviourPunCallbacks
         if(scene.buildIndex == 1) //Número de escena asiciada al juego que queremos cargar, y aquí es donde instanciamos el Prefab del PlayerManager
         {
             wait = false;
+            awa = 1;
             //PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerManager"), Vector3.zero, (Quaternion.identity));
             //PhotonNetwork.Instantiate("PlayerManager", Vector3.zero, (Quaternion.identity));
             GameObject player = PhotonNetwork.Instantiate(playerPrefab.name, playerPrefab.transform.position, Quaternion.identity);
-            GameObject quirquincho = PhotonNetwork.Instantiate(QuirquinchoManager.name, Vector3.zero, Quaternion.identity);
+            // GameObject quirquincho = PhotonNetwork.Instantiate(QuirquinchoManager.name, Vector3.zero, Quaternion.identity);
             
             if (PhotonNetwork.IsMasterClient){
+                GameObject quirquincho = PhotonNetwork.Instantiate(QuirquinchoManager.name, Vector3.zero, Quaternion.identity);
                 GameObject enemy = PhotonNetwork.Instantiate(hunterPrefab.name, new Vector3(Random.Range(-115, -110), 116, 513), Quaternion.identity);
-                StartCoroutine(HunterSpawn());
+                GameObject madriguera = PhotonNetwork.Instantiate(prefabMadriguera.name, prefabMadriguera.transform.position, Quaternion.identity);
+                // StartCoroutine(HunterSpawn());
             }
             
         }
@@ -83,7 +92,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
         if (wait == false){
             StartCoroutine(ActualizarContador(5));
         }
-        
+        Debug.Log("variable total : "+total);
     }
 
     public void Llamar()

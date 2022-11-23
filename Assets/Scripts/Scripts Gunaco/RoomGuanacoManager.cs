@@ -37,13 +37,16 @@ public class RoomGuanacoManager : MonoBehaviourPunCallbacks
     }
 
     public override void OnEnable() {
-        base.OnEnable();
-        SceneManager.sceneLoaded += OnSceneLoaded;
+        if(SceneManager.sceneCount == 1)
+        {
+            base.OnEnable();
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
     }
 
     public override void OnDisable() {
         base.OnDisable();
-        SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
