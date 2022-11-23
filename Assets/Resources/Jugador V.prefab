@@ -1951,12 +1951,14 @@ MonoBehaviour:
   bronze: {fileID: 2935438905726975820}
   silver: {fileID: 2935438905414870128}
   gold: {fileID: 2935438905835416679}
+  marco: {fileID: 0}
   panel: {fileID: 2935438905695917077}
   controller: {fileID: 938761413207878399}
   contadores: {fileID: 2935438906068099359}
   finished: 0
   button: {fileID: 2935438905025974913}
   capturado: 0
+  cameraCont: {fileID: 0}
 --- !u!1 &2935438905970995335
 GameObject:
   m_ObjectHideFlags: 0
@@ -3157,12 +3159,14 @@ MonoBehaviour:
   bronze: {fileID: 6966282026871743643}
   silver: {fileID: 8301534200333849192}
   gold: {fileID: 8754199471026446366}
+  marco: {fileID: 0}
   panel: {fileID: 6080450857538036746}
   controller: {fileID: 938761413207878399}
   contadores: {fileID: 8876009855591216327}
   finished: 0
   button: {fileID: 2364067118945116638}
   capturado: 0
+  cameraCont: {fileID: 0}
 --- !u!1 &7248203756973910167
 GameObject:
   m_ObjectHideFlags: 0

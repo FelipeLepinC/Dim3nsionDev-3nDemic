@@ -50,6 +50,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
             GameObject quirquincho = PhotonNetwork.Instantiate(QuirquinchoManager.name, Vector3.zero, Quaternion.identity);
             
             if (PhotonNetwork.IsMasterClient){
+                GameObject enemy = PhotonNetwork.Instantiate(hunterPrefab.name, new Vector3(Random.Range(-115, -110), 116, 513), Quaternion.identity);
                 StartCoroutine(HunterSpawn());
             }
             
