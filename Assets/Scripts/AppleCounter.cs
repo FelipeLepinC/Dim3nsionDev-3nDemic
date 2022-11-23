@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class AppleCounter : MonoBehaviour
 {
-    public Text PersonalCounter;
-    public Text TotalCounter;
+    public TextMeshProUGUI PersonalCounter;
+    public TextMeshProUGUI TotalCounter;
     public int counter;
     public int total;
     public Image alert;
