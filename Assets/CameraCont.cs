@@ -8,9 +8,11 @@ public class CameraCont : MonoBehaviour
     PhotonView view;
     public GameObject camera;
     public GameObject player;
+    public GameObject manager;
+    public GameObject[] managers;
     public int contador;
 
-     public int counter;
+    public int counter;
     public int local;
     public int counter2;
     public int reset = 1;
@@ -19,6 +21,9 @@ public class CameraCont : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        managers = GameObject.FindGameObjectsWithTag("GameManager");
+        manager = managers[0];
+        Debug.Log("cantidad de managers: "+ managers.Length);
         view = GetComponent<PhotonView>();
         //activar();
     }
