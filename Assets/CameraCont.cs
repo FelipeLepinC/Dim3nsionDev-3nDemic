@@ -31,6 +31,9 @@ public class CameraCont : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (contador < manager.gameObject.GetComponent<QuirquinchoManager>().puntaje){
+            contador = manager.gameObject.GetComponent<QuirquinchoManager>().puntaje;
+        }
         Debug.Log("Contador : "+contador);
         if (counter == 1 && reset == 2){
             counter = 1;
