@@ -22,7 +22,7 @@ public class PantallasCarga : MonoBehaviour
         tiempo_start += Time.deltaTime;
         if (tiempo_start >= tiempo_end){
             if(juego == "Guanaco"){
-                SceneManager.LoadScene("JuegoGuanaco VR");
+                SceneManager.LoadScene("JuegoGuanaco VR 1");
             }
             if(juego == "Tortuga"){
                 SceneManager.LoadScene("JuegoTortuga VR");
