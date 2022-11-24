@@ -20,7 +20,7 @@ public class QuirquinchoManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        players = GameObject.FindGameObjectsWithTag("GameManager");
+        players = GameObject.FindGameObjectsWithTag("Jugador");
         foreach(GameObject player in players){
             contadorPlayer = player.gameObject.GetComponent<CameraCont>().contador;
             if (puntaje < contadorPlayer){

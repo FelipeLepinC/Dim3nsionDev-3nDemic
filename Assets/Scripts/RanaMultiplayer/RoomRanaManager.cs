@@ -77,7 +77,7 @@ public class RoomRanaManager : MonoBehaviourPunCallbacks
     void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
         // Ver https://vionixstudio.com/2021/03/26/unity-scene-manager-tutorial/
-        if(scene.buildIndex == 5 && awa == 0) //Número de escena asiciada al juego que queremos cargar, y aquí es donde instanciamos el Prefab del PlayerManager
+        if(scene.buildIndex == 22 && awa == 0) //Número de escena asiciada al juego que queremos cargar, y aquí es donde instanciamos el Prefab del PlayerManager
         {
             Debug.Log("Se spawneará un jugador");
             awa = 1; // Impide que se spawneen 2 tortugas por jugador.

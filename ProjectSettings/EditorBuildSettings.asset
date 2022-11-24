@@ -29,9 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Guanaco/JuegoGuanaco.unity
     guid: 9abe738462349bf4f82a770da21ab592
-  - enabled: 1
-    path: Assets/Scenes/Rana/JuegoRanaMultiplayer.unity
-    guid: 5cbc018f74b6fcf409d0e1349f614d3b
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
@@ -89,6 +89,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/RanaLobbyVR.unity
     guid: fdb44d0e9e9d1854c90a7f6e123d5f49
+  - enabled: 1
+    path: Assets/Scenes/Rana/JuegoRanaMultiplayer.unity
+    guid: 1ce37e7257570054cadd3d9d04750dd2
   - enabled: 0
     path: Assets/TortugaLobbyVR.unity
     guid: 8ba2c6b02a1256d44bbca2a6f527ddaa

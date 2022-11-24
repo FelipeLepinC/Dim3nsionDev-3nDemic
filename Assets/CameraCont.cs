@@ -31,6 +31,10 @@ public class CameraCont : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        managers = GameObject.FindGameObjectsWithTag("GameManager");
+        manager = managers[0];
+        Debug.Log("cantidad de managers: "+ managers.Length);
+        view = GetComponent<PhotonView>();
         if (contador < manager.gameObject.GetComponent<QuirquinchoManager>().puntaje){
             contador = manager.gameObject.GetComponent<QuirquinchoManager>().puntaje;
         }

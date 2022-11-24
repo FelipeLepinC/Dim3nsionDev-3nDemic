@@ -102,7 +102,7 @@ MonoBehaviour:
   fantasmas: []
   total: 0
   puntos: 0
-  numeroDeEnemigos: 5
+  numeroDeEnemigos: 30
   enemyPrefab: {fileID: 3486835207649306539, guid: abf63bfc523c4704a8e1fd7dd8d3ee97, type: 3}
 --- !u!114 &-5900272002420924947
 MonoBehaviour:

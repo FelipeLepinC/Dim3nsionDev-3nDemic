@@ -2553,7 +2553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombreSala: Sala Rana del Loa
-  codigoJuego: 5
+  codigoJuego: 22
   errorText: {fileID: 754688212}
   roomNameText: {fileID: 1335975311}
   roomListContent: {fileID: 1716072428}

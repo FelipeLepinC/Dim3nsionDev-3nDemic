@@ -324,23 +324,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5154485428607418524, guid: 9057a5caa55b96d4880d861f217a65d9, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5154485428607418524, guid: 9057a5caa55b96d4880d861f217a65d9, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5154485428629416864, guid: 9057a5caa55b96d4880d861f217a65d9, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5154485428629416864, guid: 9057a5caa55b96d4880d861f217a65d9, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5857006285492418051, guid: 9057a5caa55b96d4880d861f217a65d9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -7.0000305
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 5857006285492418051, guid: 9057a5caa55b96d4880d861f217a65d9, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -353,6 +353,10 @@ PrefabInstance:
     - target: {fileID: 8459212910590469671, guid: 9057a5caa55b96d4880d861f217a65d9, type: 3}
       propertyPath: m_Name
       value: Guanaco_Multiplayer Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459212910590469671, guid: 9057a5caa55b96d4880d861f217a65d9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8459212910590469675, guid: 9057a5caa55b96d4880d861f217a65d9, type: 3}
       propertyPath: m_RootOrder

@@ -2459,6 +2459,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 7477088288993203178}
   player: {fileID: 7477088287983539099}
+  manager: {fileID: 0}
+  managers: []
   contador: 0
   counter: 0
   local: 0
