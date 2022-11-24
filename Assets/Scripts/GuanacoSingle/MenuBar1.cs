@@ -18,14 +18,6 @@ public class MenuBar1 : MonoBehaviour
     {
         slider = GetComponent<Slider>();
 
-        if (transform.parent.gameObject.tag == "Player")
-        {
-            target = transform.parent.transform.parent.transform.parent.gameObject;
-        }
-        else
-        {
-            target = transform.parent.transform.parent.gameObject;
-        }
         switch(barType){
             case BarType1.health:
                 slider.maxValue = target.GetComponent<Health1>().HealthPoints;

@@ -404,6 +404,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9057a5caa55b96d4880d861f217a65d9, type: 3}
+--- !u!1 &945340926 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5857006285492418048, guid: 9057a5caa55b96d4880d861f217a65d9, type: 3}
+  m_PrefabInstance: {fileID: 945340925}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &945340927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945340926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62378331a7f60542985d4dfd792c085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoEsperaPantallaFinal: 10
+  tiempoTranscurrido: 0
+  juegoTerminado: 0
+  jugador: {fileID: 945340928}
+  juegoQuirquincho: 0
+  juegoGuanaco: 0
+  juegoGuanacoArreglado: 0
+  juegoRana: 0
+  juegoRanaMultiplayer: 0
+  juegoTortuga: 0
+--- !u!1 &945340928 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8459212910590469671, guid: 9057a5caa55b96d4880d861f217a65d9, type: 3}
+  m_PrefabInstance: {fileID: 945340925}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &979943034
 GameObject:
   m_ObjectHideFlags: 0

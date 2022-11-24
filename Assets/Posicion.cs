@@ -13,7 +13,7 @@ public class Posicion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(this.gameObject.transform.position);
+        //Debug.Log(this.gameObject.transform.position);
         //if (this.gameObject.transform.position == new Vector3(0.0f,1.1176f,0.0f)){
         //    this.gameObject.transform.position = this.gameObject.transform.position - new Vector3(0,1,0);
         //}

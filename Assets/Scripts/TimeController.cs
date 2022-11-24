@@ -38,7 +38,7 @@ public class TimeController : MonoBehaviour
         bronze.enabled = false;
         silver.enabled = false;
         gold.enabled = false;
-        marco.enabled = false;
+        if (marco != null) marco.enabled = false;
         //puntajeTexto.text = "456";
         //capturasTexto.text = "456";
         capturado = 0;
@@ -54,7 +54,7 @@ public class TimeController : MonoBehaviour
                 enMarcha = false;
                 mensaje.enabled = true;
                 panel.enabled = true;
-                marco.enabled = true;
+                if (marco != null)  marco.enabled = true;
                 controller.enabled = false;
                 StartCoroutine(puntuaciones());
                 Debug.Log("Se acabó el tiempo");
@@ -64,6 +64,13 @@ public class TimeController : MonoBehaviour
             tiempo.text = string.Format("{00:00}:{01:00}", tempMin, tempSeg);
         }
         if (finished == true){
+            enMarcha = false;
+            mensaje.enabled = true;
+            panel.enabled = true;
+            if (marco != null) marco.enabled = true;
+            controller.enabled = false;
+            StartCoroutine(puntuaciones());
+            Debug.Log("Se termino el juego");
             if (Input.GetKeyDown(KeyCode.Return)){
                 SceneManager.LoadScene("MainMenu");
             }
@@ -71,7 +78,8 @@ public class TimeController : MonoBehaviour
     }
 
     IEnumerator puntuaciones(){
-        puntajeTexto.text = "" + (int)cameraCont.contador;
+        if (cameraCont != null) puntajeTexto.text = "" + (int)cameraCont.contador;
+        else puntajeTexto.text = "" + contadores.counter;
         capturasTexto.text = "" + capturado;
         medallaObtenida = CalculoMedalla();
         yield return new WaitForSeconds(1);
@@ -105,7 +113,8 @@ public class TimeController : MonoBehaviour
 
     private int CalculoMedalla(){
         //puntos = (int)contadores.GetComponent<AppleCounter>().total;
-        puntos = (int)cameraCont.contador;
+        if (cameraCont != null) puntos = cameraCont.contador;
+        else puntos = contadores.counter;
         calculo = puntos - 5 * capturado;
         if (calculo >= 150){
             return 1;
