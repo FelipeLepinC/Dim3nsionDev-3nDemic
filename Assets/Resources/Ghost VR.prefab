@@ -1617,7 +1617,9 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.21960786
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2709730986725414090, guid: 64150cf320349504788c88c871520c2a, type: 3}
+    - {fileID: 2709730986996985877, guid: 64150cf320349504788c88c871520c2a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 64150cf320349504788c88c871520c2a, type: 3}
 --- !u!224 &2588893978614834486 stripped
 RectTransform:
@@ -1797,6 +1799,28 @@ MonoBehaviour:
   finished: 0
   button: {fileID: 6234669033960294905}
   capturado: 0
+--- !u!114 &6721335818652164771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6234669033653383354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62378331a7f60542985d4dfd792c085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoEsperaPantallaFinal: 10
+  tiempoTranscurrido: 0
+  juegoTerminado: 0
+  jugador: {fileID: 7208146830163970929}
+  juegoQuirquincho: 0
+  juegoGuanaco: 0
+  juegoGuanacoArreglado: 0
+  juegoRana: 0
+  juegoRanaMultiplayer: 0
+  juegoTortuga: 0
 --- !u!114 &6234669033920512583 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3251935420437069729, guid: 13aacb6e282d39b4a90241b393438e8b, type: 3}
