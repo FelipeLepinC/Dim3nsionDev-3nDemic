@@ -634,7 +634,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2709730986996985899, guid: 64150cf320349504788c88c871520c2a, type: 3}
   m_PrefabInstance: {fileID: 191261506115264650}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3973921943752184497
+--- !u!114 &3659254597157503275
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -643,7 +643,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2827586197199917217}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3452ccfc6b9417140ac34776a4290692, type: 3}
+  m_Script: {fileID: 11500000, guid: 9be59c0b9058c5443822f670a46a60c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 925487533576748669}
@@ -653,7 +653,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2709730986725414089, guid: 64150cf320349504788c88c871520c2a, type: 3}
   m_PrefabInstance: {fileID: 191261506115264650}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3209229136323064645
+--- !u!114 &3396463587232812291
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -662,7 +662,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2827586197463233603}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3452ccfc6b9417140ac34776a4290692, type: 3}
+  m_Script: {fileID: 11500000, guid: 9be59c0b9058c5443822f670a46a60c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 925487533576748669}
@@ -875,6 +875,28 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3251935421220064604, guid: 13aacb6e282d39b4a90241b393438e8b, type: 3}
   m_PrefabInstance: {fileID: 2151344249893699828}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1824964774590668607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3529184090314722728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62378331a7f60542985d4dfd792c085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoEsperaPantallaFinal: 10
+  tiempoTranscurrido: 0
+  juegoTerminado: 0
+  jugador: {fileID: 925487533576748669}
+  juegoQuirquincho: 0
+  juegoGuanaco: 0
+  juegoGuanacoArreglado: 0
+  juegoRana: 0
+  juegoRanaMultiplayer: 0
+  juegoTortuga: 0
 --- !u!114 &3730782484382533867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -906,28 +928,6 @@ MonoBehaviour:
   finished: 0
   button: {fileID: 3529184090621621483}
   capturado: 0
---- !u!114 &1824964774590668607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3529184090314722728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f62378331a7f60542985d4dfd792c085, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tiempoEsperaPantallaFinal: 10
-  tiempoTranscurrido: 0
-  juegoTerminado: 0
-  jugador: {fileID: 925487533576748669}
-  juegoQuirquincho: 0
-  juegoGuanaco: 0
-  juegoGuanacoArreglado: 0
-  juegoRana: 0
-  juegoRanaMultiplayer: 0
-  juegoTortuga: 0
 --- !u!114 &3529184090583324527 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3251935420414662555, guid: 13aacb6e282d39b4a90241b393438e8b, type: 3}

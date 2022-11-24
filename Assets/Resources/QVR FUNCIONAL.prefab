@@ -1310,6 +1310,7 @@ GameObject:
   - component: {fileID: 8522645613062440700}
   - component: {fileID: 102004809837944170}
   - component: {fileID: 5037661186133423951}
+  - component: {fileID: 4741493376319352723}
   m_Layer: 8
   m_Name: PanelTiempo
   m_TagString: PanelTiempo
@@ -1410,6 +1411,28 @@ MonoBehaviour:
   button: {fileID: 6225209899580049323}
   capturado: 0
   cameraCont: {fileID: 7295483459668212935}
+--- !u!114 &4741493376319352723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5532766621662141655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62378331a7f60542985d4dfd792c085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoEsperaPantallaFinal: 10
+  tiempoTranscurrido: 0
+  juegoTerminado: 0
+  jugador: {fileID: 7477088287983539099}
+  juegoQuirquincho: 0
+  juegoGuanaco: 0
+  juegoGuanacoArreglado: 0
+  juegoRana: 0
+  juegoRanaMultiplayer: 0
+  juegoTortuga: 0
 --- !u!1 &5680887807367075436
 GameObject:
   m_ObjectHideFlags: 0

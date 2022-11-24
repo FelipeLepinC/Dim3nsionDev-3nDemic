@@ -48,7 +48,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugadores: []
+  players: []
   total: 0
+  puntaje: 0
 --- !u!114 &-7560153307821350103
 MonoBehaviour:
   m_ObjectHideFlags: 0

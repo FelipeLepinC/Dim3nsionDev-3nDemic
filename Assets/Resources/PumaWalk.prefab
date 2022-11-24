@@ -1800,7 +1800,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5245004023811669791}
   - component: {fileID: 2723276957360061160}
-  - component: {fileID: 2509291350883700625}
+  - component: {fileID: 1943926710425926036}
   m_Layer: 5
   m_Name: Vida
   m_TagString: Untagged
@@ -1881,7 +1881,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2509291350883700625
+--- !u!114 &1943926710425926036
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1890,7 +1890,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1932986072501715044}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5db96aacc6078843bdce14350422f3d, type: 3}
+  m_Script: {fileID: 11500000, guid: 9be59c0b9058c5443822f670a46a60c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 3486835207649306539}
